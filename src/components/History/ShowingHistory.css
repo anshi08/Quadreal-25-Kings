@@ -1,0 +1,80 @@
+
+/* Container styles */
+.container {
+    max-width: '100%';
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Title styles */
+  .title {
+    position: relative;
+    left: 80px;
+    top: 57px;
+    width: 528px;
+    pointer-events: auto;
+    cursor: inherit;
+    font-size: 40px;
+    color: rgb(165, 124, 82);
+    font-family: "Copyright Klim Type Fo-k7cTyXjE";
+    text-align: left;
+    line-height: 48px;
+    
+  }
+  
+  /* Content styles */
+  .content {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-top: 70px;
+  }
+  
+  /* Right side image container */
+  .image-container {
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .content {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    /* .title {
+      font-size: 24px;
+    } */
+  
+    .content {
+      font-size: 12px;
+    }
+  }
+
+  /* Media query for tablet devices */
+@media (max-width: 768px) {
+    .title {
+      font-size: 32px;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      line-height: 40px;
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 480px) {
+    .title {
+      font-size: 24px;
+      width: 90%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      line-height: 32px;
+    }
+  }
+  

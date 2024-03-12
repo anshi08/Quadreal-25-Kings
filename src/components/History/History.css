@@ -1,0 +1,40 @@
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Desktop view */
+@media (min-width: 1024px) {
+  .image-text {
+    font-family: "Copyright Klim Type Fo-k7cTyXjE";
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: normal;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 767px) {
+  .image-text {
+    font-family: inherit; /* Inherits font-family from parent */
+    font-size: inherit; /* Inherits font-size from parent */
+    line-height: inherit; /* Inherits line-height from parent */
+    letter-spacing: inherit; /* Inherits letter-spacing from parent */
+  }
+}
