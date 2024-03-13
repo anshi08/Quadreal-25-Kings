@@ -43,11 +43,11 @@
   }
   
   .image-slider .MuiButtonBase-root.prev {
-    left: 1rem;
+    left: 0.5rem;
   }
   
   .image-slider .MuiButtonBase-root.next {
-    right: 1rem;
+    right: 0.5rem;
   }
 
   .carousel-container {
@@ -78,8 +78,8 @@
     background-color: rgba(255, 255, 255, 0.8);
     border: none;
     border-radius: 50%;
-    padding: 12px;
     cursor: pointer;
+    min-width: 'auto !important';
   }
   
   .carousel-button:hover {

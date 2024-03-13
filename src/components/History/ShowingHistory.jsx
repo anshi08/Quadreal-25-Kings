@@ -76,7 +76,7 @@ const ShowingHistory = () => {
                   }}>DID YOU KNOW?</h1>
                   <p className='my-4 leading-7'
                     style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '20px' }}
-                  >Modelled after the Baths of Caracella in<br /> Rome, the Banking Hall’s ceiling is 65 feet at<br />
+                  >Modelled after the Baths of Caracella in Rome,the Banking Hall’s ceiling is 65 feet at<br />
                     the apex. Painted a pale azure, 715 ounces of<br /> gold leaf was used to create the<br /> surrounding mouldings.</p>
                 </div>
                 <div className="image-wrapper">

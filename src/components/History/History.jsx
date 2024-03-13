@@ -15,7 +15,7 @@ const History = () => {
       </div>
       </Reveal>
       <Reveal>
-      <div style={{ backgroundColor: 'rgb(248, 245, 241)', height: '3400px' }}>
+      <div style={{ backgroundColor: 'rgb(248, 245, 241)'}}>
         <ShowingHistory />
       </div>
       </Reveal>
