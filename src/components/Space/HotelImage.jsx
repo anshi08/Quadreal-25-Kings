@@ -77,17 +77,18 @@ const HotelImage = () => {
                             <div style={{ width: '50%', maxWidth: '300px', marginLeft: '20px' }}> {/* Adjust width and max-width as needed */}
                                 <img src='http://127.0.0.1:5500/media/e262416a57ea6dd17a805e19a3f1a8fe/parking-leve-half.png' style={{ width: '100%' }} />
                             </div>
-                            <div style={{marginBottom:'15px'}}>
+                            <div style={{ marginBottom: '15px',color: 'rgb(165, 124, 82)'  }} className='font-bold'>
                                 <p>CONCOURSE LEVEL RETAIL <br />+ KING SUBWAY STATION</p>
-                                <p>PARKING LEVEL 1 <br/>
+                                <p>PARKING LEVEL 1 <br />
 
-PARKING LEVEL 2 <br/>
+                                    PARKING LEVEL 2 <br />
 
-PARKING LEVEL 3</p>
+                                    PARKING LEVEL 3</p>
                             </div>
                         </div>
                     </div>
 
+                    {/* floor names */}
                     <div className="right">
                         <div style={{ display: 'flex', flexDirection: 'column' }} className='my-9'>
                             <h1 className='font-bold' style={{ color: 'rgb(165, 124, 82)' }}>

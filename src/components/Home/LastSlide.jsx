@@ -1,29 +1,12 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-const style = {
-    position: 'absolute',
-    left: '110px',
-    top: '3578px',
-    width: '1440px',
-    height: '903px',
-    opacity: 1,
-    cursor: 'inherit',
-    borderWidth: '0px',
-    backgroundColor: 'rgba(165, 124, 82, 0.25)',
-    zIndex: 123
-};
+import "./LastSlide.css"
+import { Grid } from '@mui/material';
 
 const LastSlide = () => {
-
     const [isHovered, setIsHovered] = useState(false);
 
     const btn = {
-        position: 'absolute',
-        left: '155px',
-        top: '520px',
-        width: '219px',
-        zIndex: 149,
         fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
         textAlign: 'center',
         backgroundColor: isHovered ? '#a0aec0' : 'black',
@@ -33,35 +16,51 @@ const LastSlide = () => {
         fontSize: "1rem",
         padding: "12px 24px",
         transition: 'background-color 0.3s ease',
-    }
+    };
 
     return (
         <>
-            <div style={style}>
-                <div>
-                    <p style={{
-                        marginTop: '305px', position: "relative",
-                        marginLeft: '155px', lineHeight: '32px',
-                        fontFamily: 'Gotham-Book-Normal-WOhkQgwc', fontSize: '24px'
-                    }}
-                    >The keystone of today’s Commerce <br /> Court, the newly renovated 25
-                        King West <br /> tells a story of aspiration, prosperity, <br /> industry,
-                        integrity and of a progressive <br />future. The renovation of this
-                        iconic <br /> address reinvigorates those values. </p>
+            <Grid container style={{ backgroundColor: 'rgba(165, 124, 82, 0.25)' }}>
+                <Grid item xs={12} md={6} style={{padding :'35px'}}>
+                    <div >
+                        <p
+                            style={{
+                                fontFamily: 'Gotham-Book-Normal-WOhkQgwc',
+                                fontSize: '24px',
+                                lineHeight: '32px',
+                                textAlign: 'left',
+                                letterSpacing: 'normal'
+                            }}
+                        >
+                            The keystone of today’s Commerce <br />
+                            Court, the newly renovated 25 <br />
+                            King West tells a story of aspiration, <br />
+                            prosperity, industry, integrity and of a <br />
+                            progressive future. The renovation of this <br />
+                            iconic address reinvigorates those values.
+                        </p>
 
-                    {/* Link Button */}
-                    <Link
-                        to="/page/4"
-                        style={btn}
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
-                    >
-                        View Availability
-                    </Link>
-                </div>
-            </div>
+                        {/* Add space between text and button */}
+                        <div style={{ marginTop: '20px' }}>
+                            {/* Link Button */}
+                            <Link
+                                to="/page/4"
+                                style={btn}
+                                onMouseEnter={() => setIsHovered(true)}
+                                onMouseLeave={() => setIsHovered(false)}
+                            >
+                                View Availability
+                            </Link>
+                        </div>
+                    </div>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    {/* Add your image here */}
+                    <img src="https://www.dropbox.com/s/yexz44hne1ia8uu/After%402x.jpg?raw=1" alt="Your Image" style={{ width: '100%' }} />
+                </Grid>
+            </Grid>
         </>
-    )
+    );
 }
 
-export default LastSlide
+export default LastSlide;

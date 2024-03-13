@@ -1,0 +1,11 @@
+/* Default padding for small devices */
+.textStroke{
+    padding: 40px 24px;
+}
+
+/* Media query for large devices */
+@media (min-width: 960px) {
+    .textStroke{
+        padding: 280px 24px;
+    }
+}

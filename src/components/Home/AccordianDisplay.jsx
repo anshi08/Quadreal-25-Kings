@@ -4,6 +4,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Accordion from "@mui/material/Accordion";
 import Typography from "@mui/material/Typography";
+import { Grid } from "@mui/material";
 
 const AccordionItem = ({ title, content, isOpen, onChange }) => {
   return (
@@ -43,8 +44,10 @@ const AccordianDisplay = () => {
   };
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-      <div style={{ flex: 1, padding: '0 20px', textAlign: 'center' }}>
+   
+    <>
+    <Grid container spacing={4}>
+      <Grid item xs={12} md={6}>
         <AccordionItem 
           title="Distinction"
           content="Elevate your brand with an address in the heart of Toronto’s financial hub, 25 King Street West at King and Bay. Its connection to the city’s PATH system, immediate accessibility to transit, and the multitude of restaurants and cafes, makes it one of the most convenient locations in downtown Toronto."
@@ -69,11 +72,12 @@ const AccordianDisplay = () => {
           isOpen={openIndex === 3}
           onChange={() => handleAccordionChange(3)}
         />
-      </div>
-      <div style={{ flex: 1, padding: '0 20px', textAlign: 'center' }}>
+        </Grid>
+        <Grid item xs={12} md={6}>
         <img src={imageSrc} alt="Accordion Image" style={{ maxWidth: '100%', height: 'auto' }} />
-      </div>
-    </div>
+        </Grid>
+        </Grid>
+    </>
   );
 };
 

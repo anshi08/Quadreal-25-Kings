@@ -1,0 +1,11 @@
+/* Default padding for small devices */
+.select{
+    padding: 40px 24px;
+}
+
+/* Media query for large devices */
+@media (min-width: 960px) {
+    .select{
+        padding: 280px 24px;
+    }
+}
