@@ -8,11 +8,11 @@ import AddSlide from './AddSlide';
 import LastSlide from './LastSlide';
 
 const componentStyle = {
-  fontSize: 'clamp(1.5rem, 4vw, 3rem)', 
+  fontSize: 'clamp(1.5rem, 4vw, 3rem)',
   color: 'rgb(165, 124, 82)',
   fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
   lineHeight: '1.5',
-  marginBottom: '2rem' 
+  marginBottom: '2rem'
 };
 
 const divImage = {
@@ -21,7 +21,7 @@ const divImage = {
   backgroundPosition: 'center',
   color: 'white',
   textAlign: 'center',
-  padding: '2rem' 
+  padding: '2rem'
 };
 
 
@@ -32,6 +32,7 @@ const Home = () => {
   return (
     <>
       <div>
+
         <Carousal />
         <Reveal>
           <div style={divImage}>
@@ -54,11 +55,11 @@ const Home = () => {
           transition={{ duration: 1 }}
         >
           <Slide />
-          
-        <AddSlide />
-        <LastSlide />
+
+          <AddSlide />
+          <LastSlide />
         </motion.div>
-        </Reveal>
+      </Reveal>
     </>
   );
 }

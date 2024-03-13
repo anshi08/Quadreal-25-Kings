@@ -6,10 +6,11 @@
 .image-responsive {
   width: 100%;
   height: auto;
+  filter: brightness(70%);
 }
 
 .image-text {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

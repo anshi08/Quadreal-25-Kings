@@ -1,6 +1,18 @@
 /* Default padding for small devices */
 .select{
-    padding: 40px 24px;
+    padding: 2rem 2rem;
+    border-radius: 2px;
+}
+
+.maintext{
+    font-size: 24px;
+    font-style: normal;
+    font-family: 'Gotham-Book-Normal-WOhkQgwc';
+    margin: 2rem 4rem;
+
+}
+.btnLink{
+    margin: 2rem 4rem;
 }
 
 /* Media query for large devices */

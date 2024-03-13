@@ -31,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="sticky" style={{backgroundColor: 'rgb(248, 245, 241)'}}>
+    <AppBar position="sticky" style={{ backgroundColor: 'rgb(248, 245, 241)' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -43,15 +43,17 @@ const Header = () => {
               mr: 2,
               ml: 2, // Add left margin for spacing
               display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
+              fontFamily: "Times New Roman, Times, serif",
+              fontSize: '22px',
+              lineHeight: '130%',
+              fontWeight: 'bolder',
               color: 'black',
               textDecoration: 'none',
             }}
           >
-            25 King West
+            25 KING WEST
           </Typography>
+
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
             <IconButton
@@ -78,9 +80,8 @@ const Header = () => {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
+              style={{ display: { xs: 'block', md: 'none' } }}
+
             >
               <MenuItem onClick={handleCloseNavMenu} component={Link} to="/page/3">
                 The History
@@ -117,8 +118,10 @@ const Header = () => {
             25 King West
           </Typography>
 
-          <Box sx={{ display:'flex', justifyContent:'space-evenly',
-          flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{
+            display: 'flex', justifyContent: 'space-evenly',
+            flexGrow: 1, display: { xs: 'none', md: 'flex' }
+          }}>
             <Button component={Link} to="/page/3" sx={{ mx: 1, color: 'black' }}>
               The History
             </Button>

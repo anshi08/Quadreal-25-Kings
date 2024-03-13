@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
+import { motion } from "framer-motion"
 import "./AddSlice.css"
 import Image from "../../assets/HomeImage11.jpg"
 
@@ -9,7 +10,7 @@ const AddSlide = () => {
 
 
     const textContent = (
-        <p style={{lineHeight: '32px', fontFamily: 'Gotham-Book-Normal-WOhkQgwc', fontSize: '24px', marginBottom: '20px' }}>
+        <p className='maintext'>
             Here is an opportunity to be part of this historic building at an iconic address, with
             the flexibility of floorplates and plans customizable to the unique needs of contemporary business.
         </p>
@@ -27,24 +28,74 @@ const AddSlide = () => {
     };
 
     return (
-        <div style={{ backgroundColor: 'rgb(248, 245, 241)'}}>
+        <div style={{ backgroundColor: 'rgb(248, 245, 241)' }}>
             <Grid container>
                 {/* Left Side: Image */}
                 <Grid item xs={12} md={6}>
-                    <img src={Image} alt="Your Image" style={{ width: '100%', maxHeight: '100%', objectFit: 'cover' }} />
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                            x: -100,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            x: 0,
+                            transition: {
+                                duration: 1,
+                            },
+                        }}
+                        viewport={{ once: true }}
+                    >
+
+                        <img src={Image} alt="Your Image" style={{ width: '100%', maxHeight: '100%', objectFit: 'cover' }} />
+                    </motion.div>
                 </Grid>
                 {/* Right Side: Text */}
-                <Grid item xs={12} md={6} className="select">
-                    {textContent}
-                    {/* Link Button */}
-                    <Link
-                        to="/page/5"
-                        style={{ ...btn, marginTop: '20px' }}
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
+                <Grid item xs={12} md={6}>
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                            x: 100,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            x: 0,
+                            transition: {
+                                duration: 1,
+                            },
+                        }}
+                        viewport={{ once: true }}
                     >
-                        View Availability
-                    </Link>
+                        <div className='select'>
+                            {textContent}
+                            {/* Link Button */}
+                            <motion.div
+                                initial={{
+                                    opacity: 0,
+                                    y: 100,
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: {
+                                        duration: 1,
+                                    },
+                                }}
+                                viewport={{ once: true }}>
+                                <Link
+                                    to="/page/5"
+                                    className='btnLink'
+                                    style={{ ...btn}}
+                                    onMouseEnter={() => setIsHovered(true)}
+                                    onMouseLeave={() => setIsHovered(false)}
+                                >
+                                    VIEW AVAILABILITY
+                                </Link>
+                            </motion.div>
+
+                        </div>
+                    </motion.div>
+
                 </Grid>
             </Grid>
         </div>
