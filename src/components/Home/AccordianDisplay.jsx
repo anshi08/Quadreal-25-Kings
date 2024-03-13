@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import RemoveIcon from '@mui/icons-material/Remove';
+import AddIcon from '@mui/icons-material/Add';
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Accordion from "@mui/material/Accordion";
@@ -14,7 +15,7 @@ const AccordionItem = ({ title, content, isOpen, onChange }) => {
   return (
     <Accordion expanded={isOpen} onChange={onChange}>
       <AccordionSummary
-        expandIcon={<ExpandMoreIcon />}
+        expandIcon={isOpen ? <RemoveIcon /> : <AddIcon />}
         sx={{
           backgroundColor: isOpen ? "#f5f5f5" : "transparent",
           transition: "background-color 0.3s ease",

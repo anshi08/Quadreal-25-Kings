@@ -15,15 +15,12 @@
     "@mui/icons-material": "^5.15.12",
     "@mui/lab": "^5.0.0-alpha.167",
     "@mui/material": "^5.15.12",
-    "@mui/styles": "^5.15.12",
     "framer-motion": "^11.0.8",
     "react": "^18.2.0",
     "react-compare-image": "^3.4.0",
     "react-dom": "^18.2.0",
     "react-responsive-carousel": "^3.2.23",
-    "react-router-dom": "^6.22.2",
-    "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+    "react-router-dom": "^6.22.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
@@ -37,5 +34,9 @@
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1",
     "vite": "^5.1.4"
-  }
+  },
+  "description": "This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.",
+  "main": "postcss.config.js",
+  "author": "Anshika",
+  "license": "ISC"
 }
