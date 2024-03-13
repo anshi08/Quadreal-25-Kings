@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "./LastSlide.css"
+import "./AddSlice.css"
 import { Grid } from '@mui/material';
+import { motion } from "framer-motion"
 import ReactCompareImage from 'react-compare-image';
 import image1 from "../../assets/SliderImage1.jpg"
 import image2 from "../../assets/SliderImage2.jpg"
@@ -23,17 +25,26 @@ const LastSlide = () => {
 
     return (
         <>
-            <Grid container style={{ backgroundColor: 'rgba(165, 124, 82, 0.25)' }}>
-                <Grid item xs={12} md={6} style={{padding :'35px'}}>
-                    <div >
+            <Grid container style={{ backgroundColor: 'rgba(165, 124, 82, 0.25)', padding: '8rem 2rem' }}>
+                <Grid item xs={12} md={6} >
+                    <motion.div
+                        initial={{
+                            opacity: 0,
+                            y: 50,
+                        }}
+                        whileInView={{
+                            opacity: 1,
+                            y: 0,
+                            transition: {
+                                duration: 1,
+                            },
+                        }}
+                        viewport={{ once: true }}
+                    style={{padding:'3rem 0'}}
+                        >
+
                         <p
-                            style={{
-                                fontFamily: 'Gotham-Book-Normal-WOhkQgwc',
-                                fontSize: '24px',
-                                lineHeight: '32px',
-                                textAlign: 'left',
-                                letterSpacing: 'normal'
-                            }}
+                            className='maintext'
                         >
                             The keystone of today’s Commerce <br />
                             Court, the newly renovated 25 <br />
@@ -43,26 +54,26 @@ const LastSlide = () => {
                             iconic address reinvigorates those values.
                         </p>
 
-                        {/* Add space between text and button */}
-                        <div style={{ marginTop: '20px' }}>
+                        <div>
                             {/* Link Button */}
                             <Link
                                 to="/page/4"
-                                style={btn}
+                                className='btnLink'
+                                style={{ ...btn, marginTop: '20px' }}
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
                             >
-                                View Availability
+                                LEARN MORE
                             </Link>
                         </div>
-                    </div>
+                    </motion.div>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  
-                    <ReactCompareImage 
 
-                    leftImage={image1} 
-                    rightImage={image2} />;
+                    <ReactCompareImage
+
+                        leftImage={image1}
+                        rightImage={image2} />;
                 </Grid>
             </Grid>
         </>

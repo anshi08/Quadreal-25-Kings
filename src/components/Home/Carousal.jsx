@@ -10,9 +10,9 @@ import img4 from '../../assets/HomeImage4.jpg'
 import img5 from '../../assets/HomeImage5.jpg'
 
 const images = [
+  img3,
   img1,
   img2,
-  img3,
   img4,
   img5
 ];
