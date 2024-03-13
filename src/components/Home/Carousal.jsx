@@ -3,13 +3,18 @@ import { motion, AnimatePresence } from 'framer-motion';
 import EastIcon from '@mui/icons-material/East';
 import WestIcon from '@mui/icons-material/West';
 import Heading from './Heading';
+import img1 from '../../assets/HomeImage1.jpg'
+import img2 from '../../assets/HomeImage2.jpg'
+import img3 from '../../assets/HomeImage3.jpg'
+import img4 from '../../assets/HomeImage4.jpg'
+import img5 from '../../assets/HomeImage5.jpg'
 
 const images = [
-  "http://127.0.0.1:5500/media/b6a4237a3ec27faf8547607e31451381/the-history-hero-4-1-at-2x-half.jpg",
-  "http://127.0.0.1:5500/media/4ecafe147515f2a88de17e7ce2dc6364/dsc06093-at-2x-half.jpg",
-  'http://127.0.0.1:5500/media/ecfc6f655a9b848c8f8b8f5642bd508c/homepage-hero-1-at-2x-half.jpg',
-  "http://127.0.0.1:5500/media/e3ebf90900fd8ac805fb05bf3f7b493c/dsc00288-at-2x-half.jpg",
-  "http://127.0.0.1:5500/media/a8a26258e41a46fe562d7488cf76054b/the-history-hero-3-at-2x-half.jpg"
+  img1,
+  img2,
+  img3,
+  img4,
+  img5
 ];
 
 const Carousal = () => {

@@ -5,6 +5,10 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import Accordion from "@mui/material/Accordion";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
+import image1 from '../../assets/HomeImage6.jpg'
+import image2 from '../../assets/HomeImage7.jpg'
+import image3 from '../../assets/HomeImage8.jpg'
+import image4 from '../../assets/HomeImage9.jpg'
 
 const AccordionItem = ({ title, content, isOpen, onChange }) => {
   return (
@@ -28,10 +32,10 @@ const AccordionItem = ({ title, content, isOpen, onChange }) => {
 };
 
 const images = [
-  "http://127.0.0.1:5500/media/aadde1e1b88579f1e83ff4fc92f60f5d/tab-image-1-at-2x-half.jpg",
-  "http://127.0.0.1:5500/media/9ec85d024cb42b0b837cc175319d782a/tab-image-2-at-2x-half.jpg",
-  "http://127.0.0.1:5500/media/736a3736276434d7151ce8172681d74f/tab-image-4-2-at-2x-half.jpg",
-  "http://127.0.0.1:5500/media/08ddf228a727c347f82e291c5ffd5b53/tab-image-4-at-2x-half.jpg"
+   image1,
+   image2,
+   image3,
+   image4
 ];
 
 const AccordianDisplay = () => {

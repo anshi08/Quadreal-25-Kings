@@ -2,6 +2,7 @@ import React from 'react'
 import './PageOne.css'
 import CarousalImage from './CarousalImage';
 import { Grid } from '@mui/material';
+import image2 from "../../assets/Renovation2.png"
 
 
 const PageOne = () => {
@@ -21,7 +22,7 @@ const PageOne = () => {
             </div>
             <div >
               <img
-                src='http://127.0.0.1:5500/media/c8d0759d36c65b34de50f8121dcd8cdd/ticker-copy-half.png' />
+                src={image2} />
             </div>
           </Grid>
           <Grid item xs={12} md={6}>

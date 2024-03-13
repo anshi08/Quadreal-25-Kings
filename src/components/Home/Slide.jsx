@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-
+import elephantImage from '../../assets/HomeImage10.jpg'
 
 const overlayTextStyle = {
     position: 'absolute',
@@ -48,7 +48,7 @@ const Slide = () => {
         <>
             <div style={{ position: 'relative', height: '100%' }}>
                 <img
-                    src="http://127.0.0.1:5500/media/44bfb7e0c54e3704bdb0e5efca2185da/dsc06101-4240_2659_0_0-half.jpg"
+                    src={elephantImage}
                     alt="Some Image"
                 />
                 <div style={overlayTextStyle}>

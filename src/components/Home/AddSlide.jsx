@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Grid from '@mui/material/Grid';
 import { Link } from 'react-router-dom';
 import "./AddSlice.css"
+import Image from "../../assets/HomeImage11.jpg"
 
 const AddSlide = () => {
     const [isHovered, setIsHovered] = useState(false);
 
-    const imageSrc = 'http://127.0.0.1:5500/media/4772ee7c42d22640cde258961dd283a3/018-half.jpg';
 
     const textContent = (
         <p style={{lineHeight: '32px', fontFamily: 'Gotham-Book-Normal-WOhkQgwc', fontSize: '24px', marginBottom: '20px' }}>
@@ -31,7 +31,7 @@ const AddSlide = () => {
             <Grid container>
                 {/* Left Side: Image */}
                 <Grid item xs={12} md={6}>
-                    <img src={imageSrc} alt="Your Image" style={{ width: '100%', maxHeight: '100%', objectFit: 'cover' }} />
+                    <img src={Image} alt="Your Image" style={{ width: '100%', maxHeight: '100%', objectFit: 'cover' }} />
                 </Grid>
                 {/* Right Side: Text */}
                 <Grid item xs={12} md={6} className="select">

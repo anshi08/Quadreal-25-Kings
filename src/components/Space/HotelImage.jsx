@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import "./HotelImage.css"
 import { Link } from 'react-router-dom';
+import image2 from "../../assets/Space2.png"
+import image3 from "../../assets/space3.png"
+import image4 from "../../assets/space4.png"
+import image5 from "../../assets/space5.png"
 
 const HotelImage = () => {
 
@@ -48,14 +52,14 @@ const HotelImage = () => {
 
                                 <div style={{ display: 'flex', alignItems: 'center' }} className='my-4'>
                                     <div style={{ width: '33px', height: '24px' }}>
-                                        <img src='http://127.0.0.1:5500/media/6f4c0a5c290f60ab17cbb786f1460955/concourse-level-half.png' />
+                                        <img src={image3} />
                                     </div>
                                     <h3 style={{ marginLeft: '8px', fontWeight: 'bold' }}>Concourse Level</h3>
                                 </div>
 
                                 <div style={{ display: 'flex', alignItems: 'center' }} className='my-4'>
                                     <div style={{ width: '33px', height: '24px' }}>
-                                        <img src='http://127.0.0.1:5500/media/3de08072216ca96bc4a340151e989cd5/parking-level-half.png' />
+                                        <img src={image4} />
                                     </div>
                                     <h3 style={{ marginLeft: '8px', fontWeight: 'bold' }}>Parking Level</h3>
                                 </div>
@@ -68,14 +72,14 @@ const HotelImage = () => {
                     {/* For Small devices  */}
                     <div>
                         <div className="center flex flex-row items-end" >
-                            <img src='http://127.0.0.1:5500/media/ca09725a7ece4cf6bcb72f40d99e35e8/ce0741c5596f1c3788f9ca4f47feaeea63b0007c-full.png' alt="Hotel" />
+                            <img src={image2} alt="Hotel" />
 
                             <h1 className='font-bold whitespace-nowrap' style={{ color: 'rgb(165, 124, 82)' }}>DIRECT PATH ACCESS</h1>
 
                         </div>
                         <div style={{ display: 'flex', alignItems: 'center' }} className='mt-5'>
                             <div style={{ width: '50%', maxWidth: '300px', marginLeft: '20px' }}> {/* Adjust width and max-width as needed */}
-                                <img src='http://127.0.0.1:5500/media/e262416a57ea6dd17a805e19a3f1a8fe/parking-leve-half.png' style={{ width: '100%' }} />
+                                <img src={image5} style={{ width: '100%' }} />
                             </div>
                             <div style={{ marginBottom: '15px',color: 'rgb(165, 124, 82)'  }} className='font-bold'>
                                 <p>CONCOURSE LEVEL RETAIL <br />+ KING SUBWAY STATION</p>

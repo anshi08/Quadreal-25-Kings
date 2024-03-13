@@ -1,15 +1,22 @@
 import React, { useState } from 'react';
 import EastIcon from '@mui/icons-material/East';
 import WestIcon from '@mui/icons-material/West';
+import image1 from "../../assets/Space1.jpg"
+import image2 from "../../assets/space8.jpg"
+import image3 from "../../assets/space3.jpg"
+import image4 from "../../assets/space4.jpg"
+import image5 from "../../assets/space5.jpg"
+import image6 from "../../assets/space6.jpg"
+import image7 from "../../assets/space7.jpg"
 
 const images = [
-  "http://127.0.0.1:5500/media/1123a359fa0f8a0fd252c8a28276c886/015-at-2x-half.jpg",
-  "http://127.0.0.1:5500/media/00b4b00bb3747efc39e2e039c688ea00/014-at-2x-half.jpg",
-  'http://127.0.0.1:5500/media/30b921f775b640114f1e5594e2e13ae3/016-at-2x-half.jpg',
-  "http://127.0.0.1:5500/media/63220e3d1aa7c1eb576fcb6d3e57b2d1/013-at-2x-half.jpg",
-  "http://127.0.0.1:5500/media/3820d9c5a36f3d37aefd83c7b2be4695/021-at-2x-half.jpg",
-  "http://127.0.0.1:5500/media/c7a4b92255dd97ffd0122a94e3536d6d/032-1-at-2x-half.jpg",
-  "http://127.0.0.1:5500/media/7291a20c340e91798c73ea307dd4a4b0/002-at-2x-half.jpg"
+   image1,
+   image3,
+   image4,
+   image5,
+   image6,
+   image7,
+   image2
 ];
 
 const Gallery = () => {

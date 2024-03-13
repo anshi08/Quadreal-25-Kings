@@ -1,6 +1,7 @@
 // import "./styles.css";
 import { Grid, Typography} from "@mui/material";
 import {Link} from 'react-router-dom'
+import image1 from "../../assets/commerceCourt.png"
 
  
 export default function Footer() {
@@ -20,7 +21,7 @@ export default function Footer() {
             className="mx-5"
           >
             <img
-              src="http://127.0.0.1:5500/media/6844e96a5db04195bf7e3413f8a6c0da/7224648ae2705a8928576c4c71f830e03773da5c-full.png"
+              src={image1}
               alt="Commerce Court"
             />
           </a>

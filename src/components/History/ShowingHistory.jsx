@@ -1,6 +1,14 @@
 import { Grid } from '@mui/material';
 import React from 'react'
 import "./ShowingHistory.css"
+import image2 from "../../assets/HistoryImage2.png"
+import image3 from "../../assets/HistoryImage3.png"
+import image4 from "../../assets/HistoryImage4.png"
+import image5 from "../../assets/HistoryImage5.png"
+import image6 from "../../assets/HistoryImage6.png"
+import image7 from "../../assets/HistoryImage7.png"
+import image8 from "../../assets/HistoryImage8.png"
+import image9 from "../../assets/HistoryImage9.png"
 
 
 const ShowingHistory = () => {
@@ -25,13 +33,13 @@ const ShowingHistory = () => {
             </div>
 
             <div className="image-container my-5">
-              <img src='http://127.0.0.1:5500/media/b3a6b3745a65502681537e37deed0a1a/group-half.png' />
+              <img src={image2} />
               <p className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px' }}>Despite the ornate nature of the building,<br /> construction of the North Tower took only two <br /> years.
                 There were 750 artisans and builders <br /> employed in its construction.</p>
             </div>
 
             <div className="image-container my-5">
-              <img src='http://127.0.0.1:5500/media/bc193a2f514b3f32ba694938b99eea09/group-3-half.png' />
+              <img src={image3} />
               <p className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px' }}>Dominating the skyline for over 30 years, the height and opulence of <br />
                 the North Tower represented the area’s growing importance as a <br />
                 financial centre.</p>
@@ -53,14 +61,14 @@ const ShowingHistory = () => {
                     today’s dollars.</p>
                 </div>
                 <div className="image-wrapper my-5">
-                  <img src='http://127.0.0.1:5500/media/1629e266bb0e897237e20bf99814090f/construction-2a-illustration-half.png' />
+                  <img src={image4} />
                 </div>
               </div>
             </div>
 
 
             <div className="image-container my-5">
-              <img src='http://127.0.0.1:5500/media/fed77a1fee8a056b7aac994ca704f972/group-4-half.png' />
+              <img src={image5} />
               <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '16px' }}
                 className='font-bold'
               >Changing styles. By the mid-20th century the elegance of the Banking<br /> Hall remained pristine, while
@@ -80,7 +88,7 @@ const ShowingHistory = () => {
                     the apex. Painted a pale azure, 715 ounces of<br /> gold leaf was used to create the<br /> surrounding mouldings.</p>
                 </div>
                 <div className="image-wrapper">
-                  <img src='http://127.0.0.1:5500/media/6f4833eb2b6cfeaabafc00c88294e783/construction-2b-illustration-half.png' />
+                  <img src={image6} />
                 </div>
               </div>
             </div>
@@ -92,7 +100,7 @@ const ShowingHistory = () => {
           <Grid item xs={12} md={6}>
 
             <div className="image-container my-5">
-              <img src='http://127.0.0.1:5500/media/1084f16a5d2e64c9dd6f2fd7aa4bf02a/group-2-half.png' />
+              <img src={image7} />
               <p className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px' }}>
                 August 11, 1930: His Majesty’s R100 Airship over the soon to be opened<br /> headquarters of the Canadian Bank of Commerce.
                 The building itself opened on <br /> January 13, 1931, in time for the bank’s annual shareholder’s meeting.
@@ -100,7 +108,7 @@ const ShowingHistory = () => {
             </div>
 
             <div className="image-container my-5">
-              <img src='http://127.0.0.1:5500/media/9dfa59780d31c2f41f5e65b4c3d164b3/image-half.png' />
+              <img src={image8} />
               <h1 style={{
                 fontSize: '40px',
                 color: 'rgb(165, 124, 82)',
@@ -114,7 +122,7 @@ const ShowingHistory = () => {
             </div>
 
             <div className="image-container my-5">
-              <img src='http://127.0.0.1:5500/media/f065001ff6ccac6bb6649d0395ea7737/group-5-half.png' />
+              <img src={image9}/>
               <p
                 className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px' }}
               >With its elegant arched doorways, chandeliers and gold-coffered ceiling, CIBC’s Banking<br />

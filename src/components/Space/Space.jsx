@@ -4,6 +4,7 @@ import HotelImage from './HotelImage'
 import FastFacts from './FastFacts'
 import Gallery from './Gallery'
 import FeasibilityPlans from './FeasibilityPlans'
+import image1 from "../../assets/Space1.jpg"
 
 const Space = () => {
   return (
@@ -11,7 +12,7 @@ const Space = () => {
       <Reveal>
         <div class="image">
           <img
-            src="http://127.0.0.1:5500/media/75bd29bdda6a159502ac37ad915487b6/the-space-hero-at-2x-half.jpg" alt="Image description" class="image-responsive" />
+            src={image1} alt="Image description" class="image-responsive" />
           <div class="image-text">UNIQUE AND CURATED<br /> SPACE FOR<br /> CONTEMPORARY<br /> BUSINESS</div>
         </div>
       </Reveal>
