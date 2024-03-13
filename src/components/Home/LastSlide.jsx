@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "./LastSlide.css"
 import { Grid } from '@mui/material';
+import ReactCompareImage from 'react-compare-image';
 
 const LastSlide = () => {
     const [isHovered, setIsHovered] = useState(false);
@@ -55,8 +56,11 @@ const LastSlide = () => {
                     </div>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    {/* Add your image here */}
-                    <img src="https://www.dropbox.com/s/yexz44hne1ia8uu/After%402x.jpg?raw=1" alt="Your Image" style={{ width: '100%' }} />
+                  
+                    <ReactCompareImage 
+
+                    leftImage="https://uc841cc80d4d4d2ee426c1714d88.dl.dropboxusercontent.com/cd/0/inline/CO_Wv3CJj3KHysj7OsBGvtqQrKAD3CnreYJv0ZpGK7KQkeRnkngMp2keUZ3IjIZnx4xJM47bi68ilsTVvDY-lXPtvGOOng-Yc35-7um2isouh_exoXArJkFFhrLL-xth1P4wkTspKA4dQ25Cgt8R-oTg/file#" 
+                    rightImage="https://www.dropbox.com/s/yexz44hne1ia8uu/After%402x.jpg?raw=1" />;
                 </Grid>
             </Grid>
         </>

@@ -15,11 +15,13 @@ const History = () => {
         <div class="image-text">RICH IN TRADITION,<br /> FOCUSED ON THE FUTURE</div>
       </div>
       </Reveal>
-      <Reveal>
+     
       <div style={{ backgroundColor: 'rgb(248, 245, 241)'}}>
+        <Reveal>
         <ShowingHistory />
+        </Reveal>
       </div>
-      </Reveal>
+      
     </>
   )
 }

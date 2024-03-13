@@ -17,8 +17,12 @@ const Space = () => {
         </div>
       </Reveal>
       <div>
+        <Reveal>
         <HotelImage />
+        </Reveal>
+        <Reveal>
         <FastFacts />
+        </Reveal>
         <div style={{
           fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
           fontSize: '40px',
@@ -29,7 +33,9 @@ const Space = () => {
         }}>
           Gallery
         </div>
+        <Reveal>
         <Gallery />
+        </Reveal>
 
            <h1 style={{
           fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
@@ -41,7 +47,9 @@ const Space = () => {
         }}>FEASIBILITY PLANS</h1>
            <p style={{textAlign:'center',fontWeight:'bold'}}>The opportunity to make the space your own is enabled<br/>
             by tremendous flexibility in both floorplate and ceiling<br/> parameters. Here are three excellent examples:</p>
+        <Reveal>
         <FeasibilityPlans />
+        </Reveal>
       </div>
     </>
   )

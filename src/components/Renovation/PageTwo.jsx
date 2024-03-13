@@ -1,11 +1,13 @@
 import React from 'react';
 import { Grid, Container, Card, CardMedia, CardContent, Typography } from '@mui/material';
 import { Room, Lightbulb, Wifi, BeachAccess, Bathtub, Elevator } from '@mui/icons-material';
+import Reveal from '../../utils/Reveal';
 
 
 const PageTwo = () => {
     return (
         <>
+        <Reveal>
             <Grid container>
                 <Grid item xs={12} md={6}>
                     <Card>
@@ -71,6 +73,7 @@ const PageTwo = () => {
                     </div>
                 </Grid>
             </Grid>
+            </Reveal>
         </>
     );
 };

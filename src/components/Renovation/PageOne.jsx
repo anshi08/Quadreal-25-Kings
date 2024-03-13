@@ -3,12 +3,15 @@ import './PageOne.css'
 import CarousalImage from './CarousalImage';
 import { Grid } from '@mui/material';
 import image2 from "../../assets/Renovation2.png"
+import Reveal from '../../utils/Reveal';
 
 
 const PageOne = () => {
   return (
     <>
+    <Reveal>
       <div style={{ padding: '30px' }}>
+        
         <Grid container>
           <Grid item xs={12} md={6}>
             <div className="heading">
@@ -32,6 +35,7 @@ const PageOne = () => {
           </Grid>
         </Grid>
       </div>
+      </Reveal>
     </>
   )
 }

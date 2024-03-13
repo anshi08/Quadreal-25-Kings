@@ -1,15 +1,16 @@
 import React from 'react'
 import Brochure from './Brochure'
+import Reveal from '../../utils/Reveal'
 // import "./Contact.css"
 
 const Contact = () => {
   return (
     <>
+   
       <div style={{ backgroundColor: 'rgb(248, 245, 241)', borderTop: '2px solid brown' }}>
+      <Reveal>
         <div>
-          {/* <div class="circle">
-  <div class="text">25</div>
-</div> */}
+    
           <p
             style={{
               textAlign: 'center',
@@ -25,6 +26,7 @@ const Contact = () => {
             BECOME PART OF 25 KING WEST'S <br />
             ON GOING HISTORY</h1>
         </div>
+        </Reveal>
         <Brochure />
       </div>
     </>

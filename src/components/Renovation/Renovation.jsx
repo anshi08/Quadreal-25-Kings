@@ -15,10 +15,13 @@ const Renovation = () => {
 </div>
 </Reveal>
 <div style={{ backgroundColor: 'rgb(248, 245, 241)'}}>
+  
   <PageOne />
 </div>
 <div>
+  
   <PageTwo />
+  
 </div>
 </>
   )
