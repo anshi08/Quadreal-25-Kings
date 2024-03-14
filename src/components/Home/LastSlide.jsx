@@ -30,7 +30,7 @@ const LastSlide = () => {
                     <motion.div
                         initial={{
                             opacity: 0,
-                            y: 50,
+                            y: 100,
                         }}
                         whileInView={{
                             opacity: 1,
@@ -40,8 +40,8 @@ const LastSlide = () => {
                             },
                         }}
                         viewport={{ once: true }}
-                    style={{padding:'3rem 0'}}
-                        >
+                        style={{ padding: '3rem 0' }}
+                    >
 
                         <p
                             className='maintext'
