@@ -33,7 +33,7 @@ const HotelImage = () => {
         <>
             <div className='mt-14'>
                 <div className="image-container">
-                    <div className="left" style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div className="left" style={{ display: 'flex', flexDirection: 'column',justifyContent:'center',alignItems:'center' }}>
                         <div style={{ marginBottom: '30%' }}> {/* Adding margin-bottom */}
                         <div className="circle" >
               <div className="logo"  >25</div>
