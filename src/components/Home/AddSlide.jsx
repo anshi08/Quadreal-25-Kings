@@ -25,6 +25,7 @@ const AddSlide = () => {
         fontSize: "1rem",
         padding: "12px 24px",
         transition: 'background-color 0.3s ease',
+        
     };
 
     return (

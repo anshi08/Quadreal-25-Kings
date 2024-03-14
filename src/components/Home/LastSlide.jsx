@@ -30,7 +30,7 @@ const LastSlide = () => {
                     <motion.div
                         initial={{
                             opacity: 0,
-                            y: 50,
+                            y: 100,
                         }}
                         whileInView={{
                             opacity: 1,
@@ -40,8 +40,8 @@ const LastSlide = () => {
                             },
                         }}
                         viewport={{ once: true }}
-                    style={{padding:'3rem 0'}}
-                        >
+                        style={{ padding: '3rem 0' }}
+                    >
 
                         <p
                             className='maintext'
@@ -58,7 +58,7 @@ const LastSlide = () => {
                             {/* Link Button */}
                             <Link
                                 to="/page/4"
-                                className='btnLink'
+                                // className='btnLink'
                                 style={{ ...btn, marginTop: '20px' }}
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
@@ -73,7 +73,7 @@ const LastSlide = () => {
                     <ReactCompareImage
 
                         leftImage={image1}
-                        rightImage={image2} />;
+                        rightImage={image2} />
                 </Grid>
             </Grid>
         </>

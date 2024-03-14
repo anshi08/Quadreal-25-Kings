@@ -122,7 +122,7 @@ const Header = () => {
             display: 'flex', justifyContent: 'space-evenly',
             flexGrow: 1, display: { xs: 'none', md: 'flex' }
           }}>
-            <Button component={Link} to="/page/3" sx={{ mx: 1, color: 'black' }}>
+            <Button component={Link} to="/page/3" sx={{ mx: 1, color: 'black', }}>
               The History
             </Button>
             <Button component={Link} to="/page/4" sx={{ mx: 1, color: 'black' }}>
