@@ -31,7 +31,7 @@ const Header = () => {
   };
 
   return (
-    <AppBar position="sticky" style={{ backgroundColor: 'rgb(248, 245, 241)' }}>
+    <AppBar position="sticky" style={{ backgroundColor: 'rgb(248, 245, 241)', fontFamily: ['Helvetica', 'Arial', 'sans-serif'] }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -49,6 +49,7 @@ const Header = () => {
               fontWeight: 'bolder',
               color: 'black',
               textDecoration: 'none',
+              fontFamily:' Helvetica, Arial, sans-serif'
             }}
           >
             25 KING WEST
@@ -113,6 +114,7 @@ const Header = () => {
               letterSpacing: '.3rem',
               color: 'black',
               textDecoration: 'none',
+       
             }}
           >
             25 King West
@@ -122,7 +124,7 @@ const Header = () => {
             display: 'flex', justifyContent: 'space-evenly',
             flexGrow: 1, display: { xs: 'none', md: 'flex' }
           }}>
-            <Button component={Link} to="/page/3" sx={{ mx: 1, color: 'black', }}>
+            <Button component={Link} to="/page/3" sx={{ mx: 1, color: 'black' }}>
               The History
             </Button>
             <Button component={Link} to="/page/4" sx={{ mx: 1, color: 'black' }}>

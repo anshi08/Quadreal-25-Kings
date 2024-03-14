@@ -10,7 +10,7 @@ const overlayTextStyle = {
     transform: 'translate(-50%, -50%)',
     textAlign: 'center',
     color: 'white',
-    fontSize: '2rem',
+    fontSize: '3rem',
     fontWeight: 'bold'
 };
 

@@ -10,27 +10,24 @@
   /* Title styles */
   .title {
     position: relative;
-    /* left: 80px;
-    top: 57px; */
     width: 528px;
     pointer-events: auto;
     cursor: inherit;
-    font-size: 40px;
+    font-size: 40px !important;
     color: rgb(165, 124, 82);
-    font-family: "Copyright Klim Type Fo-k7cTyXjE";
+    font-family: "Copyright Klim Type Fo-k7cTyXjE" !important;
     text-align: left;
-    font-size: inherit;
-    font-style: normal;
-    font-weight: 400px;
+    font-weight: bold;
     line-height: 48px;
     
   }
   
   /* Content styles */
   .content {
-    font-size: 16px;
-    /* color: rgb(0, 0, 0); */
+    font-size: 15px;
+    font-family: "Gotham-Book-Normal-WOhkQgwc";
     margin-top: 1rem;
+    line-height: 24px;
 
   }
   
@@ -78,6 +75,7 @@
 @media (max-width: 768px) {
     .title {
       font-size: 32px;
+      font-family: "Copyright Klim Type Fo-k7cTyXjE" !important;
       width: 80%;
       left: 50%;
       transform: translateX(-50%);
@@ -90,6 +88,7 @@
   @media (max-width: 480px) {
     .title {
       font-size: 24px;
+      font-family: "Copyright Klim Type Fo-k7cTyXjE" !important;
       width: 90%;
       left: 50%;
       transform: translateX(-50%);
@@ -98,17 +97,3 @@
     }
   }
   
-  /* .path2 {
-    stroke-dasharray: 1120;
-    stroke-dashoffset: 0;
-    animation: draw1 5s linear forwards;
-  }
-  
-  @keyframes draw1 {
-    from {
-      stroke-dashoffset: 1120;
-    }
-    to {
-      stroke-dashoffset: 0; 
-    }
-  } */

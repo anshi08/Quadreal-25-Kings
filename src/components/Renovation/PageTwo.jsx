@@ -56,16 +56,16 @@ const PageTwo = () => {
                                 <CardContent>
                                     <div style={{
                                         fontWeight: 'bold',
-                                        fontSize: '32px',
+                                        fontSize: '40px',
                                         color: 'rgb(165, 124, 82)',
                                         fontFamily: '"Copyright Klim Type Fo-k7cTyXjE"',
                                         lineHeight: '32px',
                                         marginTop: '132px',
                                         paddingLeft: '20px'
                                     }}>
-                                        <Typography variant="h4" gutterBottom>
+                                        <p>
                                             THE UPGRADES
-                                        </Typography>
+                                        </p>
                                         <style jsx>{`
 @media (max-width: 896px) and (min-width: 280px) {
     .MuiCardContent-root {

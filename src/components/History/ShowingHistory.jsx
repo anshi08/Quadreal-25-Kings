@@ -32,7 +32,7 @@ const ShowingHistory = () => {
               },
             }}
             viewport={{ once: true }}>
-            <p className="text-xl md:text-3xl font-bold">
+            <p>
               THE FINANCIAL <br /> DISTRICT RISES</p>
           </motion.div>
 
@@ -53,7 +53,7 @@ const ShowingHistory = () => {
               }}
               viewport={{ once: true }}>
               <div className='content'>
-                <p className='font-bold my-5'>In the late 19th Century, Toronto’s Financial District was a medley <br />
+                <p>In the late 19th Century, Toronto’s Financial District was a medley <br />
                   of small regional and local banks. In 1926, the Canadian Bank of <br /> Commerce decided to replace
                   their modest seven-storey head office <br /> with something more impressive: 25 King West. Designed by
                   architects <br /> York and Sawyer (USA) and
@@ -81,7 +81,7 @@ const ShowingHistory = () => {
                 viewport={{ once: true }}>
                 <img src={image2} />
                 
-                <p className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px', marginTop: '1rem' }}>Despite the ornate nature of the building,<br /> construction of the North Tower took only two <br /> years.
+                <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px', marginTop: '1rem' }}>Despite the ornate nature of the building,<br /> construction of the North Tower took only two <br /> years.
                   There were 750 artisans and builders <br /> employed in its construction.</p>
               </motion.div>
 
@@ -104,7 +104,7 @@ const ShowingHistory = () => {
                 viewport={{ once: true }}>
 
                 <img src={image3} />
-                <p className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px', marginTop: '1rem' }}>Dominating the skyline for over 30 years, the height and opulence of <br />
+                <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px', marginTop: '1rem' }}>Dominating the skyline for over 30 years, the height and opulence of <br />
                   the North Tower represented the area’s growing importance as a <br />
                   financial centre.</p>
               </motion.div>
@@ -129,12 +129,13 @@ const ShowingHistory = () => {
                 <div className='flex flex-row'>
                   <div className="text-container">
                     <h1 style={{
-                      fontSize: '16px',
+                      fontSize: '18px',
                       color: 'rgb(165, 124, 82)',
-                      fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU'
+                      fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU',
+                      fontWeight:'bold'
                     }}>DID YOU KNOW?</h1>
-                    <p className='leading-7'
-                      style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '20px' }}
+                    <p
+                      style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '16px' }}
                     >The cornerstone of this ambitious 141<br /> metre tall limestone building was laid just<br />
                       two days after the stock market crash of <br /> October 29, 1929. Constructed between<br />
                       1929 – 1932, 25 King West cost over $8<br /> million to build – or well over $85 million in<br />
@@ -164,8 +165,8 @@ const ShowingHistory = () => {
                 viewport={{ once: true }}>
 
                 <img src={image5} />
-                <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '16px', marginTop: '1rem' }}
-                  className='font-bold'
+                <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '14px', marginTop: '1rem' }}
+                 
                 >Changing styles. By the mid-20th century the elegance of the Banking<br /> Hall remained pristine, while
                   providing a modern environment to <br />conduct business.</p>
 
@@ -189,12 +190,13 @@ const ShowingHistory = () => {
                 <div className='flex flex-row'>
                   <div className="text-container">
                     <h1 style={{
-                      fontSize: '28px',
+                      fontSize: '18px',
                       color: 'rgb(165, 124, 82)',
-                      fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU'
+                      fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU',
+                      fontWeight:'bold'
                     }}>DID YOU KNOW?</h1>
-                    <p className='my-4 leading-7'
-                      style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '20px' }}
+                    <p 
+                      style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '16px' }}
                     >Modelled after the Baths of Caracella in Rome,the Banking Hall’s ceiling is 65 feet at<br />
                       the apex. Painted a pale azure, 715 ounces of<br /> gold leaf was used to create the<br /> surrounding mouldings.</p>
                   </div>
@@ -252,7 +254,7 @@ const ShowingHistory = () => {
    
 
                 <img src={image7} />
-                <p className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '15px', marginTop: '1rem' }}>
+                <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '15px' }}>
                   August 11, 1930: His Majesty’s R100 Airship over the soon to be opened<br /> headquarters of the Canadian Bank of Commerce.
                   The building itself opened on <br /> January 13, 1931, in time for the bank’s annual shareholder’s meeting.
                 </p>
@@ -285,13 +287,13 @@ const ShowingHistory = () => {
                   COMMERCE COURT <br />
                   WEST, SOUTH AND EAST</h1>
                 <p
-                  className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px' }}
+                style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px' }}
                 >These combined modernist materials and traditional stone to fit<br /> the original North building design.</p>
 
               </motion.div>
             </div>
 
-            <div className="image-container2 my-5" style={{ marginTop: '10rem' }}>
+            <div className="image-container2 " style={{ marginTop: '10rem' }}>
               <motion.div
                 initial={{
                   opacity: 0,
@@ -308,7 +310,7 @@ const ShowingHistory = () => {
 
                 <img src={image9} />
                 <p
-                  className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px', marginTop: '1rem' }}
+                  style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '13px', marginTop: '1rem' }}
                 >With its elegant arched doorways, chandeliers and gold-coffered ceiling, CIBC’s Banking<br />
                   Hall was not only beautiful, but spoke to the bank’s wealth and prosperity. Look closely<br />
                   at the top of the chandelier and you can see the four words representing CIBC’s brand<br />

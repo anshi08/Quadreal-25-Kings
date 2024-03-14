@@ -21,7 +21,7 @@ const Contact = () => {
       <div style={{ backgroundColor: 'rgb(248, 245, 241)', borderTop: '2px solid brown' }}>
         <Reveal>
           <div style={{display:'flex', flexDirection:'column',
-              justifyContent:'center',alignItems:'center'}}>
+              justifyContent:'center',alignItems:'center',margin:'2rem'}}>
             <div className="circle" >
               <div className="logo"  >25</div>
               <div className="text"  >
@@ -32,7 +32,7 @@ const Contact = () => {
             {/* Heading */}
             <h1 style={{
               textAlign: 'center', fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
-              fontSize: '30px', color: '#a57c52', fontWeight: 'bold'
+              fontSize: '30px', color: '#a57c52', fontWeight: 'bold',marginTop:'1rem'
             }}
             >A RARE OPPORTUNITY TO <br />
               BECOME PART OF 25 KING WEST'S <br />

@@ -34,10 +34,14 @@
     font-size: 40px;
     color: rgb(165, 124, 82);
     font-family: "Copyright Klim Type Fo-k7cTyXjE";
+    line-height: 48px;
+    font-weight: bold;
 
 }
 
 .contentpara {
     font-size: 16px;
     color: rgb(0, 0, 0);
+    font-family: 'Gotham-Book-Normal-WOhkQgwc';
+    line-height: 24px;
 }

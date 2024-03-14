@@ -18,13 +18,15 @@
   font-weight: bold;
   color: white;
   text-align: center;
+  font-family: "Copyright Klim Type Fo-k7cTyXjE";
+  font-size: 47px;
 }
 
 /* Desktop view */
 @media (min-width: 1024px) {
   .image-text {
-    font-family: "Copyright Klim Type Fo-k7cTyXjE";
-    font-size: 64px;
+    font-family: "serif";
+    font-size: 47px;
     line-height: 64px;
     letter-spacing: normal;
   }

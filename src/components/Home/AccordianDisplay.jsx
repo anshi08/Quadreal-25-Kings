@@ -26,13 +26,15 @@ const AccordionItem = ({ title, content, isOpen, onChange }) => {
         <Reveal>
           <Typography style={{
             fontSize: '28px', fontWeight: 'bold',
-            color: 'rgb(165, 124, 82)'
+            color: 'rgb(165, 124, 82)',fontFamily:
+            'Gotham-Bold-Normal-ZjuVkIoU'
           }}>{title}</Typography>
         </Reveal>
       </AccordionSummary>
       <Reveal>
         <AccordionDetails sx={{ padding: "16px" }}>
-          <Typography style={{ lineHeight: '24px', fontSize: '20px' }}
+          <Typography style={{ lineHeight: '24px', fontSize: '16px',fontFamily:' Gotham-Book-Normal-WOhkQgwc',
+          textAlign:'left' }}
           >{content}</Typography>
         </AccordionDetails>
       </Reveal>
