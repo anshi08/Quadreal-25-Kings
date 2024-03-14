@@ -58,7 +58,7 @@ const LastSlide = () => {
                             {/* Link Button */}
                             <Link
                                 to="/page/4"
-                                className='btnLink'
+                                // className='btnLink'
                                 style={{ ...btn, marginTop: '20px' }}
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
@@ -73,7 +73,7 @@ const LastSlide = () => {
                     <ReactCompareImage
 
                         leftImage={image1}
-                        rightImage={image2} />;
+                        rightImage={image2} />
                 </Grid>
             </Grid>
         </>

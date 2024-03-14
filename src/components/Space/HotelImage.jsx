@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./HotelImage.css"
 import { Link } from 'react-router-dom';
 import image2 from "../../assets/Space2.png"
@@ -7,6 +7,17 @@ import image4 from "../../assets/space4.png"
 import image5 from "../../assets/space5.png"
 
 const HotelImage = () => {
+
+    const [rotatedText, setRotatedText] = useState('');
+
+    useEffect(() => {
+      const text = "KING WEST COMMERCE COURT";
+      const chars = text.split("");
+      const rotatedChars = chars.map((char, i) => (
+        <span key={i} style={{ transform: `rotate(${i * 10.3}deg)` }}>{char}</span>
+      ));
+      setRotatedText(rotatedChars);
+    }, []);
 
     const [isHovered, setIsHovered] = useState(false);
 
@@ -24,7 +35,12 @@ const HotelImage = () => {
                 <div className="image-container">
                     <div className="left" style={{ display: 'flex', flexDirection: 'column' }}>
                         <div style={{ marginBottom: '30%' }}> {/* Adding margin-bottom */}
-                            <p style={{ fontWeight: 'bold', color: 'brown', fontSize: '32px' }}>25</p>
+                        <div className="circle" >
+              <div className="logo"  >25</div>
+              <div className="text"  >
+                {rotatedText}
+              </div>
+            </div>
                         </div>
                         <div>
                             <Link

@@ -98,3 +98,17 @@
     }
   }
   
+  /* .path2 {
+    stroke-dasharray: 1120;
+    stroke-dashoffset: 0;
+    animation: draw1 5s linear forwards;
+  }
+  
+  @keyframes draw1 {
+    from {
+      stroke-dashoffset: 1120;
+    }
+    to {
+      stroke-dashoffset: 0; 
+    }
+  } */

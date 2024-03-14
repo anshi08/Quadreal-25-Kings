@@ -65,7 +65,9 @@ const Carousal = () => {
           transition={{ duration: 0.5 }}
         >
         <div className="absolute top-16 left-9 z-20">
-            <h1 className="text-white text-4xl font-bold">A HERITAGE TO BE PROUD OF <br/>
+            <h1 style={{fontSize: '40px',
+    color: 'rgb(255, 255, 255)',
+    fontFamily: "Copyright Klim Type Fo-k7cTyXjE",fontWeight:'bold'}}>A HERITAGE TO BE PROUD OF <br/>
             A FUTURE TO PLAY A PART IN </h1>
           </div>
         </motion.div>

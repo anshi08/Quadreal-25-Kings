@@ -10,6 +10,7 @@ import image6 from "../../assets/HistoryImage6.png"
 import image7 from "../../assets/HistoryImage7.png"
 import image8 from "../../assets/HistoryImage8.png"
 import image9 from "../../assets/HistoryImage9.png"
+import Reveal from '../../utils/Reveal';
 
 
 const ShowingHistory = () => {
@@ -36,8 +37,8 @@ const ShowingHistory = () => {
           </motion.div>
 
         </div>
-        <Grid container spacing={4} >
-          <Grid item xs={12} md={6}>
+        <Grid container spacing={1} >
+          <Grid item xs={12} md={5}>
             <motion.div
               initial={{
                 opacity: 0,
@@ -79,6 +80,7 @@ const ShowingHistory = () => {
                 }}
                 viewport={{ once: true }}>
                 <img src={image2} />
+                
                 <p className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px', marginTop: '1rem' }}>Despite the ornate nature of the building,<br /> construction of the North Tower took only two <br /> years.
                   There were 750 artisans and builders <br /> employed in its construction.</p>
               </motion.div>
@@ -206,8 +208,32 @@ const ShowingHistory = () => {
 
           </Grid>
 
+{/* Vertical Line */}
+<Grid item xs={12} md={2} className='flex justify-center'>
+          <Reveal>
+                <motion.svg
+    width="5px"
+    height="1200px"
+   
+    xmlns="http://www.w3.org/2000/svg"
+    xmlnsXlink="http://www.w3.org/1999/xlink"
+    initial={{ strokeDashoffset: 1120, y: -1200 }} // Start from top (-Y axis)
+    animate={{ strokeDashoffset: 0, y: 0 }} // Move to bottom (Y axis)
+    transition={{ duration: 5, ease: "linear" }}
+  >
+    <motion.path
+      className="path2"
+      fill="none"
+      strokeWidth="3"
+      stroke="rgb(165, 124, 82)"
+      d="M0 0 L0 1120"
+    />
+  </motion.svg>
+  </Reveal>
+  </Grid>
+
           {/* right side part */}
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={5}>
 
             <div className="image-container2 my-5">
               <motion.div
@@ -223,6 +249,7 @@ const ShowingHistory = () => {
                   },
                 }}
                 viewport={{ once: true }}>
+   
 
                 <img src={image7} />
                 <p className='font-bold' style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '15px', marginTop: '1rem' }}>
