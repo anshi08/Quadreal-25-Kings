@@ -25,7 +25,7 @@ const AddSlide = () => {
         fontSize: "13px",
         padding: "12px 24px",
         transition: 'background-color 0.3s ease',
-        
+
     };
 
     return (
@@ -52,51 +52,36 @@ const AddSlide = () => {
                     </motion.div>
                 </Grid>
                 {/* Right Side: Text */}
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} style={{ display:'grid',placeItems:'center',padding:'8% 2rem'}}>
+
+                    {/* Link Button */}
                     <motion.div
                         initial={{
                             opacity: 0,
-                            x: 100,
+                            y: 100,
                         }}
                         whileInView={{
                             opacity: 1,
-                            x: 0,
+                            y: 0,
                             transition: {
                                 duration: 1,
                             },
                         }}
                         viewport={{ once: true }}
+                        style={{ padding: '3rem 0' }}
+
                     >
-                        <div className='select'>
-                            {textContent}
-                            {/* Link Button */}
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
-                                <Link
-                                    to="/page/5"
-                                    className='btnLink'
-                                    style={{ ...btn}}
-                                    onMouseEnter={() => setIsHovered(true)}
-                                    onMouseLeave={() => setIsHovered(false)}
-                                >
-                                    VIEW AVAILABILITY
-                                </Link>
-                            </motion.div>
-
-                        </div>
+                        {textContent}
+                        <Link
+                            to="/page/5"
+                            className='btnLink'
+                            style={{ ...btn }}
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
+                        >
+                            VIEW AVAILABILITY
+                        </Link>
                     </motion.div>
-
                 </Grid>
             </Grid>
         </div>

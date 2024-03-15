@@ -25,8 +25,8 @@ const LastSlide = () => {
 
     return (
         <>
-            <Grid container style={{ backgroundColor: 'rgba(165, 124, 82, 0.25)', padding: '8rem 2rem' }}>
-                <Grid item xs={12} md={6} >
+            <Grid container style={{ backgroundColor: 'rgba(165, 124, 82, 0.25)' }}>
+                <Grid item xs={12} md={6} style={{padding:'8% 2rem'}}>
                     <motion.div
                         initial={{
                             opacity: 0,
@@ -42,7 +42,6 @@ const LastSlide = () => {
                         viewport={{ once: true }}
                         style={{ padding: '3rem 0' }}
                     >
-
                         <p
                             className='maintext'
                         >
@@ -58,17 +57,18 @@ const LastSlide = () => {
                             {/* Link Button */}
                             <Link
                                 to="/page/4"
-                                // className='btnLink'
-                                style={{ ...btn, marginTop: '20px' }}
+                                className='btnLink'
+                                style={{ ...btn}}
                                 onMouseEnter={() => setIsHovered(true)}
                                 onMouseLeave={() => setIsHovered(false)}
                             >
                                 LEARN MORE
                             </Link>
                         </div>
+
                     </motion.div>
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} style={{padding:'6rem 2rem'}}>
 
                     <ReactCompareImage
 
