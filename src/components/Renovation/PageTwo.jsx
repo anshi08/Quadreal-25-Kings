@@ -75,7 +75,7 @@ const PageTwo = () => {
 `}</style>
                                     </div>
                                     <div className="mb-275" >
-                                        <Typography variant="body1" >
+                                        <p>
                                             <ul style={{
                                                 paddingLeft: '20px', fontFamily: 'Gotham-Book-Normal-WOhkQgwc',
                                                 lineHeight: '50px'
@@ -94,7 +94,9 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center' }} className='my-5'>
+                                                    <li style={{ display: 'flex', alignItems: 'center',
+                                                    fontSize:'18px',lineHeight:'24px'
+                                                }} className='my-7'>
                                                         <Lightbulb style={{ marginRight: '10px' }} /> Best-in-class connectivity and tech infrastructure
                                                     </li>
                                                 </motion.div>
@@ -112,7 +114,8 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center' }} className='my-5'>
+                                                    <li style={{ display: 'flex', alignItems: 'center',
+                                                fontSize:'18px',lineHeight:'24px' }} className='my-7'>
                                                         <Lightbulb style={{ marginRight: '10px' }} /> Wood framed glass entry doors
                                                     </li>
                                                 </motion.div>
@@ -130,7 +133,11 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center' }} className='my-5'>
+                                                    <li style={{ display: 'flex', alignItems: 'center',
+                                                    
+                                                    fontSize:'18px',lineHeight:'24px' }} className='my-7'
+                                                    
+                                                    >
                                                         <Wifi style={{ marginRight: '10px' }} /> LED light fixtures
                                                     </li>
                                                 </motion.div>
@@ -148,7 +155,8 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center' }} className='my-5'>
+                                                    <li style={{ display: 'flex', alignItems: 'center',
+                                               fontSize:'18px',lineHeight:'24px'  }} className='my-7'>
                                                         <BeachAccess style={{ marginRight: '10px' }} /> Ample natural light
                                                     </li>
                                                 </motion.div>
@@ -167,7 +175,9 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center' }} className='my-5'>
+                                                    <li style={{ display: 'flex', alignItems: 'center',
+                                                
+                                                fontSize:'18px',lineHeight:'24px'}} className='my-7'>
                                                         <Bathtub style={{ marginRight: '10px' }} /> Newly renovated washrooms
                                                     </li>
                                                 </motion.div>
@@ -186,12 +196,13 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center' }} className='my-5'>
+                                                    <li style={{ display: 'flex', alignItems: 'center',
+                                                fontSize:'18px',lineHeight:'24px' }} className='my-7'>
                                                         <Elevator style={{ marginRight: '10px' }} /> Restored heritage elevator lobbies
                                                     </li>
                                                 </motion.div>
                                             </ul>
-                                        </Typography>
+                                        </p>
                                     </div>
                                 </CardContent>
                             </div>

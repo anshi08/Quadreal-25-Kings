@@ -32,7 +32,7 @@ const Contact = () => {
             {/* Heading */}
             <h1 style={{
               textAlign: 'center', fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
-              fontSize: '30px', color: '#a57c52', fontWeight: 'bold',marginTop:'1rem'
+              fontSize: '48px', color: '#a57c52', fontWeight: 'bold',marginTop:'1rem'
             }}
             >A RARE OPPORTUNITY TO <br />
               BECOME PART OF 25 KING WEST'S <br />

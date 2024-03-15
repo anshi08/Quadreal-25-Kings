@@ -8,7 +8,13 @@ import space9 from "../../assets/space9.png"
 
 const FastFacts = () => {
 
-    const imageSrc = 'https://media.istockphoto.com/id/846288120/photo/modern-glass-silhouettes-of-skyscrapers.jpg?s=612x612&w=0&k=20&c=h4JDj_Co_hgzFpPJWUvR6AoqiLsR6p2dbsE_dSMXb-0=';
+    const strongText={
+        fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',
+        fontSize:'18px',
+        lineHeight:'24px',
+        color:'black'
+    }
+
 
     const textContent = (
         <>
@@ -19,45 +25,46 @@ const FastFacts = () => {
                     lineHeight: '32px',
                     textAlign: 'left',
                     letterSpacing: 'normal',
-                    color: '#a57c52'
+                    color: '#a57c52',
+                    fontWeight:'bold'
                 }}
             >FAST FACTS </h1>
 
             <ul style={{ lineHeight: '32px', fontFamily: 'Gotham-Book-Normal-WOhkQgwc', marginBottom: '20px' }}>
                 <li style={{ marginBottom: '10px' }}>
                     <CheckCircleIcon className='mx-3' />
-                    <strong>Total Floors:</strong>
-                    <span> 32</span>
+                    <strong style={strongText}>Total Floors:</strong>
+                    <span style={strongText}> 32</span>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
                     <CheckCircleIcon className='mx-3' />
-                    <strong>Total Building SF:</strong>
-                    <span> 245,000 SF</span>
+                    <strong style={strongText}>Total Building SF:</strong>
+                    <span style={strongText}> 245,000 SF</span>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
                     <CheckCircleIcon className='mx-3' />
-                    <strong>Ceiling Height Typical Floor:</strong>
-                    <span> 9 to 11 feet</span>
+                    <strong style={strongText}>Ceiling Height Typical Floor:</strong>
+                    <span style={strongText}> 9 to 11 feet</span>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
                     <CheckCircleIcon className='mx-3' />
-                    <strong>Parking Levels:</strong>
-                    <span> 3</span>
+                    <strong style={strongText}>Parking Levels:</strong>
+                    <span style={strongText}> 3</span>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
                     <CheckCircleIcon className='mx-3' />
-                    <strong>Parking:</strong>
-                    <span> 555 stalls</span>
+                    <strong style={strongText}>Parking:</strong>
+                    <span style={strongText}> 555 stalls</span>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
                     <CheckCircleIcon className='mx-3' />
-                    <strong>Bicycle Parking:</strong>
-                    <span> Capacity for 110 bicycles with new shower facilities</span>
+                    <strong style={strongText}>Bicycle Parking:</strong>
+                    <span style={strongText}> Capacity for 110 bicycles with new shower facilities</span>
                 </li>
                 <li style={{ marginBottom: '10px' }}>
                     <CheckCircleIcon className='mx-3' />
-                    <strong>Public Transit:</strong>
-                    <span> Direct connection to the TTC, King Street and one block north of
+                    <strong style={strongText}>Public Transit:</strong>
+                    <span style={strongText}> Direct connection to the TTC, King Street and one block north of
                         Union Station</span>
                 </li>
             </ul>

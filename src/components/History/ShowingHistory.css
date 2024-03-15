@@ -96,4 +96,20 @@
       line-height: 32px;
     }
   }
+
+  .animated-line {
+    position: absolute;
+    height: 2px;
+    background: black;
+    animation: drawLine 2s linear forwards;
+    left: 38.8%;
+  }
   
+  @keyframes drawLine {
+    from {
+      width: 0;
+    }
+    to {
+      width: 11%;
+    }
+  }  

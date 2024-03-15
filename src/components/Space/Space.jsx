@@ -26,6 +26,7 @@ const Space = () => {
         </Reveal>
         <div style={{
           fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
+          fontWeight:'bold',
           fontSize: '40px',
           lineHeight: '32px',
           textAlign: 'center',
@@ -53,6 +54,7 @@ const Space = () => {
 
           <h1 style={{
             fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
+            fontWeight:'bold',
             fontSize: '40px',
             lineHeight: '32px',
             textAlign: 'center',
@@ -60,7 +62,7 @@ const Space = () => {
             color: '#a57c52', padding: '30px'
           }}>FEASIBILITY PLANS</h1>
         </motion.div>
-        <p style={{ textAlign: 'center', fontWeight: 'bold' }}>
+        <p style={{ textAlign: 'center',fontSize:'16px',fontFamily:'Gotham-Book-Normal-WOhkQgwc'}}>
           <motion.div
             initial={{
               opacity: 0,
