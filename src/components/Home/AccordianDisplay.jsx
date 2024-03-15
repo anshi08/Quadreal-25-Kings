@@ -24,18 +24,18 @@ const AccordionItem = ({ title, content, isOpen, onChange }) => {
         }}
       >
         <Reveal>
-          <Typography style={{
-            fontSize: '28px', fontWeight: 'bold',
+          <h1 style={{
+            fontSize: '25px', fontWeight: 'bold',
             color: 'rgb(165, 124, 82)',fontFamily:
             'Gotham-Bold-Normal-ZjuVkIoU'
-          }}>{title}</Typography>
+          }}>{title}</h1>
         </Reveal>
       </AccordionSummary>
       <Reveal>
         <AccordionDetails sx={{ padding: "16px" }}>
-          <Typography style={{ lineHeight: '24px', fontSize: '16px',fontFamily:' Gotham-Book-Normal-WOhkQgwc',
+          <p style={{ lineHeight: '24px', fontSize: '16px',fontFamily:' Gotham-Book-Normal-WOhkQgwc',
           textAlign:'left' }}
-          >{content}</Typography>
+          >{content}</p>
         </AccordionDetails>
       </Reveal>
 
@@ -66,7 +66,7 @@ const AccordianDisplay = () => {
         <Grid item xs={12} md={6}>
 
           <AccordionItem
-            title="Distinction"
+            title="DISTINCTION"
             content="Elevate your brand with an address in the heart of Toronto’s financial hub, 25 King Street West at King and Bay. Its connection to the city’s PATH system, immediate accessibility to transit, and the multitude of restaurants and cafes, makes it one of the most convenient locations in downtown Toronto."
             isOpen={openIndex === 0}
             onChange={() => handleAccordionChange(0)}
@@ -75,7 +75,7 @@ const AccordianDisplay = () => {
           <hr style={{ border: '1px solid rgb(165, 124, 82)', transform: 'rotate(0deg) scale(1,1)', transformOrigin: '0 0', opacity: 1 }} />
 
           <AccordionItem
-            title="Boutique"
+            title="BOUTIQUE"
             content="A rare opportunity to locate your business in an authentic heritage tower with a contemporary flair."
             isOpen={openIndex === 1}
             onChange={() => handleAccordionChange(1)}
@@ -86,7 +86,7 @@ const AccordianDisplay = () => {
 
 
           <AccordionItem
-            title="Class AAA Complex"
+            title="CLASS AAA COMPLEX"
             content="A roster of AAA amenities from bike storage with showers, tenant engagement programs and 24-hour security helping you attract and retain top talent."
             isOpen={openIndex === 2}
             onChange={() => handleAccordionChange(2)}
@@ -95,7 +95,7 @@ const AccordianDisplay = () => {
 
 
           <AccordionItem
-            title="Modern Experience"
+            title="MODERN EXPERIENCE"
             content="Exciting restaurants and shops as well as robust programming within an Art Deco building makes working here a unique experience."
             isOpen={openIndex === 3}
             onChange={() => handleAccordionChange(3)}
