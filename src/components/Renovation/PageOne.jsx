@@ -32,11 +32,11 @@ const PageOne = () => {
                 style={{ padding: '3rem 0' }}
               >
                 <div className="heading">
-                  <p className="text-xl md:text-3xl font-bold">
+                  <p>
                     A RENOVATION THAT<br /> RESPECTS HISTORY AND <br /> ANTICIPATES THE FUTURE</p>
                 </div>
                 <div className='contentpara'>
-                  <p className='font-bold my-5'>Preserving the classic design of 25 King West involved<br /> adapting the ambiance of its Art Deco heritage
+                  <p className='my-5'>Preserving the classic design of 25 King West involved<br /> adapting the ambiance of its Art Deco heritage
                     into a<br /> new and purpose-built restoration; one that offers the<br /> beauty of the building’s
                     original architecture with<br /> cutting-edge technology and design that surpasses<br /> contemporary business needs.</p>
                 </div>
