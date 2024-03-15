@@ -79,10 +79,14 @@ const ShowingHistory = () => {
                   },
                 }}
                 viewport={{ once: true }}>
+                  <div className='flex flex-row items-center'>
                 <img src={image2} />
-                
+                 {/* Horizontal line */}
+                 <div className="animated-line"></div>
+                </div>
                 <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px', marginTop: '1rem' }}>Despite the ornate nature of the building,<br /> construction of the North Tower took only two <br /> years.
                   There were 750 artisans and builders <br /> employed in its construction.</p>
+                 
               </motion.div>
 
 

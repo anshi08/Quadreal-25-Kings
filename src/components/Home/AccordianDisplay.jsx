@@ -4,7 +4,6 @@ import AddIcon from '@mui/icons-material/Add';
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import Accordion from "@mui/material/Accordion";
-import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
 import { motion } from 'framer-motion'
 import image1 from '../../assets/HomeImage6.jpg'
@@ -26,19 +25,22 @@ const AccordionItem = ({ title, content, isOpen, onChange }) => {
         <Reveal>
           <h1 style={{
             fontSize: '25px', fontWeight: 'bold',
-            color: 'rgb(165, 124, 82)',fontFamily:
-            'Gotham-Bold-Normal-ZjuVkIoU'
+            color: 'rgb(165, 124, 82)', fontFamily:
+              'Gotham-Bold-Normal-ZjuVkIoU'
           }}>{title}</h1>
         </Reveal>
       </AccordionSummary>
       <Reveal>
         <AccordionDetails sx={{ padding: "16px" }}>
-          <p style={{ lineHeight: '24px', fontSize: '16px',fontFamily:' Gotham-Book-Normal-WOhkQgwc',
-          textAlign:'left' }}
+          <p style={{
+            lineHeight: '24px', fontSize: '16px', fontFamily: ' Gotham-Book-Normal-WOhkQgwc',
+            textAlign: 'left'
+          }}
           >{content}</p>
+          
         </AccordionDetails>
       </Reveal>
-
+      
     </Accordion>
   );
 };
@@ -72,7 +74,18 @@ const AccordianDisplay = () => {
             onChange={() => handleAccordionChange(0)}
           />
 
-          <hr style={{ border: '1px solid rgb(165, 124, 82)', transform: 'rotate(0deg) scale(1,1)', transformOrigin: '0 0', opacity: 1 }} />
+<Reveal>
+<motion.div
+            initial={{ left:0, width: '0%', opacity: 0 }} // Set initial values
+            animate={{ left:'100%', width: '100%', opacity: 1 }} // Set animate values
+            transition={{ duration: 3, ease: 'easeInOut' }} // Set transition duration and easing
+            style={{
+              // height: '1px',
+              border: '1px solid rgb(165, 124, 82)',
+            }}
+          />
+</Reveal>
+
 
           <AccordionItem
             title="BOUTIQUE"
@@ -82,7 +95,16 @@ const AccordianDisplay = () => {
           />
 
 
-          <hr style={{ border: '1px solid rgb(165, 124, 82)', transform: 'rotate(0deg) scale(1,1)', transformOrigin: '0 0', opacity: 1 }} />
+          <motion.div
+            initial={{ width: '0%', opacity: 0 }} // Set initial values
+            animate={{ width: '100%', opacity: 1 }} // Set animate values
+            transition={{ duration: 3, ease: 'easeInOut' }} // Set transition duration and easing
+            style={{
+              height: '1px',
+              border: '1px solid rgb(165, 124, 82)',
+            }}
+          />
+
 
 
           <AccordionItem
@@ -91,7 +113,16 @@ const AccordianDisplay = () => {
             isOpen={openIndex === 2}
             onChange={() => handleAccordionChange(2)}
           />
-          <hr style={{ border: '1px solid rgb(165, 124, 82)', transform: 'rotate(0deg) scale(1,1)' }} />
+          <motion.div
+            initial={{ left:0, width: '0%', opacity: 0 }} // Set initial values
+            animate={{ left:'100%', width: '100%', opacity: 1 }} // Set animate values
+            transition={{ duration: 3, ease: 'easeInOut' }} // Set transition duration and easing
+            style={{
+              height: '1px',
+              border: '1px solid rgb(165, 124, 82)',
+            }}
+          />
+
 
 
           <AccordionItem
@@ -100,7 +131,16 @@ const AccordianDisplay = () => {
             isOpen={openIndex === 3}
             onChange={() => handleAccordionChange(3)}
           />
-          <hr style={{ border: '1px solid rgb(165, 124, 82)', transform: 'rotate(0deg) scale(1,1)' }} />
+          <motion.div
+            initial={{ width: '0%', opacity: 0 }} // Set initial values
+            animate={{ width: '100%', opacity: 1 }} // Set animate values
+            transition={{ duration: 3, ease: 'easeInOut' }} // Set transition duration and easing
+            style={{
+              height: '1px',
+              border: '1px solid rgb(165, 124, 82)',
+            }}
+          />
+
 
         </Grid>
         <Grid item xs={12} md={6}>
