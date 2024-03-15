@@ -103,7 +103,10 @@ const HotelImage = () => {
 
                                     <div style={{ display: 'flex', alignItems: 'center' }} className='my-4'>
                                         <div style={{ width: '33px', height: '24px', backgroundColor: 'rgb(192, 221, 197)' }}></div>
-                                        <h3 style={{ marginLeft: '8px', fontWeight: 'bold' }}>Occupied Spaces</h3>
+                                        <h3
+                                            style={{
+                                                marginLeft: '8px', fontFamily: 'Freight-Text Book Ital-LJw96uRe', fontSize: '18px'
+                                            }}>Occupied Spaces</h3>
                                     </div>
                                 </motion.div>
 
@@ -123,7 +126,11 @@ const HotelImage = () => {
 
                                     <div style={{ display: 'flex', alignItems: 'center' }} className='my-4'>
                                         <div style={{ width: '33px', height: '24px', backgroundColor: 'rgb(165, 124, 82)' }}></div>
-                                        <h3 style={{ marginLeft: '8px', fontWeight: 'bold' }}>Available Spaces</h3>
+                                        <h3 style={{
+                                            marginLeft: '8px', fontFamily: "Freight-Text Book Ital-LJw96uRe",
+                                            fontSize: '18px',
+                                            
+                                        }}>Available Spaces</h3>
                                     </div>
                                 </motion.div>
                                 <motion.div
@@ -144,7 +151,11 @@ const HotelImage = () => {
                                         <div style={{ width: '33px', height: '24px' }}>
                                             <img src={image3} />
                                         </div>
-                                        <h3 style={{ marginLeft: '8px', fontWeight: 'bold' }}>Concourse Level</h3>
+                                        <h3 style={{
+                                            marginLeft: '8px', fontFamily: "Freight-Text Book Ital-LJw96uRe",
+                                            fontSize: '18px',
+                                            
+                                        }}>Concourse Level</h3>
                                     </div>
                                 </motion.div>
                                 <motion.div
@@ -164,7 +175,11 @@ const HotelImage = () => {
                                         <div style={{ width: '33px', height: '24px' }}>
                                             <img src={image4} />
                                         </div>
-                                        <h3 style={{ marginLeft: '8px', fontWeight: 'bold' }}>Parking Level</h3>
+                                        <h3 style={{
+                                            marginLeft: '8px', fontFamily: "Freight-Text Book Ital-LJw96uRe",
+                                            fontSize: '18px',
+                                            
+                                        }}>Parking Level</h3>
                                     </div>
                                 </motion.div>
                             </div>
@@ -177,7 +192,9 @@ const HotelImage = () => {
                         <div className="center flex flex-row items-end" >
                             <img src={image2} alt="Hotel" />
 
-                            <h1 className='font-bold whitespace-nowrap' style={{ color: 'rgb(165, 124, 82)' }}>DIRECT PATH ACCESS</h1>
+                            <h1 className='font-bold whitespace-nowrap' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' 
+                         }}>DIRECT PATH ACCESS</h1>
 
                         </div>
                         <Grid container spacing={2}>
@@ -216,7 +233,8 @@ const HotelImage = () => {
                                             },
                                         }}
                                         viewport={{ once: true }}>
-                                        <p>CONCOURSE LEVEL RETAIL <br />+ KING SUBWAY STATION</p>
+                                        <p style={{fontSize:'16px',
+                                        fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' }}>CONCOURSE LEVEL RETAIL <br />+ KING SUBWAY STATION</p>
                                     </motion.div>
                                     <motion.div
                                         initial={{
@@ -231,11 +249,17 @@ const HotelImage = () => {
                                             },
                                         }}
                                         viewport={{ once: true }}>
-                                        <p>PARKING LEVEL 1 <br />
+                                        <p  
+                                        style={{fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',
+                                        lineHeight:'16px',padding:'4px' }}>PARKING LEVEL 1</p>
 
-                                            PARKING LEVEL 2 <br />
+                                        <p  
+                                        style={{fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',
+                                        lineHeight:'16px',padding:'4px' }}>  PARKING LEVEL 2 </p>
 
-                                            PARKING LEVEL 3</p>
+<p  
+                                        style={{fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',
+                                        lineHeight:'16px',padding:'4px' }}>  PARKING LEVEL 3 </p>
                                     </motion.div>
                                 </div>
                             </Grid>
@@ -260,7 +284,9 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
 
-                                <h1 className='font-bold' style={{ color: 'rgb(165, 124, 82)' }}>
+                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px'
+                            }}>
                                     FLOOR 28&nbsp;&nbsp;&nbsp;&nbsp;LEASED
                                 </h1>
                             </motion.div>
@@ -278,7 +304,8 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
 
-                                <h1 className='font-bold' style={{ color: 'rgb(165, 124, 82)' }}>
+                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' }}>
                                     FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;4,236 SF
                                 </h1>
                             </motion.div>
@@ -296,7 +323,8 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
 
-                                <h1 className='font-bold' style={{ color: 'rgb(165, 124, 82)' }}>
+                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' }}>
                                     FLOOR 26&nbsp;&nbsp;&nbsp;&nbsp;4,199 SF
                                 </h1>
                             </motion.div>
@@ -314,7 +342,8 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
 
-                                <h1 className='font-bold' style={{ color: 'rgb(165, 124, 82)' }}>
+                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' }}>
                                     FLOOR 25&nbsp;&nbsp;&nbsp;&nbsp;5,500 SF
                                 </h1>
                             </motion.div>
@@ -335,7 +364,8 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
 
-                                <h1 className='font-bold' style={{ color: 'rgb(165, 124, 82)' }}>
+                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' }}>
                                     FLOOR 22&nbsp;&nbsp;&nbsp;&nbsp;LEASED
                                 </h1>
                             </motion.div>
@@ -353,7 +383,8 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
 
-                                <h1 className='font-bold' style={{ color: 'rgb(165, 124, 82)' }}>
+                                <h1 className='font-bold' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' }}>
                                     FLOOR 21&nbsp;&nbsp;&nbsp;&nbsp;3,268 SF
                                 </h1>
                             </motion.div>
@@ -376,7 +407,8 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
 
-                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)' }}>
+                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' }}>
                                     FLOOR 16&nbsp;&nbsp;&nbsp;&nbsp;7,192 SF
                                 </h1>
                             </motion.div>
@@ -394,7 +426,8 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
 
-                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)' }}>
+                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' }}>
                                     FLOOR 15&nbsp;&nbsp;&nbsp;&nbsp;7,174 SF
                                 </h1>
                             </motion.div>
@@ -412,7 +445,8 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
 
-                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)' }}>
+                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' }}>
                                     FLOOR 14&nbsp;&nbsp;&nbsp;&nbsp;6,865 SF
                                 </h1>
                             </motion.div>
@@ -430,7 +464,8 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
 
-                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)' }}>
+                                <h1 className='font-bold my-2' style={{ color: 'rgb(165, 124, 82)',
+                             fontSize:'16px',fontFamily:'Gotham-Bold-Normal-ZjuVkIoU',lineHeight:'16px' }}>
                                     FLOOR 13&nbsp;&nbsp;&nbsp;&nbsp;6,567 SF
                                 </h1>
                             </motion.div>
