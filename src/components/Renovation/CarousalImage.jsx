@@ -15,6 +15,13 @@ const images = [
    image6
 ];
 
+const imageInfo = [
+  "Cleaning of interior stone walls and decorative ground elevator Lobby ceiling completed in 2020",
+  "Extensive restoration of 17 original art murals",
+  "Elevator Lobby lighting upgrade completed in 2020",
+  "Restoration of bronze Lobby features completed in 2020"
+];
+
 const CarousalImage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -35,17 +42,22 @@ const CarousalImage = () => {
             <WestIcon />
           </Button>
 
-
-          <img className="carousel-image" src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} fontSize="large" />
-
+          <div>
+            <img className="carousel-image" 
+              src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} fontSize="large" />
+            <div className="info-box" style={{fontFamily: 'Gotham-Book-Normal-WOhkQgwc',color:'white'}}>
+              {imageInfo[currentImageIndex]}
+            </div>
+          </div>
+      
           <Button className="carousel-button" onClick={handleNext} disabled={currentImageIndex === images.length - 1}>
             <EastIcon />
           </Button>
-
+      
         </div>
       </div>
     </>
   );
 }
 
-export default CarousalImage
+export default CarousalImage;

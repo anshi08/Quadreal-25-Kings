@@ -18,7 +18,7 @@ const LastSlide = () => {
         color: "white",
         textTransform: "none",
         fontWeight: 400,
-        fontSize: "1rem",
+        fontSize: "13px",
         padding: "12px 24px",
         transition: 'background-color 0.3s ease',
     };
