@@ -26,7 +26,7 @@
 }
 
 /* Title styles */
-.heading {
+.Renoheading {
     position: relative;
     left: 0;
     top: 0;
@@ -36,12 +36,20 @@
     font-family: "Copyright Klim Type Fo-k7cTyXjE";
     line-height: 48px;
     font-weight: bold;
+    letter-spacing: normal;
 
 }
-
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham Book.otf') format('WOhkQgwc');
+  }
 .contentpara {
     font-size: 16px;
     color: rgb(0, 0, 0);
-    font-family: 'Gotham-Book-Normal-WOhkQgwc';
+    font-family: "Gotham",sans-serif;
+    white-space: prev-wrap;
+    font-weight: normal;
     line-height: 24px;
+    letter-spacing: normal;
+    font-weight: 400 !important;
 }

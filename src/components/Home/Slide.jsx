@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
 import elephantImage from '../../assets/HomeImage10.jpg'
+import './Slide.css'
 
 const overlayTextStyle = {
     position: 'absolute',
@@ -39,10 +40,11 @@ const Slide = () => {
         color: "black",
         textTransform: "none",
         fontWeight: 400,
-        fontSize: "1rem",
+        fontSize: "13px",
         padding: "12px 24px",
         transition: 'background-color 0.3s ease',
     }
+
 
     return (
         <>
@@ -54,7 +56,7 @@ const Slide = () => {
                 <div style={overlayTextStyle}>
                     <AnimatePresence>
                         <motion.p
-                            style={Heading}
+                            className='heading'
                             initial={{ y: 50, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             exit={{ y: 50, opacity: 0 }}
@@ -63,9 +65,9 @@ const Slide = () => {
                             BECOMING <br /> COMMERCE COURT
 
                         </motion.p>
-                        <div style={{ display: 'flex', justifyContent: 'center' }}>
+                        <div style={{ display: 'flex', justifyContent: 'center',marginTop:'1rem' }}>
                             <motion.div
-                                style={btn}
+                                className='learnBtn'
                                 initial={{ y: 50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 exit={{ y: 50, opacity: 0 }}
@@ -73,10 +75,11 @@ const Slide = () => {
                             >
                                 <Link
                                     to="/page/3"
+                                    className='text-center linkBtn'
                                     onMouseEnter={() => setIsHovered(true)}
                                     onMouseLeave={() => setIsHovered(false)}
                                 >
-                                    Learn The History
+                                    LEARN THE HISTORY
                                 </Link>
                             </motion.div>
                         </div>

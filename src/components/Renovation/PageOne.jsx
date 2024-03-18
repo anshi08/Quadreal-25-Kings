@@ -2,7 +2,7 @@ import React from 'react'
 import './PageOne.css'
 import CarousalImage from './CarousalImage';
 import "./Carousal.css"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import { Grid } from '@mui/material';
 import image2 from "../../assets/Renovation2.png"
 import Reveal from '../../utils/Reveal';
@@ -31,24 +31,21 @@ const PageOne = () => {
                 viewport={{ once: true }}
                 style={{ padding: '3rem 0' }}
               >
-                <div className="heading">
-                  <p>
-                    A RENOVATION THAT<br /> RESPECTS HISTORY AND <br /> ANTICIPATES THE FUTURE</p>
-                </div>
-                <div className='contentpara'>
-                  <p className='my-5'>Preserving the classic design of 25 King West involved<br /> adapting the ambiance of its Art Deco heritage
+                <p className="Renoheading">
+                  A RENOVATION THAT<br /> RESPECTS HISTORY AND <br /> ANTICIPATES THE FUTURE</p>
+                  <p className='my-5 contentpara'>Preserving the classic design of 25 King West involved<br /> adapting the ambiance of its Art Deco heritage
                     into a<br /> new and purpose-built restoration; one that offers the<br /> beauty of the building’s
                     original architecture with<br /> cutting-edge technology and design that surpasses<br /> contemporary business needs.</p>
-                </div>
+                    
               </motion.div>
 
               <div >
                 <img
-                  src={image2}  className='imageMotion'/>
+                  src={image2} className='imageMotion' />
               </div>
             </Grid>
             <Grid item xs={12} md={6}>
-            <motion.div
+              <motion.div
                 initial={{
                   opacity: 0,
                   x: 100,
@@ -61,10 +58,10 @@ const PageOne = () => {
                   },
                 }}
                 viewport={{ once: true }}
-                style={{ padding: '3rem 3rem',marginTop:'4rem' }}
+                style={{ padding: '3rem 3rem', marginTop: '4rem' }}
               >
 
-              <CarousalImage />
+                <CarousalImage />
               </motion.div>
 
             </Grid>
