@@ -46,12 +46,12 @@ const AddSlide = () => {
                             },
                         }}
                         viewport={{ once: true }}
-                        style={{backgroundImage:`url(${Image})`,backgroundSize:'cover',backgroundRepeat:'no-repeat'}}
+                        style={{width:'100%',height:'100%'}}
                     >
 
                         <img src={Image} alt="Your Image" 
-                        style={{ width: '100%', maxHeight: '100%', objectFit: 'cover',
-                        backgroundColor: 'rgb(248, 245, 241)' }} />
+                        style={{ width: '100%', height: '100%', objectFit: 'cover',}}
+                       />
                     </motion.div>
                 </Grid>
                 {/* Right Side: Text */}
