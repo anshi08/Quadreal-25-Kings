@@ -81,7 +81,7 @@ const Carousal = () => {
               <h1 style={{
                 fontSize: '40px',
                 color: 'rgb(255, 255, 255)',
-                fontFamily: "Copyright Klim Type Fo-k7cTyXjE", fontWeight: 'bold',
+                fontFamily: "CopyrightKlimTypeFoundry", fontWeight: 'bold',
                 lineHeight:'48px'
               }}>A HERITAGE TO BE PROUD OF <br />
                 A FUTURE TO PLAY A PART IN </h1>

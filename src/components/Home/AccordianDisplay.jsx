@@ -13,6 +13,7 @@ import image4 from '../../assets/HomeImage9.jpg';
 import Reveal from "../../utils/Reveal";
 
 
+
 const AccordionItem = ({ title, content, isOpen, onChange }) => {
   return (
     <Accordion expanded={isOpen} onChange={onChange} style={{ background: 'transparent', margin: '0 auto' }}>
