@@ -25,21 +25,21 @@ const PageTwo = () => {
                                     duration: 1,
                                 },
                             }}
+                            style={{
+                                height: '100%',
+                                width: '100%',
+                            }}
                             viewport={{ once: true }}
                         >
+                            <img
+                                src={image}
 
-                            <Card>
-                                <CardMedia
-                                    component="img"
-                                    image={image}
+                                alt="Image"
+                                style={{ width: '100%', height: '100%', objectFit: "cover" }} />
 
-                                    alt="Image"
-                                    style={{ objectFit: "cover" }}
-                                />
-                            </Card>
                         </motion.div>
                     </Grid>
-                    <Grid item xs={12} md={6} style={{ backgroundColor: 'rgba(165, 124, 82, 0.2)'}}>
+                    <Grid item xs={12} md={6} style={{ backgroundColor: 'rgba(165, 124, 82, 0.2)' }}>
                         <motion.div
                             initial={{
                                 opacity: 0,
@@ -97,7 +97,7 @@ const PageTwo = () => {
                                                     viewport={{ once: true }}
                                                 >
                                                     <li style={{ display: 'flex', alignItems: 'center', fontSize: '18px', lineHeight: '24px' }} className='my-7'>
-                                                      <SVG />
+                                                        <SVG />
                                                         Best-in-class connectivity and tech infrastructure
                                                     </li>
                                                 </motion.div>
@@ -119,7 +119,7 @@ const PageTwo = () => {
                                                         display: 'flex', alignItems: 'center',
                                                         fontSize: '18px', lineHeight: '24px'
                                                     }} className='my-7'>
-                                                         <SVG /> Wood framed glass entry doors
+                                                        <SVG /> Wood framed glass entry doors
                                                     </li>
                                                 </motion.div>
                                                 <motion.div
@@ -143,7 +143,7 @@ const PageTwo = () => {
                                                     }} className='my-7'
 
                                                     >
-                                                       <SVG /> LED light fixtures
+                                                        <SVG /> LED light fixtures
                                                     </li>
                                                 </motion.div>
                                                 <motion.div
@@ -164,7 +164,7 @@ const PageTwo = () => {
                                                         display: 'flex', alignItems: 'center',
                                                         fontSize: '18px', lineHeight: '24px'
                                                     }} className='my-7'>
-                                                         <SVG />Ample natural light
+                                                        <SVG />Ample natural light
                                                     </li>
                                                 </motion.div>
 
@@ -186,7 +186,7 @@ const PageTwo = () => {
                                                         display: 'flex', alignItems: 'center',
                                                         fontSize: '18px', lineHeight: '24px'
                                                     }} className='my-7'>
-                                                         <SVG /> Open ceiling up to 11'5"
+                                                        <SVG /> Open ceiling up to 11'5"
                                                     </li>
                                                 </motion.div>
 
@@ -230,7 +230,7 @@ const PageTwo = () => {
                                                         display: 'flex', alignItems: 'center',
                                                         fontSize: '18px', lineHeight: '24px'
                                                     }} className='my-7'>
-                                                         <SVG /> Exposed concrete floor
+                                                        <SVG /> Exposed concrete floor
                                                     </li>
                                                 </motion.div>
 
@@ -253,7 +253,7 @@ const PageTwo = () => {
 
                                                         fontSize: '18px', lineHeight: '24px'
                                                     }} className='my-7'>
-                                                         <SVG /> Newly renovated washrooms
+                                                        <SVG /> Newly renovated washrooms
                                                     </li>
                                                 </motion.div>
 
@@ -275,7 +275,7 @@ const PageTwo = () => {
                                                         display: 'flex', alignItems: 'center',
                                                         fontSize: '18px', lineHeight: '24px'
                                                     }} className='my-7'>
-                                                         <SVG /> Restored heritage elevator lobbies
+                                                        <SVG /> Restored heritage elevator lobbies
                                                     </li>
                                                 </motion.div>
                                             </ul>
