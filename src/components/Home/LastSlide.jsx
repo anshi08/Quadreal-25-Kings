@@ -5,8 +5,8 @@ import "./AddSlice.css"
 import { Grid } from '@mui/material';
 import { motion } from "framer-motion"
 import ReactCompareImage from 'react-compare-image';
-import image1 from "../../assets/SliderImage1.jpg"
-import image2 from "../../assets/SliderImage2.jpg"
+import image1 from "../../assets/SliderImage1.png"
+import image2 from "../../assets/SliderImage2.png"
 
 const LastSlide = () => {
     const [isHovered, setIsHovered] = useState(false);

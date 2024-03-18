@@ -10,13 +10,24 @@ import image1 from "../../assets/Space1.jpg"
 const Space = () => {
   return (
     <>
-      <Reveal>
-        <div class="image">
-          <img
-            src={image1} alt="Image description" class="image-responsive" />
-          <div class="image-text">UNIQUE AND CURATED<br /> SPACE FOR<br /> CONTEMPORARY<br /> BUSINESS</div>
-        </div>
-      </Reveal>
+      <div class="image" style={{ backgroundImage: `url(${image1})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: '100vh', display: 'grid', placeItems: 'center' }}>
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 50,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+            transition: {
+              duration: 1,
+            },
+          }}
+          viewport={{ once: true }}>
+
+          <div class="image-text2">UNIQUE AND CURATED<br /> SPACE FOR<br /> CONTEMPORARY<br /> BUSINESS</div>
+        </motion.div>
+      </div>
       <div>
         <Reveal>
           <HotelImage />
@@ -26,7 +37,7 @@ const Space = () => {
         </Reveal>
         <div style={{
           fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
-          fontWeight:'bold',
+          fontWeight: 'bold',
           fontSize: '40px',
           lineHeight: '32px',
           textAlign: 'center',
@@ -54,7 +65,7 @@ const Space = () => {
 
           <h1 style={{
             fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
-            fontWeight:'bold',
+            fontWeight: 'bold',
             fontSize: '40px',
             lineHeight: '32px',
             textAlign: 'center',
@@ -62,7 +73,7 @@ const Space = () => {
             color: '#a57c52', padding: '30px'
           }}>FEASIBILITY PLANS</h1>
         </motion.div>
-        <p style={{ textAlign: 'center',fontSize:'16px',fontFamily:'Gotham-Book-Normal-WOhkQgwc'}}>
+        <p style={{ textAlign: 'center', fontSize: '16px', fontFamily: 'Gotham-Book-Normal-WOhkQgwc' }}>
           <motion.div
             initial={{
               opacity: 0,

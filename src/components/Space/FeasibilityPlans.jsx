@@ -26,6 +26,7 @@ const images = [
     bgcolor: 'rgba(192, 221, 197, 0.2)',
     imgPath: Map3,
   },
+
 ];
 
 function FeasibilityPlans() {
@@ -46,20 +47,7 @@ function FeasibilityPlans() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <Paper
-        square
-        elevation={0}
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          height: 50,
-          pl: 2,
-          bgcolor: "background.default",
-        }}
-      >
-        <Typography>{images[activeStep].label}</Typography>
-      </Paper>
+    <Box sx={{ flexGrow: 1, border: '2px solid red' }}>
       <SwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}
@@ -76,29 +64,35 @@ function FeasibilityPlans() {
           >
             <div
               style={{
-                flex: "40%",
+                // flex: "40%",
                 overflow: "hidden",
                 backgroundColor: index === 0 ? 'white' : images[index - 1].bgcolor,
-                padding:'2rem 0'
+                padding: '2rem',
+                width:"100%",
+                height:'90%'
               }}
             >
-              {index === 0 ? null : (
+              {index === 0 ?<div style={{ width: "500px", height: "500px",maxHeight:'90%',maxWidth:'90%' }}>
+                
+              </div>: (
                 <img
                   src={images[index - 1].imgPath}
                   alt={images[index - 1].label}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                />
+                  style={{ width: "800px", height: "500px",maxHeight:'90%',maxWidth:'90%' }}                />
               )}
             </div>
             <div
               style={{
-                flex: "60%",
-                overflow: "hidden",
+                // flex: "60%",
+                // overflow: "hidden",
                 margin: "0 4rem",
                 backgroundColor: step.bgcolor,
                 padding: "2rem",
                 display: "flex",
                 justifyContent: "center",
+                alignItems:'center',
+                width:"120%",
+                height:'100%'
                 // alignItems: "center",
               }}
             >
@@ -113,8 +107,7 @@ function FeasibilityPlans() {
                 <img
                   src={step.imgPath}
                   alt={step.label}
-                  style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "cover" }}
-                />
+                  style={{ width: "800px", height: "500px",maxHeight:'90%',maxWidth:'90%' }}                />
               </div>
               <Button
                 size="small"
@@ -127,18 +120,21 @@ function FeasibilityPlans() {
 
             <div
               style={{
-                flex: "40%",
+                // flex: "40%",
                 overflow: "hidden",
                 backgroundColor: index === maxSteps - 1 ? 'white' : images[index + 1].bgcolor,
-                padding:'2rem 0'
+                padding: '2rem 0',
+                width:"100%",
+                height:'90%'
               }}
             >
-              {index === maxSteps - 1 ? null : (
+              {index === maxSteps - 1 ? <div   style={{ width: "500px", height: "500px",maxHeight:'90%',maxWidth:'90%' }}>
+              
+              </div> : (
                 <img
                   src={images[index + 1].imgPath}
                   alt={images[index + 1].label}
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                />
+                  style={{ width: "800px", height: "500px",maxHeight:'90%',maxWidth:'90%' }}                />
               )}
             </div>
           </div>

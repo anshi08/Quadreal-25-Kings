@@ -5,49 +5,67 @@ import { motion } from 'framer-motion';
 import AccordianDisplay from './AccordianDisplay';
 import Slide from './Slide';
 import AddSlide from './AddSlide';
+import accordianBG from "../../assets/accordianBG.png"
 import LastSlide from './LastSlide';
 
 const componentStyle = {
-  fontSize: 'clamp(1.5rem, 4vw, 3rem)',
+  fontSize: '40px',
   fontWeight: 'bold',
   color: 'rgb(165, 124, 82)',
   fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
-  lineHeight: '1.5',
-  marginBottom: '2rem'
+  lineHeight: '48px',
+  textAlign:'center',
+  letterSpacing:'normal',
 };
 
 const divImage = {
-  backgroundImage: `url('http://127.0.0.1:5500/media/ade78c750456c839c7ba63d5cb572fba/background-pattern-half.png')`,
+  backgroundImage: `url(${accordianBG})`,
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   color: 'white',
   textAlign: 'center',
-  padding: '2rem'
+  padding: '2rem',
+  wordWrap:'break-word'
 };
 
 
 
 const Home = () => {
-
+  console.log('bg', accordianBG)
 
   return (
     <>
       <div>
 
         <Carousal />
-        <Reveal>
-          <div style={divImage}>
-            <div style={{ padding: '1rem' }}>
+        <div style={divImage}>
+          <div style={{ padding: '1rem' }}>
+            <motion.div
+              initial={{
+                opacity: 0,
+                y: 100,
+              }}
+              whileInView={{
+                opacity: 1,
+                y: 0,
+                transition: {
+                  duration: 1,
+                },
+              }}
+              style={{padding:'2rem 0'}}
+              viewport={{ once: true }}
+            >
+
               <p style={componentStyle}>
                 A TRANSFORMATION TAKES SHAPE<br />
                 ONE THAT OPENS A NEW LEASE ON LIFE <br />
                 FOR THE LEGENDARY COMMERCE COURT <br /> NORTH AND ITS PRESTIGIOUS ADDRESS <br />
                 OF 25 KING WEST
               </p>
-            </div>
-            <AccordianDisplay />
+            </motion.div>
           </div>
-        </Reveal>
+          <AccordianDisplay />
+        </div>
       </div>
       <Reveal>
         <motion.div

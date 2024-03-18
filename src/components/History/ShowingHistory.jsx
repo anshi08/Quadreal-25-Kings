@@ -11,9 +11,25 @@ import image7 from "../../assets/HistoryImage7.png"
 import image8 from "../../assets/HistoryImage8.png"
 import image9 from "../../assets/HistoryImage9.png"
 import Reveal from '../../utils/Reveal';
+import { useTheme } from '@mui/material/styles';
 
 
 const ShowingHistory = () => {
+  const theme = useTheme()
+  const draw = {
+    hidden: { pathLength: 0, opacity: 0 },
+    visible: (i) => {
+      const delay = 1 + i * 0.5;
+      return {
+        pathLength: 1,
+        opacity: 1,
+        transition: {
+          pathLength: { delay, type: "spring", duration: 1000, bounce: 0 },
+          opacity: { delay, duration: 0.01 },
+        },
+      };
+    },
+  };
   return (
     <>
       <div className="container" >
@@ -79,14 +95,31 @@ const ShowingHistory = () => {
                   },
                 }}
                 viewport={{ once: true }}>
-                  <div className='flex flex-row items-center'>
-                <img src={image2} />
-                 {/* Horizontal line */}
-                 <div className="animated-line"></div>
+                <div className='flex flex-row items-center'>
+                  <img src={image2} />
+                  {/* Horizontal line */}
+                  {/* <motion.svg
+                    width="100%"
+                    height="100%"
+                    initial="hidden"
+                    animate="visible"
+                  >
+                    <motion.line
+                      x1="0" // Set x1 to the middle of the container
+                      y1="0"   // Start from the top
+                      x2="100%" // Set x2 to the middle of the container
+                      y2="0" // End at the bottom
+                      stroke="rgb(165, 124, 82)"
+                      strokeWidth={2}
+                      variants={draw}
+                      custom={2}
+                      style={{ border: '2px solid red' }}
+                    />
+                  </motion.svg> */}
                 </div>
                 <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px', marginTop: '1rem' }}>Despite the ornate nature of the building,<br /> construction of the North Tower took only two <br /> years.
                   There were 750 artisans and builders <br /> employed in its construction.</p>
-                 
+
               </motion.div>
 
 
@@ -136,7 +169,7 @@ const ShowingHistory = () => {
                       fontSize: '18px',
                       color: 'rgb(165, 124, 82)',
                       fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU',
-                      fontWeight:'bold'
+                      fontWeight: 'bold'
                     }}>DID YOU KNOW?</h1>
                     <p
                       style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '16px' }}
@@ -170,7 +203,7 @@ const ShowingHistory = () => {
 
                 <img src={image5} />
                 <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '14px', marginTop: '1rem' }}
-                 
+
                 >Changing styles. By the mid-20th century the elegance of the Banking<br /> Hall remained pristine, while
                   providing a modern environment to <br />conduct business.</p>
 
@@ -197,9 +230,9 @@ const ShowingHistory = () => {
                       fontSize: '18px',
                       color: 'rgb(165, 124, 82)',
                       fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU',
-                      fontWeight:'bold'
+                      fontWeight: 'bold'
                     }}>DID YOU KNOW?</h1>
-                    <p 
+                    <p
                       style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '16px' }}
                     >Modelled after the Baths of Caracella in Rome,the Banking Hall’s ceiling is 65 feet at<br />
                       the apex. Painted a pale azure, 715 ounces of<br /> gold leaf was used to create the<br /> surrounding mouldings.</p>
@@ -212,34 +245,33 @@ const ShowingHistory = () => {
             </div>
 
 
-          </Grid>
+          </Grid >
 
-{/* Vertical Line */}
-<Grid item xs={12} md={2} className='flex justify-center'>
-          <Reveal>
-                <motion.svg
-    width="5px"
-    height="1200px"
-   
-    xmlns="http://www.w3.org/2000/svg"
-    xmlnsXlink="http://www.w3.org/1999/xlink"
-    initial={{ strokeDashoffset: 1120, y: -1200 }} // Start from top (-Y axis)
-    animate={{ strokeDashoffset: 0, y: 0 }} // Move to bottom (Y axis)
-    transition={{ duration: 5, ease: "linear" }}
-  >
-    <motion.path
-      className="path2"
-      fill="none"
-      strokeWidth="3"
-      stroke="rgb(165, 124, 82)"
-      d="M0 0 L0 1120"
-    />
-  </motion.svg>
-  </Reveal>
-  </Grid>
+          {/* Vertical Line */}
+          < Grid item xs={12} md={2} sx={{ [theme.breakpoints.down(900)]: { display: 'none' } }}>
+            <motion.svg
+              width="100%"
+              height="100%"
+              initial="hidden"
+              animate="visible"
+            >
+              <motion.line
+                x1="50%" // Set x1 to the middle of the container
+                y1="0"   // Start from the top
+                x2="50%" // Set x2 to the middle of the container
+                y2="100%" // End at the bottom
+                stroke="rgb(165, 124, 82)"
+                strokeWidth={2}
+                variants={draw}
+                custom={2}
+                style={{ border: '2px solid red' }}
+              />
+            </motion.svg>
+          </Grid >
+
 
           {/* right side part */}
-          <Grid item xs={12} md={5}>
+          < Grid item xs={12} md={5} >
 
             <div className="image-container2 my-5">
               <motion.div
@@ -255,7 +287,7 @@ const ShowingHistory = () => {
                   },
                 }}
                 viewport={{ once: true }}>
-   
+
 
                 <img src={image7} />
                 <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '15px' }}>
@@ -291,7 +323,7 @@ const ShowingHistory = () => {
                   COMMERCE COURT <br />
                   WEST, SOUTH AND EAST</h1>
                 <p
-                style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px' }}
+                  style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px' }}
                 >These combined modernist materials and traditional stone to fit<br /> the original North building design.</p>
 
               </motion.div>
@@ -322,9 +354,9 @@ const ShowingHistory = () => {
 
               </motion.div>
             </div>
-          </Grid>
-        </Grid>
-      </div>
+          </Grid >
+        </Grid >
+      </div >
     </>
   )
 }
