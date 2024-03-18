@@ -3,6 +3,41 @@
     padding: 40px 24px;
 }
 
+.compare-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Adjust max-width as needed */
+    margin: 0 auto;
+  }
+  
+  .compare-image-container {
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+  
+  .compare-image-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .compare-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .image-text {
+    position: absolute;
+    top: 10px; /* Adjust top position */
+    left: 10px; /* Adjust left position */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    color: white;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+
 /* Media query for large devices */
 @media (min-width: 960px) {
     .textStroke{

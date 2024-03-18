@@ -23,7 +23,7 @@ const Carousal = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); 
+    }, 5000);
 
     return () => clearInterval(interval);
   }, []);
@@ -38,15 +38,15 @@ const Carousal = () => {
 
   return (
     <div style={{ position: 'relative' }}>
-      <button onClick={handlePrev} 
-      className="absolute top-1/2 left-0 transform -translate-y-1/2 
+      <button onClick={handlePrev}
+        className="absolute top-1/2 left-0 transform -translate-y-1/2 
      p-2 rounded-l-md z-10">
-      <WestIcon style={{ fontSize: '70px', color:'white' }}/>
-     </button>
-      <button onClick={handleNext} 
-      className="absolute top-1/2 right-0 transform -translate-y-1/2 
-       p-2 rounded-r-md z-10">  
-        <EastIcon style={{ fontSize: '70px', color:'white' }} />
+        <WestIcon style={{ fontSize: '70px', color: 'white' }} />
+      </button>
+      <button onClick={handleNext}
+        className="absolute top-1/2 right-0 transform -translate-y-1/2 
+       p-2 rounded-r-md z-10">
+        <EastIcon style={{ fontSize: '70px', color: 'white' }} />
       </button>
       <AnimatePresence mode='wait' >
         <motion.div
@@ -64,14 +64,31 @@ const Carousal = () => {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
-        <div className="absolute top-16 left-9 z-20">
-            <h1 style={{fontSize: '40px',
-    color: 'rgb(255, 255, 255)',
-    fontFamily: "Copyright Klim Type Fo-k7cTyXjE",fontWeight:'bold'}}>A HERITAGE TO BE PROUD OF <br/>
-            A FUTURE TO PLAY A PART IN </h1>
-          </div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: -50,
+            }}
+            whileInView={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
+            viewport={{ once: true }}>
+            <div className="absolute top-14 left-9 z-20">
+              <h1 style={{
+                fontSize: '40px',
+                color: 'rgb(255, 255, 255)',
+                fontFamily: "Copyright Klim Type Fo-k7cTyXjE", fontWeight: 'bold',
+                lineHeight:'48px'
+              }}>A HERITAGE TO BE PROUD OF <br />
+                A FUTURE TO PLAY A PART IN </h1>
+            </div>
+          </motion.div>
         </motion.div>
-        
+
       </AnimatePresence>
       {/* <div>
           <Heading />
