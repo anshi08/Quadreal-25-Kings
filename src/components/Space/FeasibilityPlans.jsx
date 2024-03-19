@@ -47,7 +47,7 @@ function FeasibilityPlans() {
   };
 
   return (
-    <Box sx={{ flexGrow: 1, border: '2px solid red' }}>
+    <Box sx={{ flexGrow: 1, border: '2px solid red',overflowX:'auto' }}>
       <SwipeableViews
         axis={theme.direction === "rtl" ? "x-reverse" : "x"}
         index={activeStep}

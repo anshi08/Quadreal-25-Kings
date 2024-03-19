@@ -14,17 +14,20 @@
   cursor: inherit;
   font-size: 40px !important;
   color: rgb(165, 124, 82);
+
   font-family: "Copyright Klim Type Fo-k7cTyXjE" !important;
   text-align: left;
   font-weight: bold;
   line-height: 48px;
-
 }
-
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham Book.woff');
+}
 /* Content styles */
 .content {
   font-size: 16px;
-  /* font-family: "Gotham-Book-Normal-WOhkQgwc"; */
+  /* font-family: "Gotham"; */
   margin-top: 1rem;
   line-height: 24px;
   letter-spacing: normal;

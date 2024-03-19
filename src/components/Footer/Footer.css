@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GothamBook.otf') format('opentype');
+}
+.bottom-text{
+    font-size: 12px;
+    line-height: 16px;
+    font-family: "Gotham";
+    color: rgb(102, 102, 102);
+    font-weight: 400;
+    font-style: normal;
+}
+.bottom-navigate{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    font-family: 'Gotham';
+    line-height: 14px;
+}

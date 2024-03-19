@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham Book.woff');
+}
+.liItem{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Gotham';
+}
