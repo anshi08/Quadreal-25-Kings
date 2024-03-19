@@ -49,9 +49,9 @@ const AddSlide = () => {
                         style={{backgroundImage:`url(${Image})`,backgroundSize:'cover',backgroundRepeat:'no-repeat'}}
                     >
 
-                        {/* <img src={Image} alt="Your Image" 
+                        <img src={Image} alt="Your Image" 
                         style={{ width: '100%', maxHeight: '100%', objectFit: 'cover',
-                        backgroundColor: 'rgb(248, 245, 241)' }} /> */}
+                        backgroundColor: 'rgb(248, 245, 241)' }} />
                     </motion.div>
                 </Grid>
                 {/* Right Side: Text */}

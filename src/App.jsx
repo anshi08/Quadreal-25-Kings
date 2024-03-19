@@ -14,11 +14,9 @@ const App = () => {
 
   return (
     <>
-    <Container maxWidth='xl'>
     <Header />
     <Outlet />
     <Footer />
-    </Container>
     </>
   )
 }

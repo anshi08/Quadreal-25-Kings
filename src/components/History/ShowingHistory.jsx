@@ -117,7 +117,7 @@ const ShowingHistory = () => {
                     />
                   </motion.svg> */}
                 </div>
-                <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px', marginTop: '1rem' }}>Despite the ornate nature of the building,<br /> construction of the North Tower took only two <br /> years.
+                <p className='bottomPara'>Despite the ornate nature of the building,<br /> construction of the North Tower took only two <br /> years.
                   There were 750 artisans and builders <br /> employed in its construction.</p>
 
               </motion.div>
@@ -141,7 +141,7 @@ const ShowingHistory = () => {
                 viewport={{ once: true }}>
 
                 <img src={image3} />
-                <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px', marginTop: '1rem' }}>Dominating the skyline for over 30 years, the height and opulence of <br />
+                <p className='bottomPara'>Dominating the skyline for over 30 years, the height and opulence of <br />
                   the North Tower represented the area’s growing importance as a <br />
                   financial centre.</p>
               </motion.div>
@@ -172,13 +172,13 @@ const ShowingHistory = () => {
                       fontWeight: 'bold'
                     }}>DID YOU KNOW?</h1>
                     <p
-                      style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '16px' }}
-                    >The cornerstone of this ambitious 141<br /> metre tall limestone building was laid just<br />
-                      two days after the stock market crash of <br /> October 29, 1929. Constructed between<br />
+                      className='bottomPara'
+                    >The cornerstone of this ambitious 141 metre tall limestone building was laid just<br />
+                      two days after the stock market crash of October 29, 1929. Constructed between<br />
                       1929 – 1932, 25 King West cost over $8<br /> million to build – or well over $85 million in<br />
                       today’s dollars.</p>
                   </div>
-                  <div className="image-wrapper my-5">
+                  <div className="image-wrapper my-5 mx-2">
                     <img src={image4} />
                   </div>
                 </div>
@@ -202,7 +202,7 @@ const ShowingHistory = () => {
                 viewport={{ once: true }}>
 
                 <img src={image5} />
-                <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '14px', marginTop: '1rem' }}
+                <p className='bottomPara'
 
                 >Changing styles. By the mid-20th century the elegance of the Banking<br /> Hall remained pristine, while
                   providing a modern environment to <br />conduct business.</p>
@@ -232,8 +232,7 @@ const ShowingHistory = () => {
                       fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU',
                       fontWeight: 'bold'
                     }}>DID YOU KNOW?</h1>
-                    <p
-                      style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '16px' }}
+                    <p className='bottomPara'
                     >Modelled after the Baths of Caracella in Rome,the Banking Hall’s ceiling is 65 feet at<br />
                       the apex. Painted a pale azure, 715 ounces of<br /> gold leaf was used to create the<br /> surrounding mouldings.</p>
                   </div>
@@ -248,7 +247,8 @@ const ShowingHistory = () => {
           </Grid >
 
           {/* Vertical Line */}
-          < Grid item xs={12} md={2} sx={{ [theme.breakpoints.down(900)]: { display: 'none' } }}>
+          < Grid item xs={12} md={2} sx={{ [theme.breakpoints.down(900)]: { display: 'none' },display:'flex',justifyContent:"center",alignItems:'center' }}>
+            {/* <SVG/> */}
             <motion.svg
               width="100%"
               height="100%"
@@ -267,6 +267,7 @@ const ShowingHistory = () => {
                 style={{ border: '2px solid red' }}
               />
             </motion.svg>
+            {/* <SVG/> */}
           </Grid >
 
 
@@ -290,7 +291,7 @@ const ShowingHistory = () => {
 
 
                 <img src={image7} />
-                <p style={{ fontFamily: "Freight-Text Book-WQKKhyvm", fontSize: '15px' }}>
+                <p className='bottomPara'>
                   August 11, 1930: His Majesty’s R100 Airship over the soon to be opened<br /> headquarters of the Canadian Bank of Commerce.
                   The building itself opened on <br /> January 13, 1931, in time for the bank’s annual shareholder’s meeting.
                 </p>
@@ -323,7 +324,7 @@ const ShowingHistory = () => {
                   COMMERCE COURT <br />
                   WEST, SOUTH AND EAST</h1>
                 <p
-                  style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '15px' }}
+                  className='bottomPara'
                 >These combined modernist materials and traditional stone to fit<br /> the original North building design.</p>
 
               </motion.div>
@@ -346,7 +347,7 @@ const ShowingHistory = () => {
 
                 <img src={image9} />
                 <p
-                  style={{ fontFamily: "Freight-Text Book-WQKKhyvm", lineHeight: '24px', fontSize: '13px', marginTop: '1rem' }}
+                  className='bottomPara'
                 >With its elegant arched doorways, chandeliers and gold-coffered ceiling, CIBC’s Banking<br />
                   Hall was not only beautiful, but spoke to the bank’s wealth and prosperity. Look closely<br />
                   at the top of the chandelier and you can see the four words representing CIBC’s brand<br />

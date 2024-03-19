@@ -12,7 +12,7 @@ const componentStyle = {
   fontSize: '40px',
   fontWeight: 'bold',
   color: 'rgb(165, 124, 82)',
-  fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
+  fontFamily: 'CopyrightKlimTypeFoundry',
   lineHeight: '48px',
   textAlign:'center',
   letterSpacing:'normal',
