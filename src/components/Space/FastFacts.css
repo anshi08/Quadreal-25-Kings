@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GothamBook.otf') format('opentype');
+}
+
+.li-head {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Gotham';
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-style: normal;
+}
+
+.li-content {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Gotham';
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 0.5rem;
+}
+
+.fact-text{
+    font-size: 16px;
+    font-family: 'Gotham';
+    line-height: 24px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+
+}

@@ -5,6 +5,7 @@ import Reveal from '../../utils/Reveal';
 import { motion } from "framer-motion"
 import image from "../../assets/image.jpg"
 import SVG from './SVG';
+import './PageTwo.css'
 
 
 const PageTwo = () => {
@@ -96,7 +97,7 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center', fontSize: '18px', lineHeight: '24px' }} className='my-7'>
+                                                    <li className='my-7 liItem'>
                                                         <SVG />
                                                         Best-in-class connectivity and tech infrastructure
                                                     </li>
@@ -115,10 +116,7 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{
-                                                        display: 'flex', alignItems: 'center',
-                                                        fontSize: '18px', lineHeight: '24px'
-                                                    }} className='my-7'>
+                                                    <li className='my-7 liItem'>
                                                         <SVG /> Wood framed glass entry doors
                                                     </li>
                                                 </motion.div>
@@ -136,11 +134,7 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{
-                                                        display: 'flex', alignItems: 'center',
-
-                                                        fontSize: '18px', lineHeight: '24px'
-                                                    }} className='my-7'
+                                                    <li className='my-7 liItem'
 
                                                     >
                                                         <SVG /> LED light fixtures
@@ -160,10 +154,7 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{
-                                                        display: 'flex', alignItems: 'center',
-                                                        fontSize: '18px', lineHeight: '24px'
-                                                    }} className='my-7'>
+                                                    <li className='my-7 liItem'>
                                                         <SVG />Ample natural light
                                                     </li>
                                                 </motion.div>
@@ -182,10 +173,7 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{
-                                                        display: 'flex', alignItems: 'center',
-                                                        fontSize: '18px', lineHeight: '24px'
-                                                    }} className='my-7'>
+                                                    <li className='my-7 liItem'>
                                                         <SVG /> Open ceiling up to 11'5"
                                                     </li>
                                                 </motion.div>
@@ -204,10 +192,7 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{
-                                                        display: 'flex', alignItems: 'center',
-                                                        fontSize: '18px', lineHeight: '24px'
-                                                    }} className='my-7'>
+                                                    <li className='my-7 liItem'>
                                                         <SVG /> New floor mounted induction units and ceiling ductwork
                                                     </li>
                                                 </motion.div>
@@ -226,10 +211,7 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{
-                                                        display: 'flex', alignItems: 'center',
-                                                        fontSize: '18px', lineHeight: '24px'
-                                                    }} className='my-7'>
+                                                    <li className='my-7 liItem'>
                                                         <SVG /> Exposed concrete floor
                                                     </li>
                                                 </motion.div>
@@ -248,11 +230,7 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{
-                                                        display: 'flex', alignItems: 'center',
-
-                                                        fontSize: '18px', lineHeight: '24px'
-                                                    }} className='my-7'>
+                                                    <li className='my-7 liItem'>
                                                         <SVG /> Newly renovated washrooms
                                                     </li>
                                                 </motion.div>
@@ -271,10 +249,7 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{
-                                                        display: 'flex', alignItems: 'center',
-                                                        fontSize: '18px', lineHeight: '24px'
-                                                    }} className='my-7'>
+                                                    <li className='my-7 liItem'>
                                                         <SVG /> Restored heritage elevator lobbies
                                                     </li>
                                                 </motion.div>

@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom'
 import SouthIcon from '@mui/icons-material/South';
 import Reveal from '../../utils/Reveal';
 import { motion } from "framer-motion"
+import './Brochure.css'
 
 const Brochure = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -80,33 +81,17 @@ const Brochure = () => {
               }}
               viewport={{ once: true }}>
 
-              <p style={{
-                fontSize: '16px', fontFamily: 'Gotham-Book-Normal-WOhkQgwc', fontStyle: 'normal', lineHeight: '24px'
-              }}>For further information on this exclusive leasing opportunity<br />please contact:</p>
+              <p className='first-para'>For further information on this exclusive leasing opportunity<br />please contact:</p>
               <div className='flex flex-col my-4'>
-                <strong style={{
-                  fontSize: '20px', fontFamily: "Copyright Klim Type Fo-k7cTyXjE", lineHeight: '20px', fontStyle: 'normal'
-                }}>KATE LABRASH</strong>
-                <span style={{
-                  color: '#a57c52',
-                  textDecoration: 'underline', fontSize: '16px',
-                  fontFamily: 'Gotham-Medium-Normal-E1grd569', lineHeight: '20px', fontWeight: 'bold'
-                }}>DIRECTOR, OFFICE LEASING/SALES REPRESENTATIVE</span>
+                <strong className='first-head'>KATE LABRASH</strong>
+                <span className='first-head-content'>DIRECTOR, OFFICE LEASING/SALES REPRESENTATIVE</span>
               </div>
 
-              <strong style={{ fontSize: '20px', fontFamily: "Copyright Klim Type Fo-k7cTyXjE", lineHeight: '20px', fontStyle: 'normal' }}>OFFICE:</strong>
-              <Link to='tel: 416-673-7491' style={{
-                color: '#a57c52',
-                textDecoration: 'underline', fontSize: '16px',
-                fontFamily: 'Gotham-Medium-Normal-E1grd569', lineHeight: '20px', fontWeight: 'bold'
-              }}>416-673-7491</Link>  <br />
+              <strong className='second-head'>OFFICE:</strong>
+              <Link to='tel: 416-673-7491' className='second-head-content'>416-673-7491</Link>  <br />
 
-              <strong style={{ fontSize: '20px', fontFamily: "Copyright Klim Type Fo-k7cTyXjE", lineHeight: '20px', fontStyle: 'normal' }} >EMAIL:</strong>
-              <Link to='mailto:kate.labrash@quadreal.com' style={{
-                color: '#a57c52',
-                textDecoration: 'underline', fontSize: '16px',
-                fontFamily: 'Gotham-Medium-Normal-E1grd569', lineHeight: '20px', fontWeight: 'bold'
-              }}>KATE.LABRASH@QUADREAL.COM</Link>
+              <strong className='second-head' >EMAIL:</strong>
+              <Link to='mailto:kate.labrash@quadreal.com' className='second-head-content'>KATE.LABRASH@QUADREAL.COM</Link>
             </motion.div>
           </Grid>
         </Grid>
