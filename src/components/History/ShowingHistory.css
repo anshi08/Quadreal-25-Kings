@@ -97,7 +97,7 @@
     }
   }
 
-  .animated-line {
+  /* .animated-line {
     position: absolute;
     height: 2px;
     background: black;
@@ -110,6 +110,6 @@
       width: 0;
     }
     to {
-      width: 11%;
+      width: 20%;
     }
-  }  
+  }   */

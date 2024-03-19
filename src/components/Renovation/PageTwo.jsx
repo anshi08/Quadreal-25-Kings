@@ -3,6 +3,8 @@ import { Grid, Container, Card, CardMedia, CardContent, Typography } from '@mui/
 import { Room, Lightbulb, Wifi, BeachAccess, Bathtub, Elevator } from '@mui/icons-material';
 import Reveal from '../../utils/Reveal';
 import { motion } from "framer-motion"
+import image from "../../assets/image.jpg"
+import SVG from './SVG';
 
 
 const PageTwo = () => {
@@ -10,7 +12,7 @@ const PageTwo = () => {
         <>
             <Reveal>
                 <Grid container>
-                    <Grid item xs={12} md={6}>
+                    <Grid item xs={12} md={6} >
                         <motion.div
                             initial={{
                                 opacity: 0,
@@ -29,15 +31,15 @@ const PageTwo = () => {
                             <Card>
                                 <CardMedia
                                     component="img"
-                                    // height='654px'
-                                    image="https://images.unsplash.com/photo-1709874662525-07a316aba683?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+                                    image={image}
 
                                     alt="Image"
+                                    style={{ objectFit: "cover" }}
                                 />
                             </Card>
                         </motion.div>
                     </Grid>
-                    <Grid item xs={12} md={6} style={{ backgroundColor: 'rgba(165, 124, 82, 0.2)' }}>
+                    <Grid item xs={12} md={6} style={{ backgroundColor: 'rgba(165, 124, 82, 0.2)'}}>
                         <motion.div
                             initial={{
                                 opacity: 0,
@@ -58,7 +60,7 @@ const PageTwo = () => {
                                         fontWeight: 'bold',
                                         fontSize: '40px',
                                         color: 'rgb(165, 124, 82)',
-                                        fontFamily: '"Copyright Klim Type Fo-k7cTyXjE"',
+                                        fontFamily: "Copyright Klim Type Fo-k7cTyXjE",
                                         lineHeight: '32px',
                                         marginTop: '132px',
                                         paddingLeft: '20px'
@@ -94,10 +96,9 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center',
-                                                    fontSize:'18px',lineHeight:'24px'
-                                                }} className='my-7'>
-                                                        <Lightbulb style={{ marginRight: '10px' }} /> Best-in-class connectivity and tech infrastructure
+                                                    <li style={{ display: 'flex', alignItems: 'center', fontSize: '18px', lineHeight: '24px' }} className='my-7'>
+                                                      <SVG />
+                                                        Best-in-class connectivity and tech infrastructure
                                                     </li>
                                                 </motion.div>
                                                 <motion.div
@@ -114,9 +115,11 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center',
-                                                fontSize:'18px',lineHeight:'24px' }} className='my-7'>
-                                                        <Lightbulb style={{ marginRight: '10px' }} /> Wood framed glass entry doors
+                                                    <li style={{
+                                                        display: 'flex', alignItems: 'center',
+                                                        fontSize: '18px', lineHeight: '24px'
+                                                    }} className='my-7'>
+                                                         <SVG /> Wood framed glass entry doors
                                                     </li>
                                                 </motion.div>
                                                 <motion.div
@@ -133,12 +136,14 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center',
-                                                    
-                                                    fontSize:'18px',lineHeight:'24px' }} className='my-7'
-                                                    
+                                                    <li style={{
+                                                        display: 'flex', alignItems: 'center',
+
+                                                        fontSize: '18px', lineHeight: '24px'
+                                                    }} className='my-7'
+
                                                     >
-                                                        <Wifi style={{ marginRight: '10px' }} /> LED light fixtures
+                                                       <SVG /> LED light fixtures
                                                     </li>
                                                 </motion.div>
                                                 <motion.div
@@ -155,30 +160,11 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center',
-                                               fontSize:'18px',lineHeight:'24px'  }} className='my-7'>
-                                                        <BeachAccess style={{ marginRight: '10px' }} /> Ample natural light
-                                                    </li>
-                                                </motion.div>
-
-                                                <motion.div
-                                                    initial={{
-                                                        opacity: 0,
-                                                        y: -100,
-                                                    }}
-                                                    whileInView={{
-                                                        opacity: 1,
-                                                        y: 0,
-                                                        transition: {
-                                                            duration: 1,
-                                                        },
-                                                    }}
-                                                    viewport={{ once: true }}
-                                                >
-                                                    <li style={{ display: 'flex', alignItems: 'center',
-                                                
-                                                fontSize:'18px',lineHeight:'24px'}} className='my-7'>
-                                                        <Bathtub style={{ marginRight: '10px' }} /> Newly renovated washrooms
+                                                    <li style={{
+                                                        display: 'flex', alignItems: 'center',
+                                                        fontSize: '18px', lineHeight: '24px'
+                                                    }} className='my-7'>
+                                                         <SVG />Ample natural light
                                                     </li>
                                                 </motion.div>
 
@@ -196,9 +182,100 @@ const PageTwo = () => {
                                                     }}
                                                     viewport={{ once: true }}
                                                 >
-                                                    <li style={{ display: 'flex', alignItems: 'center',
-                                                fontSize:'18px',lineHeight:'24px' }} className='my-7'>
-                                                        <Elevator style={{ marginRight: '10px' }} /> Restored heritage elevator lobbies
+                                                    <li style={{
+                                                        display: 'flex', alignItems: 'center',
+                                                        fontSize: '18px', lineHeight: '24px'
+                                                    }} className='my-7'>
+                                                         <SVG /> Open ceiling up to 11'5"
+                                                    </li>
+                                                </motion.div>
+
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: -100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}
+                                                >
+                                                    <li style={{
+                                                        display: 'flex', alignItems: 'center',
+                                                        fontSize: '18px', lineHeight: '24px'
+                                                    }} className='my-7'>
+                                                        <SVG /> New floor mounted induction units and ceiling ductwork
+                                                    </li>
+                                                </motion.div>
+
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: -100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}
+                                                >
+                                                    <li style={{
+                                                        display: 'flex', alignItems: 'center',
+                                                        fontSize: '18px', lineHeight: '24px'
+                                                    }} className='my-7'>
+                                                         <SVG /> Exposed concrete floor
+                                                    </li>
+                                                </motion.div>
+
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: -100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}
+                                                >
+                                                    <li style={{
+                                                        display: 'flex', alignItems: 'center',
+
+                                                        fontSize: '18px', lineHeight: '24px'
+                                                    }} className='my-7'>
+                                                         <SVG /> Newly renovated washrooms
+                                                    </li>
+                                                </motion.div>
+
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: -100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}
+                                                >
+                                                    <li style={{
+                                                        display: 'flex', alignItems: 'center',
+                                                        fontSize: '18px', lineHeight: '24px'
+                                                    }} className='my-7'>
+                                                         <SVG /> Restored heritage elevator lobbies
                                                     </li>
                                                 </motion.div>
                                             </ul>

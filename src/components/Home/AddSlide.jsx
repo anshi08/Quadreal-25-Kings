@@ -29,10 +29,10 @@ const AddSlide = () => {
     };
 
     return (
-        <div style={{ backgroundColor: 'rgb(248, 245, 241)' }}>
+        <div >
             <Grid container>
                 {/* Left Side: Image */}
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={6} >
                     <motion.div
                         initial={{
                             opacity: 0,
@@ -46,13 +46,17 @@ const AddSlide = () => {
                             },
                         }}
                         viewport={{ once: true }}
+                        style={{backgroundImage:`url(${Image})`,backgroundSize:'cover',backgroundRepeat:'no-repeat'}}
                     >
 
-                        <img src={Image} alt="Your Image" style={{ width: '100%', maxHeight: '100%', objectFit: 'cover' }} />
+                        {/* <img src={Image} alt="Your Image" 
+                        style={{ width: '100%', maxHeight: '100%', objectFit: 'cover',
+                        backgroundColor: 'rgb(248, 245, 241)' }} /> */}
                     </motion.div>
                 </Grid>
                 {/* Right Side: Text */}
-                <Grid item xs={12} md={6} style={{ display:'grid',placeItems:'center',padding:'8% 2rem'}}>
+                <Grid item xs={12} md={6} style={{ display:'grid',placeItems:'center',padding:'8% 2rem',
+            backgroundColor: 'rgb(248, 245, 241)' }}>
 
                     {/* Link Button */}
                     <motion.div
