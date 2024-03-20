@@ -1,57 +1,128 @@
 /* .container {
     margin: 40px;
   } */
-  
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.left,
+.center,
+.right {
+  flex: 1;
+}
+
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothamBook.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Freight';
+  src: url('../fonts/FreightTextBookItalic.otf') format('opentype');
+}
+
+.floor-names {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: bold;
+  color: rgb(165, 124, 82);
+
+}
+
+.floor-number {
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(165, 124, 82);
+}
+
+.linkBtn {
+  font-size: 12px;
+  line-height: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Gotham';
+  color:white;
+  background-color: black;
+  padding: 12px 24px;
+  transition: 'background-color 0.3s ease';
+}
+.linkBtn:hover{
+  background-color: #a0aec0;
+}
+.legend-text{
+  font-size: 16px;
+  line-height: 14px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Gotham';
+  color:rgb(165, 124, 82);
+}
+.legend-points{
+  font-size: 18px;
+  line-height: 36px;
+  font-family: "Freight";
+  color: rgb(0, 0, 0);
+  margin-left: 8px;
+}
+.image-bottom-text{
+  font-size: 16px;
+  line-height: 16px;
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(165, 124, 82);
+}
+
+
+/* Media Query for mobile devices */
+@media (max-width: 768px) {
   .image-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  }
-  
-  .left, .center, .right {
-    flex: 1;
-  }
-  
-  /* Media Query for mobile devices */
-  @media (max-width: 768px) {
-    .image-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .left, .right {
-      text-align: center;
-    }
-  }
-
-  
-  .circle {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 100vmax;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-  }
-  
-  .logo {
-    opacity: 0.45;
-  }
-  
-  @keyframes rotate {
-    /* 0% { transform: rotate(0deg); } */
-    100% { transform: rotate(360deg); }
-  }
-  
-  .box {
-    animation: rotate 15s infinite;
   }
 
-  .container {
-    position: relative;
-    display: inline-block;
+  .left,
+  .right {
+    text-align: center;
   }
-  
-  
-  
+}
+
+
+.circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 100vmax;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  opacity: 0.45;
+}
+
+@keyframes rotate {
+
+  /* 0% { transform: rotate(0deg); } */
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.box {
+  animation: rotate 15s infinite;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+}

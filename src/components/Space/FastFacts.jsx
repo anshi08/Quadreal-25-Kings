@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { CardContent } from '@mui/material';
 import space9 from "../../assets/space9.png"
 import SVG from "../Renovation/SVG"
+import './FastFacts.css'
 
 
 const FastFacts = () => {
@@ -35,38 +36,38 @@ const FastFacts = () => {
                 <li style={{ marginBottom: '10px', 
                 display: 'flex', alignItems: 'center', fontSize: '18px', lineHeight: '24px' }}>
                    <SVG />
-                    <strong style={strongText}>Total Floors:</strong>
-                    <span style={strongText}> 32</span>
+                    <strong className='li-head'>Total Floors:</strong>
+                    <span className='li-content'> 32</span>
                 </li>
                 <li style={{ marginBottom: '10px', display: 'flex', alignItems: 'center', fontSize: '18px', lineHeight: '24px' }}>
                    <SVG />
-                    <strong style={strongText}>Total Building SF:</strong>
-                    <span style={strongText}> 245,000 SF</span>
+                    <strong className='li-head'>Total Building SF:</strong>
+                    <span className='li-content'> 245,000 SF</span>
                 </li>
                 <li style={{ marginBottom: '10px', display: 'flex', alignItems: 'center', fontSize: '18px', lineHeight: '24px' }}>
                     <SVG />
-                    <strong style={strongText}>Ceiling Height Typical Floor:</strong>
-                    <span style={strongText}> 9 to 11 feet</span>
+                    <strong className='li-head'>Ceiling Height Typical Floor:</strong>
+                    <span className='li-content'> 9 to 11 feet</span>
                 </li>
                 <li style={{ marginBottom: '10px', display: 'flex', alignItems: 'center', fontSize: '18px', lineHeight: '24px' }}>
                     <SVG />
-                    <strong style={strongText}>Parking Levels:</strong>
-                    <span style={strongText}> 3</span>
+                    <strong className='li-head'>Parking Levels:</strong>
+                    <span className='li-content'> 3</span>
                 </li>
                 <li style={{ marginBottom: '10px', display: 'flex', alignItems: 'center', fontSize: '18px', lineHeight: '24px' }}>
                    <SVG />
-                    <strong style={strongText}>Parking:</strong>
-                    <span style={strongText}> 555 stalls</span>
+                    <strong className='li-head'>Parking:</strong>
+                    <span className='li-content'> 555 stalls</span>
                 </li>
                 <li style={{ marginBottom: '10px', display: 'flex', alignItems: 'center', fontSize: '18px', lineHeight: '24px' }}>
                    <SVG />
-                    <strong style={strongText}>Bicycle Parking:</strong>
-                    <span style={strongText}> Capacity for 110 bicycles with new shower facilities</span>
+                    <strong className='li-head'>Bicycle Parking:</strong>
+                    <span className='li-content'> Capacity for 110 bicycles with new shower facilities</span>
                 </li>
                 <li style={{ marginBottom: '10px', display: 'flex', fontSize: '18px', lineHeight: '24px' }}>
                    <SVG />
-                    <strong style={strongText}>Public Transit:</strong>
-                    <span style={strongText}> Direct connection to the TTC, King Street and one block<br/> north of
+                    <strong className='li-head'>Public Transit:</strong>
+                    <span className='li-content'> Direct connection to the TTC, King Street and one block<br/> north of
                    Union Station</span>
                 </li>
             </ul>

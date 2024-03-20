@@ -6,6 +6,7 @@ import Gallery from './Gallery'
 import { motion } from 'framer-motion'
 import FeasibilityPlans from './FeasibilityPlans'
 import image1 from "../../assets/Space1.jpg"
+import './FastFacts.css'
 
 const Space = () => {
   return (
@@ -42,7 +43,7 @@ const Space = () => {
           lineHeight: '32px',
           textAlign: 'center',
           letterSpacing: 'normal',
-          color: '#a57c52', padding: '50px'
+          color: '#a57c52', padding: '3rem'
         }}>
           Gallery
         </div>
@@ -70,10 +71,10 @@ const Space = () => {
             lineHeight: '32px',
             textAlign: 'center',
             letterSpacing: 'normal',
-            color: '#a57c52', padding: '30px'
+            color: '#a57c52', paddingTop: '2rem',paddingBottom:'0.5rem'
           }}>FEASIBILITY PLANS</h1>
         </motion.div>
-        <p style={{ textAlign: 'center', fontSize: '16px', fontFamily: 'Gotham-Book-Normal-WOhkQgwc' }}>
+        <p className='fact-text'>
           <motion.div
             initial={{
               opacity: 0,
