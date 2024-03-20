@@ -14,7 +14,7 @@
     font-family: 'CopyrightKlimTypeFoundry';
     letter-spacing: normal;
     transition: 'background-color 0.3s ease';
-    color: #333333;
+    /* color: #333333; */
     background-color: white;
     text-align: center;
     padding: 12px 24px;
@@ -30,7 +30,9 @@
 .linkBtn{
     display: flex;
     justify-content: center;
+    color: #333333;
     align-items: center;
+    background-color: white;
 }
 
 

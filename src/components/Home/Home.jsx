@@ -7,6 +7,7 @@ import Slide from './Slide';
 import AddSlide from './AddSlide';
 import accordianBG from "../../assets/accordianBG.png"
 import LastSlide from './LastSlide';
+import './Home.css'
 
 const componentStyle = {
   fontSize: '40px',
@@ -14,8 +15,8 @@ const componentStyle = {
   color: 'rgb(165, 124, 82)',
   fontFamily: 'CopyrightKlimTypeFoundry',
   lineHeight: '48px',
-  textAlign:'center',
-  letterSpacing:'normal',
+  textAlign: 'center',
+  letterSpacing: 'normal',
 };
 
 const divImage = {
@@ -25,19 +26,22 @@ const divImage = {
   color: 'white',
   textAlign: 'center',
   padding: '2rem',
-  wordWrap:'break-word'
+  wordWrap: 'break-word'
 };
 
 
 
 const Home = () => {
-  console.log('bg', accordianBG)
 
   return (
     <>
       <div>
+        <div className="main-div">
+          <div className="child-div">
+            <Carousal />
 
-        <Carousal />
+          </div>
+        </div>
         <div style={divImage}>
           <div style={{ padding: '1rem' }}>
             <motion.div
@@ -52,7 +56,7 @@ const Home = () => {
                   duration: 1,
                 },
               }}
-              style={{padding:'2rem 0'}}
+              style={{ padding: '2rem 0' }}
               viewport={{ once: true }}
             >
 
