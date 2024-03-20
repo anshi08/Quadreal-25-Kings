@@ -19,6 +19,13 @@ const images = [
 
 const Carousal = () => {
   const [index, setIndex] = useState(0);
+  const [showText,setShowText]=useState(false)
+
+  useEffect(()=>{
+     setTimeout(()=>{
+      setShowText(true)
+     },6000)
+  },[])
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -37,7 +44,7 @@ const Carousal = () => {
   };
 
   return (
-    <div style={{ position: 'relative' }}>
+    <div style={{ position: 'relative',height:'100%'}}>
       <button onClick={handlePrev}
         className="absolute top-1/2 left-0 transform -translate-y-1/2 
      p-2 rounded-l-md z-10">
@@ -55,8 +62,8 @@ const Carousal = () => {
             backgroundImage: `url(${images[index]})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
-            height: '855px',
-            width: 'auto',
+            height:'100%',
+            width: '100%',
             position: 'relative'
           }}
           initial={{ opacity: 0 }}
@@ -77,22 +84,20 @@ const Carousal = () => {
               },
             }}
             viewport={{ once: true }}>
-            <div className="absolute top-14 left-9 z-20">
+           {showText && <div className="absolute top-14 left-9 z-20">
               <h1 style={{
                 fontSize: '40px',
                 color: 'rgb(255, 255, 255)',
                 fontFamily: "Copyright Klim Type Fo-k7cTyXjE", fontWeight: 'bold',
-                lineHeight:'48px'
+                lineHeight:'48px',
+                wordBreak:'break-word'
               }}>A HERITAGE TO BE PROUD OF <br />
                 A FUTURE TO PLAY A PART IN </h1>
-            </div>
+            </div>}
           </motion.div>
         </motion.div>
 
       </AnimatePresence>
-      {/* <div>
-          <Heading />
-          </div> */}
     </div>
   );
 }
