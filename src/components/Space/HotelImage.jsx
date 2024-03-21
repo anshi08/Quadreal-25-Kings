@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./HotelImage.css"
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom';
-import image2 from "../../assets/Space2.png"
+import image2 from "../../assets/building.png"
 import image3 from "../../assets/space3.png"
 import image4 from "../../assets/space4.png"
 import image5 from "../../assets/space5.png"
@@ -185,7 +185,6 @@ const HotelImage = () => {
                     <div>
                         <div className="center flex flex-row items-end" >
                             <img src={image2} alt="Hotel" />
-
 
                             <h1 className='image-bottom-text'>DIRECT PATH ACCESS</h1>
 
