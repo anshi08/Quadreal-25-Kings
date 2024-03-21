@@ -21,13 +21,13 @@
   line-height: 48px;
 }
 @font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/Gotham Book.woff');
+  font-family: 'Gotham-book-normal';
+  src: url('../../fonts/gotham-book.woff');
 }
 /* Content styles */
 .content {
   font-size: 16px;
-  /* font-family: "Gotham"; */
+  font-family: "Gotham-book-normal";
   margin-top: 1rem;
   line-height: 24px;
   letter-spacing: normal;
@@ -58,12 +58,16 @@
   flex-wrap: wrap;
   margin-left: 2rem;
 }
+@font-face {
+  font-family: 'Freight-text-book';
+  src: url('../../fonts/freight-text-book.woff');
+}
 
 .bottomPara {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: normal;
-  font-family: 'Freight-Text Book-WQKKhyvm';
+  font-family: 'Freight-text-book';
   margin-top: 1rem;
   color: #000000;
 }

@@ -4,25 +4,37 @@
     border-radius: 2px;
 }
 @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/Gotham Book.woff');
+    font-family: 'Gotham-book-normal';
+    src: url('../../fonts/gotham-book.woff') format('woff');
   }
 
 .maintext{
     font-size: 24px;
     line-height: 32px;
     font-style: normal;
-    font-family:'Gotham',sans-serif;
+    font-family:'Gotham-book-normal';
     margin: 2rem 4rem;
     text-align: left;
     letter-spacing: normal;
     color: rgb(42, 40, 40);
 
 }
-
+@font-face {
+    font-family: 'Gotham-book-normal';
+    src: url('../../fonts/gotham-book.woff') format('WOhkQgwc');
+  }
 .btnLink{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    z-index: 56;
+    font-family: 'Gotham-book-normal';
+    text-align: center;
+    line-height: 1px;
+    transition-property: none;
     margin: 2rem 4rem;
-}
+  }
 
 /* Media query for large devices */
 @media (min-width: 960px) {

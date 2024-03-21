@@ -52,11 +52,11 @@ const Header = () => {
               fontFamily: "Times New Roman, Times, serif",
               fontSize: '20px',
               lineHeight: '130%',
-              fontWeight: 'bold',
+              fontWeight: '900',
               color: 'black',
               textDecoration: 'none',
-              fontFamily: 'Helvetica, Arial, sans-serif',
-              fontWeight: activeTab === '' ? 'bold' : 'bold' // Apply bold font-weight to active tab
+              // fontFamily: 'Helvetica, Arial, sans-serif',
+              fontWeight: activeTab === '' ? '900' : '900' // Apply bold font-weight to active tab
             }}
             onClick={() => handleTabClick('')}
           >

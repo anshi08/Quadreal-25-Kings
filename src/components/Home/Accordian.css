@@ -1,13 +1,27 @@
 @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/Gotham Book.otf') format('WOhkQgwc');
+    font-family: 'Gotham-bold-normal';
+    src: url('../../fonts/gotham-bold.woff') format('WOhkQgwc');
+  }
+  @font-face {
+    font-family: 'Gotham-book-normal';
+    src: url('../../fonts/gotham-book.woff') format('WOhkQgwc');
   }
 
 .accordianHeading{
     font-size: 24px;
-    line-height: 24;
-    font-family: "Gotham",sans-serif;
+    line-height: 24px;
+    font-family: 'Gotham-bold-normal';
     color: rgb(165, 124, 82);
     font-weight: bold;
 
+}
+.accordianContent{
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  color: rgb(0, 0, 0);
+  font-family: 'Gotham-book-normal';
+  text-align: left;
+  padding: 0px;
+  line-height: 24px;
 }

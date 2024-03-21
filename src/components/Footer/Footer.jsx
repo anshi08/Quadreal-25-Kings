@@ -7,7 +7,7 @@ import './Footer.css'
 
 export default function Footer() {
   return (
-    <footer className="relative bottom-0 w-full bg-white py-6 px-2">
+    <footer className="relative bottom-0 w-full bg-white py-6 px-6">
       <div
         style={{
           display: "flex",
@@ -42,13 +42,13 @@ export default function Footer() {
       <Grid container>
         <Grid item xs={12} sm={9}>
           <div className="d-flex flex-direction-column text-gray-500 dark:text-gray-400">
-            <Typography variant="body2" gutterBottom className="bottom-text">
+            <p className="bottom-text">
               © 2023 Pricing, specifications and information subject to change
               without notice. E. & O. E.
-            </Typography>
-            <Typography variant="body2" gutterBottom className="bottom-text">
+            </p>
+            <p className="bottom-text">
               ©2022 25 King West Commerce Court North
-            </Typography>
+            </p>
           </div>
         </Grid>
         <Grid item xs={12} sm={3}>

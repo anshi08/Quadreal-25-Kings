@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "./LastSlide.css"
-import "./AddSlice.css"
+// import "./AddSlice.css"
 import { Grid } from '@mui/material';
 import { motion } from "framer-motion"
 import ReactCompareImage from 'react-compare-image';
@@ -12,7 +12,6 @@ const LastSlide = () => {
     const [isHovered, setIsHovered] = useState(false);
 
     const btn = {
-        fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
         textAlign: 'center',
         backgroundColor: isHovered ? '#a0aec0' : 'black',
         color: "white",

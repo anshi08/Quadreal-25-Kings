@@ -45,7 +45,7 @@ const CarousalImage = () => {
           <div>
             <img className="carousel-image" 
               src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} fontSize="large" />
-            <div className="info-box" style={{fontFamily: 'Gotham-Book-Normal-WOhkQgwc',color:'white'}}>
+            <div className="info-box">
               {imageInfo[currentImageIndex]}
             </div>
           </div>

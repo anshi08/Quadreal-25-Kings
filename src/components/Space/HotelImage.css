@@ -16,30 +16,40 @@
 
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/GothamBook.otf') format('opentype');
+  font-family: 'Gotham-Bold-Normal-ZjuVkIoU';
+  src: url('../../fonts/gotham-bold.woff') format('woff');
 }
-@font-face {
-  font-family: 'Freight';
-  src: url('../fonts/FreightTextBookItalic.otf') format('opentype');
-}
-
 .floor-names {
   font-size: 16px;
   line-height: 16px;
-  font-family: "Gotham";
+  font-family:'Gotham-Bold-Normal-ZjuVkIoU' !important;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   color: rgb(165, 124, 82);
 
 }
+@font-face {
+  font-family: 'Freight';
+  src: url('../../fonts/gotham-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham-bold-normal';
+  src: url('../../fonts/gotham-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Freight-italic';
+  src: url('../../fonts/freight-text-book-italic.woff') format('woff');
+}
+
 
 .floor-number {
   font-size: 16px;
   line-height: 16px;
-  font-family: "Gotham";
+  /* font-family: "Freight"; */
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   color: rgb(165, 124, 82);
 }
 
@@ -62,20 +72,22 @@
   line-height: 14px;
   font-style: normal;
   font-weight: 400;
-  font-family: 'Gotham';
+  font-family: 'Gotham-bold-normal';
+  white-space: pre-wrap;
   color:rgb(165, 124, 82);
 }
 .legend-points{
   font-size: 18px;
   line-height: 36px;
-  font-family: "Freight";
+  font-family: "Freight-italic";
   color: rgb(0, 0, 0);
   margin-left: 8px;
 }
+
 .image-bottom-text{
   font-size: 16px;
   line-height: 16px;
-  font-family: 'Gotham';
+  font-family: 'Gotham-bold-normal';
   font-weight: 400;
   font-style: normal;
   color: rgb(165, 124, 82);

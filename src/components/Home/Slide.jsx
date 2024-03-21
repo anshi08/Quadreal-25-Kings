@@ -67,7 +67,7 @@ const Slide = () => {
                         </motion.p>
                         <div style={{ display: 'flex', justifyContent: 'center',marginTop:'1rem' }}>
                             <motion.div
-                                className='learnBtn'
+                                // className='learnBtn'
                                 initial={{ y: 50, opacity: 0 }}
                                 animate={{ y: 0, opacity: 1 }}
                                 exit={{ y: 50, opacity: 0 }}

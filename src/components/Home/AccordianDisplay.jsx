@@ -11,6 +11,7 @@ import image2 from '../../assets/HomeImage7.jpg';
 import image3 from '../../assets/HomeImage8.jpg';
 import image4 from '../../assets/HomeImage9.jpg';
 import Reveal from "../../utils/Reveal";
+import './Accordian.css'
 
 
 
@@ -21,20 +22,12 @@ const AccordionItem = ({ title, content, isOpen, onChange }) => {
         expandIcon={isOpen ? <RemoveIcon /> : <AddIcon />}
       >
         <Reveal>
-          <Typography variant='5' style={{
-            fontSize: '28px', fontWeight: 'bold',
-            color: 'rgb(165, 124, 82)', 
-          }}>{title}</Typography>
+          <Typography variant='5' className="accordianHeading">{title}</Typography>
         </Reveal>
       </AccordionSummary>
       <Reveal>
         <AccordionDetails sx={{ padding: "1rem" }}>
-          <p style={{
-            lineHeight: '24px', fontSize: '16px',
-            letterSpacing:'normal',
-            textAlign: 'left',
-            wordWrap: 'break-word'
-          }}
+          <p className="accordianContent"
           >{content}</p>
         </AccordionDetails>
       </Reveal>
