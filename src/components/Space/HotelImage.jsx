@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./HotelImage.css"
 import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom';
-import image2 from "../../assets/Space2.png"
+import image2 from "../../assets/Space2-CC98oV9W-v2.png"
 import image3 from "../../assets/space3.png"
 import image4 from "../../assets/space4.png"
 import image5 from "../../assets/space5.png"
@@ -69,7 +69,7 @@ const HotelImage = () => {
 
                                 <Link
                                     to="https://quadreal.findspace.com/building/commerce-court-north-commerce-court?search=25%20king&amp;min=0&amp;max=160750&amp;type=A"
-                                    // style={btn}
+                                    style={btn}
                                     className='linkBtn'
                                     target='_blank'
                                     onMouseEnter={() => setIsHovered(true)}
@@ -184,7 +184,7 @@ const HotelImage = () => {
                     {/* For Small devices  */}
                     <div>
                         <div className="center flex flex-row items-end" >
-                            <img src={image2} alt="Hotel" />
+                            <img src={image2} alt="Hotel" style={{width:'100vh'}} />
 
 
                             <h1 className='image-bottom-text'>DIRECT PATH ACCESS</h1>
