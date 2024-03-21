@@ -184,7 +184,7 @@ const HotelImage = () => {
                     {/* For Small devices  */}
                     <div>
                         <div className="center flex flex-row items-end" >
-                            <img src={image2} alt="Hotel" style={{width:'100vh'}} />
+                            <img src={image2} alt="Hotel" style={{width:'420px',height:'819px'}} />
 
 
                             <h1 className='image-bottom-text'>DIRECT PATH ACCESS</h1>
@@ -271,9 +271,9 @@ const HotelImage = () => {
                                 viewport={{ once: true }}>
 
                                 <span className='font-bold my-2 floor-names'>
-                                    FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    FLOOR 28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className='font-bold my-2 floor-number'>4,236 SF</span>
+                                <span className='font-bold my-2 floor-number'>LEASED</span>
                             </motion.div>
                             <motion.div
                                 initial={{
@@ -308,9 +308,9 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
                                 <span className='font-bold my-2 floor-names'>
-                                    FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    FLOOR 26&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className='font-bold my-2 floor-number'>4,236 SF</span>
+                                <span className='font-bold my-2 floor-number'>4,199 SF</span>
                             </motion.div>
                             <motion.div
                                 initial={{
@@ -327,9 +327,9 @@ const HotelImage = () => {
                                 viewport={{ once: true }}>
 
                                 <span className='font-bold my-2 floor-names'>
-                                    FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    FLOOR 25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className='font-bold my-2 floor-number'>4,236 SF</span>
+                                <span className='font-bold my-2 floor-number'>5,500 SF</span>
                             </motion.div>
                         </div>
 
@@ -349,9 +349,9 @@ const HotelImage = () => {
                                 viewport={{ once: true }}>
 
                                 <span className='font-bold my-2 floor-names'>
-                                    FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    FLOOR 22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className='font-bold my-2 floor-number'>4,236 SF</span>
+                                <span className='font-bold my-2 floor-number'>LEASED</span>
                             </motion.div>
                             <motion.div
                                 initial={{
@@ -368,9 +368,9 @@ const HotelImage = () => {
                                 viewport={{ once: true }}>
 
                                 <span className='font-bold my-2 floor-names'>
-                                    FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    FLOOR 21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className='font-bold my-2 floor-number'>4,236 SF</span>
+                                <span className='font-bold my-2 floor-number'>3,296 SF</span>
                             </motion.div>
 
 
@@ -392,9 +392,9 @@ const HotelImage = () => {
                                 viewport={{ once: true }}>
 
                                 <span className='font-bold my-2 floor-names'>
-                                    FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    FLOOR 16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className='font-bold my-2 floor-number'>4,236 SF</span>
+                                <span className='font-bold my-2 floor-number'>7,192 SF</span>
                             </motion.div>
                             <motion.div
                                 initial={{
@@ -411,9 +411,9 @@ const HotelImage = () => {
                                 viewport={{ once: true }}>
 
                                 <span className='font-bold my-2 floor-names'>
-                                    FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    FLOOR 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className='font-bold my-2 floor-number'>4,236 SF</span>
+                                <span className='font-bold my-2 floor-number'>7,174 SF</span>
                             </motion.div>
                             <motion.div
                                 initial={{
@@ -429,9 +429,9 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
                                 <span className='font-bold my-2 floor-names'>
-                                    FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    FLOOR 14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className='font-bold my-2 floor-number'>4,236 SF</span>
+                                <span className='font-bold my-2 floor-number'>6,865 SF</span>
                             </motion.div>
                             <motion.div
                                 initial={{
@@ -447,9 +447,9 @@ const HotelImage = () => {
                                 }}
                                 viewport={{ once: true }}>
                                 <span className='font-bold my-2 floor-names'>
-                                    FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    FLOOR 13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </span>
-                                <span className='font-bold my-2 floor-number'>4,236 SF</span>
+                                <span className='font-bold my-2 floor-number'>6,567 SF</span>
                             </motion.div>
                         </div>
 
