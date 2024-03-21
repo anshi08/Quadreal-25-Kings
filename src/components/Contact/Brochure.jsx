@@ -12,7 +12,18 @@ const Brochure = () => {
 
 
   const btn = {
+    fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
+    textAlign: 'center',
     backgroundColor: isHovered ? '#a0aec0' : 'white',
+    color: "black",
+    textTransform: "none",
+    fontWeight: 400,
+    fontSize: "1rem",
+    padding: "12px 24px",
+    transition: 'background-color 0.3s ease',
+    position: 'absolute',
+    bottom: '10px',
+    left: '10px'
   }
 
   return (
@@ -44,7 +55,7 @@ const Brochure = () => {
                   to="https://25king.ca/brochure/"
                   target='_blank'
                   className='bounce-btn'
-                  style={btn}
+                  // style={btn}
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >

@@ -20,8 +20,12 @@
     padding: 12px 24px;
     line-height: 20px;
     position: absolute;
+    background-color: white;
     left: 10px;
     bottom: 10px;
+}
+.bounce-btn:hover{
+    background-color: #a0aec0;
 }
 
 .first-para {
