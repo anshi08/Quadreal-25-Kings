@@ -69,17 +69,16 @@ const ShowingHistory = () => {
               }}
               viewport={{ once: true }}>
               <div className='content'>
-                <p>In the late 19th Century, Toronto’s Financial District was a medley <br />
-                  of small regional and local banks. In 1926, the Canadian Bank of <br /> Commerce decided to replace
-                  their modest seven-storey head office <br /> with something more impressive: 25 King West. Designed by
-                  architects <br /> York and Sawyer (USA) and
-                  Pearson and Darling (Canada), 25 King <br /> West launched in 1931 with a height of an unprecedented <br />
-                  32-storeys (141 meters), gaining prestige as Canada’s tallest building.<br /> Despite launching in the
-                  height of the Depression, the building <br /> represented Canada’s growing optimism and the Financial
-                  District’s <br /> global significance. </p>
+                <p>In the late 19th Century, Toronto’s Financial District was a medley
+                  of small regional and local banks. In 1926, the Canadian Bank of Commerce decided to replace
+                  their modest seven-storey head office with something more impressive: 25 King West. Designed by
+                  architects York and Sawyer (USA) and
+                  Pearson and Darling (Canada), 25 King West launched in 1931 with a height of an unprecedented
+                  32-storeys (141 meters), gaining prestige as Canada’s tallest building. Despite launching in the
+                  height of the Depression, the building represented Canada’s growing optimism and the Financial
+                  District’s global significance. </p>
               </div>
             </motion.div>
-
 
             <div className="image-container1">
               <motion.div
@@ -105,9 +104,9 @@ const ShowingHistory = () => {
                     animate="visible"
                   >
                     <motion.line
-                      x1="0" // Set x1 to the middle of the container
+                      x1="100%" // Set x1 to the middle of the container
                       y1="0"   // Start from the top
-                      x2="100%" // Set x2 to the middle of the container
+                      x2="0" // Set x2 to the middle of the container
                       y2="0" // End at the bottom
                       stroke="rgb(165, 124, 82)"
                       strokeWidth={2}
@@ -121,11 +120,9 @@ const ShowingHistory = () => {
                   There were 750 artisans and builders <br /> employed in its construction.</p>
 
               </motion.div>
-
-
             </div>
 
-            <div className="image-container1 my-5">
+            <div className="image-container1">
               <motion.div
                 initial={{
                   opacity: 0,
@@ -138,17 +135,17 @@ const ShowingHistory = () => {
                     duration: 1,
                   },
                 }}
+                // style={{border:'2px solid yellow',display:'flex',justifyContent:'flex-end',flexDirection:'column'}}
                 viewport={{ once: true }}>
+                <div className='flex flex-row items-center'>
+                  <img src={image3} width='100%' />
+                </div>
+                <p className='bottomPara'>Dominating the skyline for over 30 years, the height and opulence of the North Tower represented the area’s growing importance as a financial centre.</p>
 
-                <img src={image3} />
-                <p className='bottomPara'>Dominating the skyline for over 30 years, the height and opulence of <br />
-                  the North Tower represented the area’s growing importance as a <br />
-                  financial centre.</p>
               </motion.div>
-
             </div>
 
-            <div className="image-container1" style={{ padding: '2rem', marginBottom: '8rem' }}>
+            <div className="did-container" >
               <motion.div
                 initial={{
                   opacity: 0,
@@ -161,26 +158,25 @@ const ShowingHistory = () => {
                     duration: 1,
                   },
                 }}
+                className='flex gap-2'
                 viewport={{ once: true }}>
 
-                <div className='flex flex-row'>
-                  <div className="text-container">
-                    <h1 style={{
-                      fontSize: '18px',
-                      color: 'rgb(165, 124, 82)',
-                      fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU',
-                      fontWeight: 'bold'
-                    }}>DID YOU KNOW?</h1>
-                    <p
-                      className='bottomPara'
-                    >The cornerstone of this ambitious 141 metre tall limestone building was laid just<br />
-                      two days after the stock market crash of October 29, 1929. Constructed between<br />
-                      1929 – 1932, 25 King West cost over $8<br /> million to build – or well over $85 million in<br />
-                      today’s dollars.</p>
-                  </div>
-                  <div className="image-wrapper my-5 mx-2">
-                    <img src={image4} />
-                  </div>
+                <div className="text-container" style={{ flex: '40%' }}>
+                  <h1 style={{
+                    fontSize: '18px',
+                    color: 'rgb(165, 124, 82)',
+                    fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU',
+                    fontWeight: 'bold'
+                  }}>DID YOU KNOW?</h1>
+                  <p
+                    className='bottomPara'
+                  >The cornerstone of this ambitious 141 metre tall limestone building was laid just
+                    two days after the stock market crash of October 29, 1929. Constructed between
+                    1929 – 1932, 25 King West cost over $8 million to build – or well over $85 million in
+                    today’s dollars.</p>
+                </div>
+                <div className="image-wrapper" style={{ flex: '60%', display: 'grid', placeItems: 'center' }}>
+                  <img src={image4} style={{ width: '239px', height: '246px' }} />
                 </div>
               </motion.div>
             </div>
@@ -201,15 +197,15 @@ const ShowingHistory = () => {
                 }}
                 viewport={{ once: true }}>
 
-                <img src={image5} />
+                <img src={image5} width='100%' />
                 <p className='bottomPara'
 
-                >Changing styles. By the mid-20th century the elegance of the Banking<br /> Hall remained pristine, while
-                  providing a modern environment to <br />conduct business.</p>
+                >Changing styles. By the mid-20th century the elegance of the Banking Hall remained pristine, while
+                  providing a modern environment to conduct business.</p>
 
               </motion.div>
             </div>
-            <div className="image-container1 my-5">
+            <div className="did-container" >
               <motion.div
                 initial={{
                   opacity: 0,
@@ -222,23 +218,25 @@ const ShowingHistory = () => {
                     duration: 1,
                   },
                 }}
+                className='flex gap-2'
                 viewport={{ once: true }}>
 
-                <div className='flex flex-row'>
-                  <div className="text-container">
-                    <h1 style={{
-                      fontSize: '18px',
-                      color: 'rgb(165, 124, 82)',
-                      fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU',
-                      fontWeight: 'bold'
-                    }}>DID YOU KNOW?</h1>
-                    <p className='bottomPara'
-                    >Modelled after the Baths of Caracella in Rome,the Banking Hall’s ceiling is 65 feet at<br />
-                      the apex. Painted a pale azure, 715 ounces of<br /> gold leaf was used to create the<br /> surrounding mouldings.</p>
-                  </div>
-                  <div className="image-wrapper">
-                    <img src={image6} />
-                  </div>
+                <div className="text-container" style={{ flex: '40%' }}>
+                  <h1 style={{
+                    fontSize: '18px',
+                    color: 'rgb(165, 124, 82)',
+                    fontFamily: 'Gotham-Bold-Normal-ZjuVkIoU',
+                    fontWeight: 'bold'
+                  }}>DID YOU KNOW?</h1>
+                  <p
+                    className='bottomPara'
+                  >The cornerstone of this ambitious 141 metre tall limestone building was laid just
+                    two days after the stock market crash of October 29, 1929. Constructed between
+                    1929 – 1932, 25 King West cost over $8 million to build – or well over $85 million in
+                    today’s dollars.</p>
+                </div>
+                <div className="image-wrapper" style={{ flex: '60%', display: 'grid', placeItems: 'center' }}>
+                  <img src={image4} style={{ width: '239px', height: '246px' }} />
                 </div>
               </motion.div>
             </div>
@@ -247,7 +245,7 @@ const ShowingHistory = () => {
           </Grid >
 
           {/* Vertical Line */}
-          < Grid item xs={12} md={2} sx={{ [theme.breakpoints.down(900)]: { display: 'none' },display:'flex',justifyContent:"center",alignItems:'center' }}>
+          < Grid item xs={12} md={2} sx={{ [theme.breakpoints.down(900)]: { display: 'none' }, display: 'flex', justifyContent: "center", alignItems: 'center' }}>
             {/* <SVG/> */}
             <motion.svg
               width="100%"
@@ -289,11 +287,30 @@ const ShowingHistory = () => {
                 }}
                 viewport={{ once: true }}>
 
-
-                <img src={image7} />
+                <div className='flex items-center'>
+                {/* <motion.svg
+                    width="100%"
+                    height="100%"
+                    initial="hidden"
+                    animate="visible"
+                  >
+                    <motion.line
+                      x1="0" // Set x1 to the middle of the container
+                      y1="0"   // Start from the top
+                      x2="100%" // Set x2 to the middle of the container
+                      y2="0" // End at the bottom
+                      stroke="rgb(165, 124, 82)"
+                      strokeWidth={2}
+                      variants={draw}
+                      custom={2}
+                      style={{ border: '2px solid red' }}
+                    />
+                  </motion.svg> */}
+                  <img src={image7} />
+                </div>
                 <p className='bottomPara'>
-                  August 11, 1930: His Majesty’s R100 Airship over the soon to be opened<br /> headquarters of the Canadian Bank of Commerce.
-                  The building itself opened on <br /> January 13, 1931, in time for the bank’s annual shareholder’s meeting.
+                  August 11, 1930: His Majesty’s R100 Airship over the soon to be opened headquarters of the Canadian Bank of Commerce.
+                  The building itself opened on January 13, 1931, in time for the bank’s annual shareholder’s meeting.
                 </p>
 
               </motion.div>
@@ -325,7 +342,7 @@ const ShowingHistory = () => {
                   WEST, SOUTH AND EAST</h1>
                 <p
                   className='bottomPara'
-                >These combined modernist materials and traditional stone to fit<br /> the original North building design.</p>
+                >These combined modernist materials and traditional stone to fit the original North building design.</p>
 
               </motion.div>
             </div>
@@ -348,9 +365,9 @@ const ShowingHistory = () => {
                 <img src={image9} />
                 <p
                   className='bottomPara'
-                >With its elegant arched doorways, chandeliers and gold-coffered ceiling, CIBC’s Banking<br />
-                  Hall was not only beautiful, but spoke to the bank’s wealth and prosperity. Look closely<br />
-                  at the top of the chandelier and you can see the four words representing CIBC’s brand<br />
+                >With its elegant arched doorways, chandeliers and gold-coffered ceiling, CIBC’s Banking
+                  Hall was not only beautiful, but spoke to the bank’s wealth and prosperity. Look closely
+                  at the top of the chandelier and you can see the four words representing CIBC’s brand
                   pillars of the time: Prudence, Commerce, Industry and Integrity.</p>
 
               </motion.div>

@@ -7,6 +7,7 @@ import image3 from "../../assets/Renovation3.jpg"
 import image4 from "../../assets/Renovation4.jpg"
 import image5 from "../../assets/Renovation5.jpg"
 import image6 from "../../assets/Renovation6.jpg"
+import carsvg from "../../assets/carsouelsvg.svg"
 
 const images = [
    image3,
@@ -46,6 +47,7 @@ const CarousalImage = () => {
             <img className="carousel-image" 
               src={images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} fontSize="large" />
             <div className="info-box">
+              
               {imageInfo[currentImageIndex]}
             </div>
           </div>
@@ -53,7 +55,8 @@ const CarousalImage = () => {
           <Button className="carousel-button" onClick={handleNext} disabled={currentImageIndex === images.length - 1}>
             <EastIcon />
           </Button>
-      
+          {/* <img src={carsvg}/> */}
+          
         </div>
       </div>
     </>
