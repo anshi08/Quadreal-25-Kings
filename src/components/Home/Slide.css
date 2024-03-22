@@ -1,17 +1,21 @@
 .heading {
     font-size: 64px;
     line-height: 64px;
-    font-family: 'CopyrightKlimTypeFoundry';
+    font-family: 'Copyright Klim Type Fo-k7cTyXjE';
     text-align: center;
     letter-spacing: normal;
     color: #ffffff;
     /* word-wrap: break-word; */
 }
+@font-face {
+    font-family: 'Gotham-book-normal';
+    src: url('../../fonts/gotham-book.woff');
+}
 
 .learnBtn{
     font-size: 13px;
     line-height: 16.9px;
-    font-family: 'CopyrightKlimTypeFoundry';
+    font-family: 'Gotham-book-normal';
     letter-spacing: normal;
     transition: 'background-color 0.3s ease';
     /* color: #333333; */
@@ -24,15 +28,27 @@
     justify-content: center;
     align-items: center;
 }
-.learnBtn:hover {
-    background-color: #a0aec0;
-}
+
 .linkBtn{
     display: flex;
     justify-content: center;
     color: #333333;
     align-items: center;
     background-color: white;
+    font-size: 13px;
+    line-height: 16.9px;
+    font-family: 'Gotham-book-normal';
+    letter-spacing: normal;
+    transition: 'background-color 0.3s ease';
+    /* color: #333333; */
+    /* background-color: white; */
+    text-align: center;
+    padding: 12px 24px;
+    height: 48px;
+    width: 220px;
+}
+.linkBtn:hover {
+    background-color: #C0DDC5;
 }
 
 

@@ -17,10 +17,10 @@ const AddSlide = () => {
     );
 
     const btn = {
-        fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
         textAlign: 'center',
-        backgroundColor: isHovered ? '#a0aec0' : 'black',
-        color: "white",
+        backgroundColor: isHovered ? '#C0DDC5' : 'black',
+        color: isHovered ? "black" : "white",
+        textTransform: "none",
         fontWeight: 400,
         fontSize: "13px",
         padding: "12px 24px",

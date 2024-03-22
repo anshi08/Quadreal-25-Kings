@@ -13,7 +13,7 @@ const componentStyle = {
   fontSize: '40px',
   fontWeight: 'bold',
   color: 'rgb(165, 124, 82)',
-  fontFamily: 'CopyrightKlimTypeFoundry',
+  fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
   lineHeight: '48px',
   textAlign: 'center',
   letterSpacing: 'normal',
@@ -60,7 +60,7 @@ const Home = () => {
               viewport={{ once: true }}
             >
 
-              <p style={componentStyle}>
+              <p className='main-home-text'>
                 A TRANSFORMATION TAKES SHAPE<br />
                 ONE THAT OPENS A NEW LEASE ON LIFE <br />
                 FOR THE LEGENDARY COMMERCE COURT <br /> NORTH AND ITS PRESTIGIOUS ADDRESS <br />

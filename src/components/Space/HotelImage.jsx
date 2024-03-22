@@ -7,26 +7,26 @@ import image3 from "../../assets/space3.png"
 import image4 from "../../assets/space4.png"
 import image5 from "../../assets/space5.png"
 import { Grid } from '@mui/material';
+import { useTheme } from '@mui/material/styles'
 
 const HotelImage = () => {
 
-
+    const theme = useTheme()
     const [isHovered, setIsHovered] = useState(false);
 
     const btn = {
-        fontFamily: 'Copyright Klim Type Fo-k7cTyXjE',
         textAlign: 'center',
-        backgroundColor: isHovered ? '#a0aec0' : 'black',
-        color: "white",
+        backgroundColor: isHovered ? '#C0DDC5' : 'black',
+        color: isHovered ? "black" : "white",
         padding: "12px 24px",
         transition: 'background-color 0.3s ease',
     }
     return (
         <>
             <div className='mt-14'>
-                <div className="image-container">
-                    <div className="left" style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-                        <div style={{ marginBottom: '30%' }}> {/* Adding margin-bottom */}
+                <Grid container>
+                    <Grid xs={12} md={4} >
+                        <div style={{ margin: '8rem 0 0',display:'flex',justifyContent:'center' }}> {/* Adding margin-bottom */}
                             <div className="circle" >
                                 <div className="logo"  >
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82 54" width="82" height="54">
@@ -52,7 +52,7 @@ const HotelImage = () => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div style={{margin: '4rem 0 0',display:'flex',flexDirection: 'column' ,justifyContent:'center',alignItems:'center' }}>
                             <motion.div
                                 initial={{
                                     opacity: 0,
@@ -179,287 +179,293 @@ const HotelImage = () => {
                             </div>
 
                         </div>
-                    </div>
+                    </Grid>
 
                     {/* For Small devices  */}
-                    <div>
-                        <div className="center flex flex-row items-end" >
-                            <img src={image2} alt="Hotel" style={{width:'420px',height:'819px'}} />
+                    <Grid xs={12} md={8} sx={{
+                        [theme.breakpoints.down(900)]: { 
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        },
+                    }}>
+                        <div className=" flex flex-row mt-32" >
+                            <div style={{ display: 'flex', flexDirection: 'column' }}>
+                                <div className="center flex flex-row" >
+                                    <img src={image2} alt="Hotel" className='hotel-image-size' />
+                                    <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+
+                                        <div className="right">
+                                            <div style={{ display: 'flex', flexDirection: 'column' }} className='my-9'>
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}>
+
+                                                    <span className='font-bold my-2 floor-names'>
+                                                        FLOOR 28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span>
+                                                    <span className='font-bold my-2 floor-number'>LEASED</span>
+                                                </motion.div>
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}>
+
+                                                    <span className='font-bold my-2 floor-names'>
+                                                        FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span>
+                                                    <span className='font-bold my-2 floor-number'>4,236 SF</span>
+                                                </motion.div>
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}>
+                                                    <span className='font-bold my-2 floor-names'>
+                                                        FLOOR 26&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span>
+                                                    <span className='font-bold my-2 floor-number'>4,199 SF</span>
+                                                </motion.div>
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}>
+
+                                                    <span className='font-bold my-2 floor-names'>
+                                                        FLOOR 25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span>
+                                                    <span className='font-bold my-2 floor-number'>5,500 SF</span>
+                                                </motion.div>
+                                            </div>
+
+                                            <div style={{ display: 'flex', flexDirection: 'column', marginTop: '4rem'}}>
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}>
+
+                                                    <span className='font-bold my-2 floor-names'>
+                                                        FLOOR 22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span>
+                                                    <span className='font-bold my-2 floor-number'>LEASED</span>
+                                                </motion.div>
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}>
+
+                                                    <span className='font-bold my-2 floor-names'>
+                                                        FLOOR 21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span>
+                                                    <span className='font-bold my-2 floor-number'>3,296 SF</span>
+                                                </motion.div>
 
 
-                            <h1 className='image-bottom-text'>DIRECT PATH ACCESS</h1>
+                                            </div>
 
-                        </div>
-                        <Grid container spacing={2}>
-                            <Grid xs={8} md={8}>
-                                <motion.div
-                                    initial={{
-                                        opacity: 0,
-                                        y: 100,
-                                    }}
-                                    whileInView={{
-                                        opacity: 1,
-                                        y: 0,
-                                        transition: {
-                                            duration: 1,
-                                        },
-                                    }}
-                                    viewport={{ once: true }}>
-                                    <div style={{ maxWidth: '400px', margin: '2rem 1rem' }}>
-                                        <img src={image5} style={{ width: '100%' }} />
+                                            <div style={{ display: 'flex', flexDirection: 'column', marginTop: '8rem' }}>
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}>
+
+                                                    <span className='font-bold my-2 floor-names'>
+                                                        FLOOR 16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span>
+                                                    <span className='font-bold my-2 floor-number'>7,192 SF</span>
+                                                </motion.div>
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}>
+
+                                                    <span className='font-bold my-2 floor-names'>
+                                                        FLOOR 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span>
+                                                    <span className='font-bold my-2 floor-number'>7,174 SF</span>
+                                                </motion.div>
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}>
+                                                    <span className='font-bold my-2 floor-names'>
+                                                        FLOOR 14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span>
+                                                    <span className='font-bold my-2 floor-number'>6,865 SF</span>
+                                                </motion.div>
+                                                <motion.div
+                                                    initial={{
+                                                        opacity: 0,
+                                                        y: 100,
+                                                    }}
+                                                    whileInView={{
+                                                        opacity: 1,
+                                                        y: 0,
+                                                        transition: {
+                                                            duration: 1,
+                                                        },
+                                                    }}
+                                                    viewport={{ once: true }}>
+                                                    <span className='font-bold my-2 floor-names'>
+                                                        FLOOR 13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                    </span>
+                                                    <span className='font-bold my-2 floor-number'>6,567 SF</span>
+                                                </motion.div>
+                                            </div>
+
+                                        </div>
+
+                                        <h1 className='image-bottom-text'>DIRECT PATH ACCESS</h1>
                                     </div>
-
-                                </motion.div>
-                            </Grid>
-                            <Grid xs={4} md={4}>
-                                <div style={{ color: 'rgb(165, 124, 82)', margin: '2rem 0' }} className='font-bold'>
-                                    <motion.div
-                                        initial={{
-                                            opacity: 0,
-                                            y: 100,
-                                        }}
-                                        whileInView={{
-                                            opacity: 1,
-                                            y: 0,
-                                            transition: {
-                                                duration: 1,
-                                            },
-                                        }}
-                                        viewport={{ once: true }}>
-                                        <p className='image-bottom-text p-1'>CONCOURSE LEVEL RETAIL <br />+ KING SUBWAY STATION</p>
-                                    </motion.div>
-                                    <motion.div
-                                        initial={{
-                                            opacity: 0,
-                                            y: 100,
-                                        }}
-                                        whileInView={{
-                                            opacity: 1,
-                                            y: 0,
-                                            transition: {
-                                                duration: 1,
-                                            },
-                                        }}
-                                        viewport={{ once: true }}>
-                                        <p className='image-bottom-text p-1'>PARKING LEVEL 1</p>
-
-                                        <p className='image-bottom-text p-1'>  PARKING LEVEL 2 </p>
-
-                                        <p className='image-bottom-text p-1'>  PARKING LEVEL 3 </p>
-                                    </motion.div>
                                 </div>
-                            </Grid>
 
-                        </Grid>
-                    </div>
+                                <Grid container>
+                                    <Grid xs={8} md={8}>
+                                        <motion.div
+                                            initial={{
+                                                opacity: 0,
+                                                y: 100,
+                                            }}
+                                            whileInView={{
+                                                opacity: 1,
+                                                y: 0,
+                                                transition: {
+                                                    duration: 1,
+                                                },
+                                            }}
+                                            
+                                            viewport={{ once: true }}>
+                                            <div style={{ margin: '1rem'}}>
+                                                <img src={image5} style={{ width: '100%' }} />
+                                            </div>
 
-                    {/* floor names */}
-                    <div className="right">
-                        <div style={{ display: 'flex', flexDirection: 'column' }} className='my-9'>
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
+                                        </motion.div>
+                                    </Grid>
+                                    <Grid xs={4} md={4}>
+                                        <div style={{ color: 'rgb(165, 124, 82)', margin: '2rem 0' }} className='font-bold'>
+                                            <motion.div
+                                                initial={{
+                                                    opacity: 0,
+                                                    y: 100,
+                                                }}
+                                                whileInView={{
+                                                    opacity: 1,
+                                                    y: 0,
+                                                    transition: {
+                                                        duration: 1,
+                                                    },
+                                                }}
+                                                viewport={{ once: true }}>
+                                                <p className='image-bottom-text'>CONCOURSE LEVEL RETAIL <br />+ KING SUBWAY STATION</p>
+                                            </motion.div>
+                                            <motion.div
+                                                initial={{
+                                                    opacity: 0,
+                                                    y: 100,
+                                                }}
+                                                whileInView={{
+                                                    opacity: 1,
+                                                    y: 0,
+                                                    transition: {
+                                                        duration: 1,
+                                                    },
+                                                }}
+                                                viewport={{ once: true }}>
+                                                <p className='image-bottom-text p-1'>PARKING LEVEL 1</p>
 
-                                <span className='font-bold my-2 floor-names'>
-                                    FLOOR 28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className='font-bold my-2 floor-number'>LEASED</span>
-                            </motion.div>
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
+                                                <p className='image-bottom-text p-1'>  PARKING LEVEL 2 </p>
 
-                                <span className='font-bold my-2 floor-names'>
-                                    FLOOR 27&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className='font-bold my-2 floor-number'>4,236 SF</span>
-                            </motion.div>
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
-                                <span className='font-bold my-2 floor-names'>
-                                    FLOOR 26&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className='font-bold my-2 floor-number'>4,199 SF</span>
-                            </motion.div>
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
-
-                                <span className='font-bold my-2 floor-names'>
-                                    FLOOR 25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className='font-bold my-2 floor-number'>5,500 SF</span>
-                            </motion.div>
+                                                <p className='image-bottom-text p-1'>  PARKING LEVEL 3 </p>
+                                            </motion.div>
+                                        </div>
+                                    </Grid>
+                                </Grid>
+                            </div>
                         </div>
-
-                        <div style={{ display: 'flex', flexDirection: 'column' }}>
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
-
-                                <span className='font-bold my-2 floor-names'>
-                                    FLOOR 22&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className='font-bold my-2 floor-number'>LEASED</span>
-                            </motion.div>
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
-
-                                <span className='font-bold my-2 floor-names'>
-                                    FLOOR 21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className='font-bold my-2 floor-number'>3,296 SF</span>
-                            </motion.div>
-
-
-                        </div>
-
-                        <div style={{ display: 'flex', flexDirection: 'column', marginTop: '8%' }}>
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
-
-                                <span className='font-bold my-2 floor-names'>
-                                    FLOOR 16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className='font-bold my-2 floor-number'>7,192 SF</span>
-                            </motion.div>
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
-
-                                <span className='font-bold my-2 floor-names'>
-                                    FLOOR 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className='font-bold my-2 floor-number'>7,174 SF</span>
-                            </motion.div>
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
-                                <span className='font-bold my-2 floor-names'>
-                                    FLOOR 14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className='font-bold my-2 floor-number'>6,865 SF</span>
-                            </motion.div>
-                            <motion.div
-                                initial={{
-                                    opacity: 0,
-                                    y: 100,
-                                }}
-                                whileInView={{
-                                    opacity: 1,
-                                    y: 0,
-                                    transition: {
-                                        duration: 1,
-                                    },
-                                }}
-                                viewport={{ once: true }}>
-                                <span className='font-bold my-2 floor-names'>
-                                    FLOOR 13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                </span>
-                                <span className='font-bold my-2 floor-number'>6,567 SF</span>
-                            </motion.div>
-                        </div>
-
-                    </div>
-
-                    {/* </div> */}
-                </div>
+                    </Grid>
+                </Grid>
             </div>
-
-
         </>
     );
 }

@@ -1,12 +1,16 @@
 @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/GothamBook.otf') format('opentype');
-}
+    font-family: 'Gotham-Bold-Normal-ZjuVkIoU';
+    src: url('../../fonts/gotham-bold.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Gotham-Book-Normal';
+    src: url('../../fonts/gotham-book.woff') format('woff');
+  }
 
 .li-head {
     font-size: 18px;
     line-height: 24px;
-    font-family: 'Gotham';
+    font-family: 'Gotham-Bold-Normal-ZjuVkIoU';
     color: rgb(0, 0, 0);
     font-weight: 400;
     font-style: normal;
@@ -15,7 +19,7 @@
 .li-content {
     font-size: 18px;
     line-height: 24px;
-    font-family: 'Gotham';
+    font-family: 'Gotham-Book-Normal';
     color: rgb(0, 0, 0);
     font-weight: 400;
     font-style: normal;
@@ -24,7 +28,7 @@
 
 .fact-text{
     font-size: 16px;
-    font-family: 'Gotham';
+    font-family: 'Gotham-Book-Normal';
     line-height: 24px;
     font-weight: 400;
     font-style: normal;

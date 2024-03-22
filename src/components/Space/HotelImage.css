@@ -5,41 +5,58 @@
 .image-container {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 
 .left,
 .center,
 .right {
-  flex: 1;
+  /* flex: 1; */
 }
 
 
 @font-face {
-  font-family: 'Gotham';
-  src: url('../fonts/GothamBook.otf') format('opentype');
+  font-family: 'Gotham-Bold-Normal-ZjuVkIoU';
+  src: url('../../fonts/gotham-bold.woff') format('woff');
 }
+
 @font-face {
-  font-family: 'Freight';
-  src: url('../fonts/FreightTextBookItalic.otf') format('opentype');
+  font-family: 'Gotham-Book-Normal';
+  src: url('../../fonts/gotham-book.woff') format('woff');
 }
 
 .floor-names {
   font-size: 16px;
   line-height: 16px;
-  font-family: "Gotham";
+  font-family: 'Gotham-Bold-Normal-ZjuVkIoU' !important;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
   color: rgb(165, 124, 82);
 
 }
 
+@font-face {
+  font-family: 'Freight';
+  src: url('../../fonts/gotham-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Gotham-bold-normal';
+  src: url('../../fonts/gotham-bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Freight-italic';
+  src: url('../../fonts/freight-text-book-italic.woff') format('woff');
+}
+
+
 .floor-number {
   font-size: 16px;
   line-height: 16px;
-  font-family: "Gotham";
+  /* font-family: "Freight"; */
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   color: rgb(165, 124, 82);
 }
 
@@ -48,39 +65,70 @@
   line-height: 20px;
   font-style: normal;
   font-weight: 400;
-  font-family: 'Gotham';
-  color:white;
+  font-family: 'Gotham-Book-Normal';
+  color: white;
   background-color: black;
   padding: 12px 24px;
-  transition: 'background-color 0.3s ease';
 }
-.linkBtn:hover{
-  background-color: #a0aec0;
+
+.linkBtn:hover {
+  background-color: #C0DDC5;
+  color: black;
 }
-.legend-text{
+
+.legend-text {
   font-size: 16px;
   line-height: 14px;
   font-style: normal;
   font-weight: 400;
-  font-family: 'Gotham';
-  color:rgb(165, 124, 82);
+  font-family: 'Gotham-bold-normal';
+  white-space: pre-wrap;
+  color: rgb(165, 124, 82);
 }
-.legend-points{
+
+.legend-points {
   font-size: 18px;
   line-height: 36px;
-  font-family: "Freight";
+  font-family: "Freight-italic";
   color: rgb(0, 0, 0);
   margin-left: 8px;
 }
-.image-bottom-text{
+
+.hotel-image-size {
+  width: 551px;
+  height: 1070px;
+
+}
+
+.image-bottom-text {
   font-size: 16px;
   line-height: 16px;
-  font-family: 'Gotham';
+  font-family: 'Gotham-bold-normal';
   font-weight: 400;
   font-style: normal;
   color: rgb(165, 124, 82);
 }
 
+@media (max-width: 1150px) {
+  .hotel-image-size {
+    width: 420px;
+    height: 819px;
+  }
+}
+
+@media (max-width: 630px) {
+  .hotel-image-size {
+    width: 320px;
+
+  }
+}
+
+@media (max-width: 530px) {
+  .hotel-image-size {
+    width: 250px;
+
+  }
+}
 
 /* Media Query for mobile devices */
 @media (max-width: 768px) {

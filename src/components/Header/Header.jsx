@@ -9,7 +9,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [activeTab, setActiveTab] = useState('');
@@ -39,7 +39,7 @@ const Header = () => {
   return (
     <AppBar position="sticky" style={{ backgroundColor: 'rgb(248, 245, 241)', fontFamily: ['Helvetica', 'Arial', 'sans-serif'] }}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar>
           <Typography
             variant="h6"
             noWrap
@@ -52,11 +52,11 @@ const Header = () => {
               fontFamily: "Times New Roman, Times, serif",
               fontSize: '20px',
               lineHeight: '130%',
-              fontWeight: 'bold',
+              fontWeight: '900',
               color: 'black',
               textDecoration: 'none',
-              fontFamily: 'Helvetica, Arial, sans-serif',
-              fontWeight: activeTab === '' ? 'bold' : 'bold' // Apply bold font-weight to active tab
+              // fontFamily: 'Helvetica, Arial, sans-serif',
+              fontWeight: activeTab === '' ? '900' : '900' // Apply bold font-weight to active tab
             }}
             onClick={() => handleTabClick('')}
           >
@@ -137,7 +137,15 @@ const Header = () => {
             <Button
               component={Link}
               to="/page/3"
-              sx={{ mx: 1, color: 'black', fontWeight: activeTab === 'history' ? 'bold' : 'normal' }} // Apply bold font-weight to active tab
+              sx={{
+                mx: 1,
+                color: 'black',
+                fontWeight: activeTab === 'history' ? 'bold' : 'normal',
+                '&:hover': {
+                  background:'transparent',
+                  color: activeTab === 'history' ? 'black' : '#C0DDC5',
+                },
+              }}
               onClick={() => handleTabClick('history')}
             >
               The History
@@ -145,7 +153,12 @@ const Header = () => {
             <Button
               component={Link}
               to="/page/4"
-              sx={{ mx: 1, color: 'black', fontWeight: activeTab === 'renovation' ? 'bold' : 'normal' }} // Apply bold font-weight to active tab
+              sx={{
+                mx: 1, color: 'black', fontWeight: activeTab === 'renovation' ? 'bold' : 'normal', '&:hover': {
+                  background:'transparent',
+                  color: activeTab === 'renovation' ? 'black' : '#C0DDC5',
+                },
+              }}
               onClick={() => handleTabClick('renovation')}
             >
               The Renovation
@@ -153,7 +166,12 @@ const Header = () => {
             <Button
               component={Link}
               to="/page/5"
-              sx={{ mx: 1, color: 'black', fontWeight: activeTab === 'space' ? 'bold' : 'normal' }} // Apply bold font-weight to active tab
+              sx={{
+                mx: 1, color: 'black', fontWeight: activeTab === 'space' ? 'bold' : 'normal', '&:hover': {
+                  background:'transparent',
+                  color: activeTab === 'space' ? 'black' : '#C0DDC5',
+                },
+              }}
               onClick={() => handleTabClick('space')}
             >
               The Space
@@ -161,7 +179,12 @@ const Header = () => {
             <Button
               component={Link}
               to="/page/6"
-              sx={{ mx: 1, color: 'black', fontWeight: activeTab === 'contact' ? 'bold' : 'normal' }} // Apply bold font-weight to active tab
+              sx={{
+                mx: 1, color: 'black', fontWeight: activeTab === 'contact' ? 'bold' : 'normal', '&:hover': {
+                  background:'transparent',
+                  color: activeTab === 'contact' ? 'black' : '#C0DDC5',
+                },
+              }}
               onClick={() => handleTabClick('contact')}
             >
               Contact

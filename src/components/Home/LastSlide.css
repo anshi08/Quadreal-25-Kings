@@ -20,13 +20,26 @@
     position: relative;
     overflow: hidden;
   }
-  
+  @font-face {
+    font-family: 'Gotham-book-normal';
+    src: url('../../fonts/gotham-book.woff') format('WOhkQgwc');
+  }
   .compare-image {
     display: block;
     width: 100%;
     height: auto;
   }
-  
+  .btnLink{
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: rgb(255, 255, 255);
+    z-index: 56;
+    font-family: 'Gotham-book-normal';
+    text-align: center;
+    line-height: 1px;
+    transition-property: none;
+  }
   .image-text {
     position: absolute;
     top: 10px; /* Adjust top position */

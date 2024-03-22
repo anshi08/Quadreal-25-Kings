@@ -1,45 +1,75 @@
 @font-face {
-    font-family: 'Gotham';
-    src: url('../fonts/GothamBook.otf') format('opentype');
+    font-family: 'Gotham-Book-Normal';
+    src: url('../../fonts/gotham-book.woff') format('woff');
 }
-.first-para{
+
+@font-face {
+    font-family: 'Gotham-Medium-Normal';
+    src: url('../../fonts/gotham-medium.woff') format('woff');
+}
+
+
+.bounce-btn {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 12px;
+    color: rgb(0, 0, 0);
+    z-index: 66;
+    transition-property: none;
+    font-family: 'Gotham-Book-Normal';
+    padding: 12px 24px;
+    line-height: 20px;
+    position: absolute;
+    background-color: white;
+    left: 10px;
+    bottom: 10px;
+}
+.bounce-btn:hover{
+    background-color: #a0aec0;
+}
+
+.first-para {
     font-size: 16px;
     line-height: 24px;
-    font-family: 'Gotham';
+    font-family: 'Gotham-Book-Normal';
     color: rgb(0, 0, 0);
     font-weight: 400;
     font-style: normal;
 
 }
-.first-head{
+
+.first-head {
     font-size: 20px;
     line-height: 20px;
     font-family: 'Copyright Klim Type Fo-k7cTyXjE';
     color: rgb(0, 0, 0);
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
 
 }
-.first-head-content{
+
+.first-head-content {
     font-size: 16px;
     line-height: 20px;
-    font-family: 'Gotham';
+    font-family: 'Gotham-Medium-Normal';
     color: rgb(165, 124, 82);
     font-weight: 400;
     font-style: normal;
 }
-.second-head{
+
+.second-head {
     font-size: 18px;
     line-height: 32px;
     font-family: 'Copyright Klim Type Fo-k7cTyXjE';
     color: rgb(0, 0, 0);
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
 }
-.second-head-content{
+
+.second-head-content {
     font-size: 18px;
     line-height: 32px;
-    font-family: 'Gotham';
+    font-family: 'Gotham-Medium-Normal';
     color: rgb(165, 124, 82);
     font-weight: 400;
     font-style: normal;

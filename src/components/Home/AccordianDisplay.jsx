@@ -11,33 +11,43 @@ import image2 from '../../assets/HomeImage7.jpg';
 import image3 from '../../assets/HomeImage8.jpg';
 import image4 from '../../assets/HomeImage9.jpg';
 import Reveal from "../../utils/Reveal";
+import './Accordian.css'
 
 
 
 const AccordionItem = ({ title, content, isOpen, onChange }) => {
   return (
-    <Accordion expanded={isOpen} onChange={onChange} style={{ background: 'transparent', margin: '0 auto' }}>
+    <Accordion expanded={isOpen} onChange={onChange} style={{ background: 'transparent', margin: '0 auto',padding:'0.5rem 0' }}>
       <AccordionSummary
         expandIcon={isOpen ? <RemoveIcon /> : <AddIcon />}
+        sx={{pt:'1rem'}}
       >
         <Reveal>
-          <Typography variant='5' style={{
-            fontSize: '28px', fontWeight: 'bold',
-            color: 'rgb(165, 124, 82)', 
-          }}>{title}</Typography>
+          <Typography variant='5' className="accordianHeading">{title}</Typography>
         </Reveal>
       </AccordionSummary>
-      <Reveal>
-        <AccordionDetails sx={{ padding: "1rem" }}>
-          <p style={{
-            lineHeight: '24px', fontSize: '16px',
-            letterSpacing:'normal',
-            textAlign: 'left',
-            wordWrap: 'break-word'
+      {/* <Reveal> */}
+
+      <AccordionDetails sx={{ padding:'0 1rem 1rem' }}>
+        <motion.div
+          initial={{
+            opacity: 0,
+            y: 50,
           }}
+          whileInView={{
+            opacity: 1,
+            y: 0,
+
+            transition: {
+              duration: 1,
+            },
+          }}
+          viewport={{ once: true }}>
+          <p className="accordianContent"
           >{content}</p>
-        </AccordionDetails>
-      </Reveal>
+        </motion.div>
+      </AccordionDetails>
+      {/* </Reveal> */}
     </Accordion>
   );
 };
@@ -84,7 +94,7 @@ const AccordianDisplay = () => {
   return (
     <>
       <Grid container>
-        <Grid item xs={12} md={6} className="accordion-container" style={{ padding: '2rem' }}>
+        <Grid item xs={12} md={6} className="accordion-container" >
           <AccordionItem
             title="DISTINCTION"
             content="Elevate your brand with an address in the heart of Toronto’s financial hub, 25 King Street West at King and Bay. Its connection to the city’s PATH system, immediate accessibility to transit, and the multitude of restaurants and cafes, makes it one of the most convenient locations in downtown Toronto."
@@ -148,24 +158,31 @@ const AccordianDisplay = () => {
         </Grid>
         <Grid item xs={12} md={6} style={{ padding: '2rem', margin: '0 auto' }}>
           <motion.div
+            key={imageSrc} // Add key prop to force remount on imageSrc change
             initial={{
               opacity: 0,
-              x: 100,
+              x: 50,
             }}
-            whileInView={{
+            animate={{
               opacity: 1,
               x: 0,
+              transition: {
+                duration: 1, // Change animation duration to 3 seconds
+              },
+            }}
+            exit={{
+              opacity: 0,
+              x: -50,
               transition: {
                 duration: 1,
               },
             }}
-            viewport={{ once: true }}
-            style={{ display: 'flex', justifyContent: 'center' }}
+            style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}
           >
             <img src={imageSrc} alt="Accordion Image" style={{ maxWidth: '100%', height: 'auto' }} />
           </motion.div>
-
         </Grid>
+
       </Grid>
     </>
   );

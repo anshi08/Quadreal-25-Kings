@@ -54,7 +54,8 @@ const Brochure = () => {
                 <Link
                   to="https://25king.ca/brochure/"
                   target='_blank'
-                  style={btn}
+                  className='bounce-btn'
+                  // style={btn}
                   onMouseEnter={() => setIsHovered(true)}
                   onMouseLeave={() => setIsHovered(false)}
                 >

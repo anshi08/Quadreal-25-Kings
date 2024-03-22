@@ -32,7 +32,7 @@ const FastFacts = () => {
                 }}
             >FAST FACTS </h1>
 
-            <ul style={{ lineHeight: '32px', fontFamily: 'Gotham-Book-Normal-WOhkQgwc'}}>
+            <ul style={{ lineHeight: '32px', fontFamily: 'Gotham-Book-Normal-WOhkQgwc',marginBottom:'2rem'}}>
                 <li style={{ marginBottom: '10px', 
                 display: 'flex', alignItems: 'center', fontSize: '18px', lineHeight: '24px' }}>
                    <SVG />
