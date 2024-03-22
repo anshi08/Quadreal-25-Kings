@@ -10,6 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import { Link } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
   const [activeTab, setActiveTab] = useState('');
@@ -40,28 +41,14 @@ const Header = () => {
     <AppBar position="sticky" style={{ backgroundColor: 'rgb(248, 245, 241)', fontFamily: ['Helvetica', 'Arial', 'sans-serif'] }}>
       <Container maxWidth="xl">
         <Toolbar>
-          <Typography
-            variant="h6"
-            noWrap
-            component={Link}
-            to="/"
-            sx={{
-              mr: 2,
-              ml: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: "Times New Roman, Times, serif",
-              fontSize: '20px',
-              lineHeight: '130%',
-              fontWeight: '900',
-              color: 'black',
-              textDecoration: 'none',
-              // fontFamily: 'Helvetica, Arial, sans-serif',
-              fontWeight: activeTab === '' ? '900' : '900' // Apply bold font-weight to active tab
-            }}
+        
+          <a
+            href='/'
+            className='logo-font'
             onClick={() => handleTabClick('')}
           >
             25 KING WEST
-          </Typography>
+          </a>
 
           {/* Navigation menu for mobile view */}
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -107,27 +94,14 @@ const Header = () => {
           </Box>
 
           {/* Navigation tabs for mobile view */}
-          <Typography
-            variant="h5"
-            noWrap
-            component={Link}
-            to="/"
-            sx={{
-              mr: 2,
-              ml: 'auto',
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'black',
-              textDecoration: 'none',
-              fontWeight: activeTab === '' ? 'bold' : 'normal' // Apply bold font-weight to active tab
-            }}
+          
+          <a
+            href='/'
+            className='logo-font2'
             onClick={() => handleTabClick('')}
           >
-            25 King West
-          </Typography>
+            25 KING WEST
+          </a>
 
           {/* Navigation tabs for desktop view */}
           <Box sx={{

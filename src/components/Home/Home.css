@@ -14,18 +14,20 @@
   }
   @font-face {
     font-family: 'Copyright';
-    src: url('../../fonts/copyright.otf') format('otf');
+    src: url('../../fonts/domainedisplaybold.woff') format('woff');
   }
 
-  .main-home-text{
+  .main-home-text {
     font-size: 40px;
-    font-weight: bold;
+    font-weight: 400;
     color: rgb(165, 124, 82);
     font-family: 'Copyright';
     line-height: 48px;
+    font-style: normal;
     text-align: center;
     letter-spacing: normal;
   }
+  
   
   @keyframes increaseWidth {
     from {
